@@ -1,0 +1,8 @@
+
+.linePreview {
+    border-bottom: 3px dashed #00c8b9;
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 90px;
+}

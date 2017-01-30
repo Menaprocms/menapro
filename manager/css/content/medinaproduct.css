@@ -1,0 +1,216 @@
+/* MedinaPROcms - General product styling. Can be overrided from all the themes. ©2015 */
+/* Products slider */
+.eBestSellers { /* margin: -15px; */padding: 10px;background-color: #fff;border-radius: 2px;}
+/*--*/ .bx-viewport {
+    border: 1px solid #FBFBFB;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
+    /* padding: 2px 17px; */
+    background-color: #fff;
+}
+/*--*/ .bx-viewport .bx-clone {}
+/*--*/ .bx-wrapper {
+    box-shadow: none;
+    border: 1px solid #fff;
+}
+.bx-wrapper:hover  {
+    border: 1px solid #E6E6E6;
+}
+/*--*/  .left-block {}
+/*--*/  .addToWishlist {}
+/*--*/  .left-block .product-image-container {}
+/*--*/  .left-block .product-image-container .product_img_link {}
+/*--*/  .left-block .product-image-container .product_img_link .replace-2x.img-responsive {}
+/*--*/  .left-block .product-image-container .quick-view-wrapper-mobile {}
+/*--*/  .left-block .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {
+    display: none;
+}
+/*--*/  .left-block .product-image-container .quick-view-wrapper-mobile .quick-view-mobile .icon-eye-open {}
+/*--*/  .product-container .quick-view { display: none}
+/*--*/  .product-container:hover .quick-view {
+    display: block;
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    background-color: #A0A0A0;
+    color: #fff;
+    padding: 5px;
+}
+/*--*/  .left-block .product-image-container .content_price {}
+/*--*/  .left-block .product-image-container .content_price .price.product-price {}
+/*--*/  .right-block {}
+/*--*/  .right-block h5 {}
+/*--*/  .right-block h5 .product-name {}
+/*--*/  .right-block .product-desc {}
+/*--*/  .right-block .content_price {}
+/*--*/  .right-block .content_price .price.product-price {}
+/*--*/  .right-block .button-container {}
+/*--*/  .right-block .button-container .button.ajax_add_to_cart_button.btn.btn-default {}
+/*--*/  .right-block .button-container .button.lnk_view.btn.btn-default {}
+/*--*/  .right-block .product-flags {}
+/*--*/  .right-block .availability {}
+/*--*/  .right-block .availability .available-now {}
+/*--*/  .functional-buttons {}
+/*--*/  .functional-buttons .compare {}
+/*--*/  .functional-buttons .compare .add_to_compare {}
+/*--*/  .left-block .product-image-container .content_price .old-price.product-price {}
+/*--*/  .left-block .product-image-container .content_price .price-percent-reduction {}
+/*--*/  .right-block .content_price .old-price.product-price {}
+/*--*/  .right-block .content_price .price-percent-reduction {}
+/*--*/  .right-block .product-flags .discount {}
+/*--*/  .product-container {}
+
+/*--*/  .product-image-container {}
+/*--*/  .product-image-container .product_img_link {}
+/*--*/  .product-image-container .product_img_link .replace-2x.img-responsive {}
+/*--*/  .product-image-container .quick-view-wrapper-mobile {}
+/*--*/  .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {}
+/*--*/  .product-image-container .quick-view-wrapper-mobile .quick-view-mobile .icon-eye-open {}
+/*--*/  .product-image-container .quick-view {}
+/*--*/  .product-image-container .content_price {}
+/*--*/  .product-image-container .content_price .price.product-price {}
+/*--*/ .bx-wrapper .product-container .right-block {
+    position: relative;
+}
+/*--*/  .product-container .right-block h5 {
+    text-align: center;
+    overflow: hidden;
+}
+/*--*/  .product-container .right-block h5 .product-name {
+    text-align: center;
+}
+/*--*/  .product-container .right-block .product-desc {
+    line-height: 12px;
+    font-size: 12px;
+    padding: 8px;
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid #DCDCDC;
+}
+/*--*/  .product-container .right-block .content_price {
+/* display: none; */}
+/*--*/  .product-container .right-block .content_price .price.product-price {
+    font-size: 18px;
+}
+/*--*/  .product-container .right-block .button-container {}
+/*--*/  .product-container .right-block .button-container .button.ajax_add_to_cart_button.btn.btn-default {
+    background-color: #0098CE;
+    background-image: none;
+    border: none;
+    border-radius: 40px;
+}
+/*--*/  .product-container .button.ajax_add_to_cart_button.btn.btn-default:after {
+display: block;content: "\f07a ";height: 30px;width: 30px;font-family: FontAwesome;text-align: center;font-size: 16px;line-height: 30px;text-shadow: -1px -1px 0px #05678A;}
+/*--*/  .product-container .right-block .button-container .button.ajax_add_to_cart_button.btn.btn-default span {
+    display: none;
+}
+/*--*/  .product-container .right-block .button-container .button.lnk_view.btn.btn-default {
+    background-image: none;
+    background-color: #BABCBD;
+    border-radius: 40px;
+    box-shadow: none;
+    border: none;
+}
+/*--*/  .product-container .button.lnk_view:after { content: "\f067"; font-family:FontAwesome; height: 30px;width: 30px;display: block;text-align: center;font-size: 17px;line-height: 30px;text-shadow: 0px 1px 0px #E6E6E6;color: #fff;}
+/*--*/  .product-container .right-block .button-container .button.lnk_view.btn.btn-default span {
+    display: none;
+}
+/*--*/  .product-container .right-block .product-flags {
+    /* position: relative; */
+}
+/*--*/  .product-container .right-block .availability {}
+/*--*/  .product-container .right-block .availability .available-now {
+    font-size: 8px;
+    text-transform: uppercase;
+    border: 1px solid #C7C7C7;
+    padding: 0px 6px;
+    border-radius: 10px;
+    color: #000;
+}
+/*--*/  .product-container .functional-buttons {}
+/*--*/  .product-container .functional-buttons .compare {}
+/*--*/  .product-container .functional-buttons .compare .add_to_compare {
+    display: none;
+}
+/*--*/  .product-image-container .content_price .old-price.product-price {}
+/*--*/  .product-image-container .content_price .price-percent-reduction {}
+/*--*/  .product-container .right-block .content_price .old-price.product-price {}
+/*--*/  .product-container .right-block .content_price .price-percent-reduction {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+}
+/*--*/  .product-container .right-block .product-flags .discount {
+    position: absolute;
+    top: 171px;
+    left: 0px;
+    background-color: #F13340;
+    color: #fff;
+    padding: 3px;
+    font-size: 11px;
+    display: block;
+    width: 100%;
+}
+/*--*/ .bx-controls.bx-has-controls-direction {}
+/*--*/ .bx-controls.bx-has-controls-direction .bx-controls-direction a {
+}
+/*--*/ .bx-prev {}
+/*--*/.bx-wrapper:hover .bx-prev {
+}
+/*--*/ .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next {}
+
+/* End product Slider  ------------- MedinaPROcms-----------*/
+
+
+/* eOneProduct */
+.eOneProduct .product-container {
+    background-color: #fff;
+}
+.eOneProduct .product-container .left-block {}
+.eOneProduct .product-container .left-block .product-image-container {}
+.eOneProduct .product-container .left-block .product-image-container .product_img_link {}
+.eOneProduct .product-container .left-block .product-image-container .product_img_link .replace-2x.img-responsive {}
+.eOneProduct .product-container .left-block .product-image-container .quick-view-wrapper-mobile {}
+.eOneProduct .product-container .left-block .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {}
+.eOneProduct .product-container .left-block .product-image-container .quick-view-wrapper-mobile .quick-view-mobile .icon-eye-open {}
+.eOneProduct .product-container .left-block .product-image-container .quick-view {
+    font-size: 21px;
+    padding: 5px 30px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+.eOneProduct .product-container .left-block .product-image-container .quick-view span {}
+.eOneProduct .product-container .left-block .product-image-container .content_price {
+    display: none;
+}
+.eOneProduct .product-container .left-block .product-image-container .content_price .price.product-price {}
+.eOneProduct .product-container .left-block .product-image-container .content_price meta {}
+.eOneProduct .product-container .left-block .product-image-container .content_price link {}
+.eOneProduct .product-container .right-block {}
+.eOneProduct .product-container .right-block h5 {}
+.eOneProduct .product-container .right-block h5 .product-name {
+    font-size: 15px;
+    line-height: 33px;
+}
+.eOneProduct .product-container .right-block .product-desc {
+    font-size: 15px;
+    line-height: 20px;
+    height: 60px;
+}
+.eOneProduct .product-container .right-block .content_price {}
+.eOneProduct .product-container .right-block .content_price .price.product-price {}
+.eOneProduct .product-container .right-block .button-container {}
+.eOneProduct .product-container .right-block .button-container .button.ajax_add_to_cart_button.btn.btn-default {}
+.eOneProduct .product-container .right-block .button-container .button.ajax_add_to_cart_button.btn.btn-default span {}
+.eOneProduct .product-container .right-block .button-container .button.lnk_view.btn.btn-default {}
+.eOneProduct .product-container .right-block .button-container .button.lnk_view.btn.btn-default span {}
+.eOneProduct .product-container .right-block .product-flags {}
+.eOneProduct .product-container .right-block .availability {}
+.eOneProduct .product-container .right-block .availability .available-now {}
+.eOneProduct .product-container .functional-buttons {}
+.eOneProduct .product-container .functional-buttons .wishlist {}
+.eOneProduct .product-container .functional-buttons .wishlist .addToWishlist.wishlistProd_2 {}
+.eOneProduct .product-container .functional-buttons .compare {}
+.eOneProduct .product-container .functional-buttons .compare .add_to_compare {}
+
+/* End eOneProduct ---------------- MedinaPROcms----------*/

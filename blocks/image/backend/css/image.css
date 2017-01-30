@@ -1,0 +1,56 @@
+
+#image_previewImage {
+    display: block;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('noimage.jpg');
+    background-color: #e0e0e0;
+}
+#image_previewImage:empty {
+}
+
+div#image_previewImage:hover {
+    cursor: pointer;
+}
+/*****Imported from editor2 css************/
+.eRow .eImage {
+    padding: 15px 10px;
+    overflow: hidden;
+    position: relative;
+    }
+.eRow .eImage img[src*=".png"] {
+    background: url("alpha.png");
+    background-size: 60px;
+}
+.eRow .eImage img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+/*eImage*/
+.eImage .eListImage {
+    padding: 0px;
+    margin: 0px;
+    list-style: none; }
+.eImage .eListImage li {
+    display: block;
+    width: 100%;
+    margin: 5px 8px;
+    height: auto;
+    border: 1px solid #D6D6D6;
+    overflow: hidden; }
+.eImage .eListImage li img {
+    border: none;
+    width: 100%;
+    height: auto; }

@@ -1,0 +1,76 @@
+
+
+#proBox {
+    display: none;
+    background: #FFFFFF;
+    padding: 45px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 5800;
+
+    width: 100%;
+    left: 0px;
+
+    box-shadow: 0px 251px 0px 254px rgba(0, 0, 0, 0.22);
+    border-bottom: 1px solid  #F14B4B;
+    /*Writed by Silvia*/
+    max-height: 85% !important;
+    overflow-y:auto !important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCI+CjxmaWx0ZXIgaWQ9Im4iIHg9IjAiIHk9IjAiPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43IiBudW1PY3RhdmVzPSIxMCIgc3RpdGNoVGlsZXM9InN0aXRjaCI+PC9mZVR1cmJ1bGVuY2U+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzAwMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIwLjQiPjwvcmVjdD4KPC9zdmc+");
+
+}
+#proBox>div.container{
+    background-color: #ECECEC;
+    border-radius: 3px;
+    padding: 0px 15px 21px;
+    overflow: hidden;
+    max-width: 980px;
+
+}
+#proBox .btn-danger.toTrash:hover {
+    background-color: #DC3833;
+}
+#proBox .btn-danger.toTrash {
+    font-size: 27px;
+    padding: 2px 15px;
+
+    color: #A22E2B;
+
+}
+#proBox .eRow .btn-success:hover {
+    background-color: #11D4C5;
+}
+#proBox h1 {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: block;
+
+}
+#proBox .eRow .btn-success {
+    background-color: #01C2B3;
+    border-color: #00897F;
+
+    font-size: 16px;
+    padding: 4px 15px;
+    color: #037D74;
+    text-shadow: 1px 1px 0px #12D4C5;
+}
+#proBox .row {  }
+#proBox .eRow {background-color: #ECECEC;}
+#proBox div[id*="fancy-"]{ }
+#proBox div#fancy-select { display: block}
+#proBox .proBoxTitle {
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0px -15px 21px -15px;
+    line-height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #00C8B9;
+}
+
+#proBox hr {border-bottom: 1px solid #d4d4d4;}
+body.probox-scroll-lock {
+    overflow-y: hidden;
+}

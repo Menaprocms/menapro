@@ -1,0 +1,219 @@
+body {background: #2DC19F;box-shadow: 0px 0px 450px #52FFD7 inset;}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
+.body-content {
+    text-align: center;
+}
+
+.h1.title, h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+    color: #fff;
+}
+
+a#continue_first_step {background-color: #DED948 !important;}
+a#start_installation,a#check_db_connection,a#continue_first_step,a#finish_installation,a#delete_install,a#accept_license{
+    padding: 12px 55px;
+    background: #36DCB6;
+    border-color: #70F7D8;
+    opacity: 0;
+    text-transform: uppercase;
+    color: #124237;
+    font-weight: 100;
+}
+
+
+.godown {
+    position: relative;
+    animation-name: dropdown;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+.goup {
+    position: relative;
+    animation-name: dropup;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+.delay2s{
+    animation-delay: 1s !important;
+}
+.fadein {
+    animation-fill-mode: forwards;
+
+    position: relative;
+    animation-name: scalefadein;
+    animation-duration: 2s;
+    animation-timing-function: easen;
+}
+@keyframes dropdown {
+    0%   {bottom: 100px;
+        opacity: 0;}
+    /*25%  {background-color: yellow;}*/
+    50%  {opacity: 1}
+    100% { bottom: 0px}
+}
+@keyframes dropup {
+    0%   {top: 100px;
+        opacity: 0;}
+    /*25%  {background-color: yellow;}*/
+    50%  {opacity: 1}
+    100% { top: 0px}
+}
+
+@keyframes scalefadein {
+    0%   {transform:scale(1.1);
+        opacity: 0;}
+
+    50%  {opacity: 1}
+    100% { transform: scale(1);
+        opacity: 1;}
+}
+
+a#start_installation:hover,a#delete_install:hover,a#accept_license:hover {
+    background: #FFD508;
+}
+/*a.installbtn:hover{*/
+    /*background: #FFD508;*/
+/*}*/
+/*a.installbtn{*/
+    /*padding: 12px 55px;*/
+    /*background: #36DCB6;*/
+    /*border-color: #70F7D8;*/
+    /*text-transform: uppercase;*/
+    /*color: #124237;*/
+    /*font-weight: 100;*/
+/*}*/
+
+.alert {
+    background: #fff;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    border: 2px solid #228C74;
+    box-shadow: inset 0px 1px 5px 0px #BBB;
+    background: #E8E8E8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+}
+
+ul#take_permissions {
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+    padding: 30px;
+    list-style: none;
+}
+
+li.take_permissions_file {
+    border-bottom: 1px dashed #1F7B67;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+.form-control {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px dashed #fff;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 29px;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+.form-control:focus
+{
+    /*@fixme: In checkbox hover the field dissapeared. Disabled by Silvia.*/
+    /*outline:0px !important;*/
+    /*-webkit-appearance:none !important;*/
+    /*box-shadow: none;*/
+    /*-webkit-box-shadow: none;*/
+    /*border-color: inherit;*/
+}
+
+.form-control:hover {
+    color: #fff;
+    box-shadow: 0px -11px 10px -10px rgb(50, 234, 192) inset;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: #1B5D4E;
+}
+input:-webkit-autofill {
+    background-color: #f00 !important;
+    color: inherit !important;
+    box-shadow: 0 0 0px 1000px #2DC19F inset !important;
+    color: #fff !important;
+    -webkit-text-fill-color: white !important;
+    font-weight: 400;
+}
+
+a#finish_installation,a#check_db_connection,a#continue_first_step,a#delete_install,a#accept_license { opacity:1 }
+
+hr {
+    border-top: 1px solid #1FA989;
+    border-bottom: 1px solid #3AD7B3;
+    max-width: 500px;
+}
+
+a#check_db_connection {
+    margin-bottom: 8px;
+    padding: 0px 30px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: #A0F1DE;
+}
+.pass_error{
+    color: #c43333;
+}
+/***************************Writed by Silvia*******************************************/
+#lang_selection {
+    padding: 0px !important;
+}
+#lang_selection > option{
+    background-color: #36dcb6;
+    color: #1b5d4e;
+}
+#license_terms{
+    color: #848585;
+    font-size: 14px;
+}
+
+
+/***************************Writed by Silvia*******************************************/
+#loader_install{
+    position:fixed;
+    top:80%;
+    left:49%;
+}
+#back_link{
+	text-transform:none !important;
+}

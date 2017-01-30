@@ -1,0 +1,16 @@
+.placeholder {
+    border: 1px dashed #4183C4;
+    height: 125px;
+    background: rgba(8, 8, 8, 0.27);
+    padding:0px !important
+}
+
+.mn_pages li.ui-sortable-helper { height: 125px !important; overflow: hidden;transition: none !important;-o-transition: none !important;-webkit-transition: none !important;-moz-transition: none !important;}
+.placeholder:after { content:"1";display: block;position: absolute;top: 6px;left: 6px;height: 42px;width: 42px;background: rgba(255, 255, 255, 0.25);border-radius: 30px;font-size: 30px;font-weight: bold;text-indent: 0px;text-align: center;}
+ul>li>ul>li.placeholder {     border-color:#eea236;  }
+ul>li>ul>li>ul>li.placeholder:after { content:"3" !important}
+ul>li>ul>li>ul>li.placeholder { border-color: #FFFF00;}
+ul>li>ul>li>ul>li>ul>li.placeholder { border-color: turquoise}
+
+ul>li>ul>li>ul>li>ul>li.placeholder:after { content:"4" !important}
+ul>li>ul>li.placeholder:after {content:"2" !important}

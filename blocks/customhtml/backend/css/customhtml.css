@@ -1,0 +1,10 @@
+.eCustomhtml{
+    text-align: center;
+    color: #14C7BB;
+}
+.customhtml_textarea{
+    margin-left:2%;
+}
+/*****Imported from editor css************/
+.eRow .eIcoCustomhtml:after {
+    content: "\F121"; }

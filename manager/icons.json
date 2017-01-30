@@ -1,0 +1,7214 @@
+[
+    {
+        "name": "minus",
+        "tags": [
+            "hide",
+            "minify",
+            "delete",
+            "remove",
+            "trash",
+            "hide",
+            "collapse",
+            "fa-minus",
+            "minus",
+            "math",
+            "line",
+            "horizontal"
+        ],
+        "unicode": "f068",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "plus",
+        "tags": [
+            "add",
+            "new",
+            "create",
+            "expand",
+            "fa-plus",
+            "plus",
+            "math",
+            "cross",
+            "increase",
+            "surplus",
+            "extra"
+        ],
+        "unicode": "f067",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "compress",
+        "tags": [
+            "collapse",
+            "combine",
+            "contract",
+            "merge",
+            "smaller",
+            "fa-compress",
+            "compress",
+            "minimize",
+            "shrink",
+            "narrow",
+            "reduce"
+        ],
+        "unicode": "f066",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "expand",
+        "tags": [
+            "enlarge",
+            "bigger",
+            "resize",
+            "fa-expand",
+            "expand",
+            "extend",
+            "increase",
+            "dilate",
+            "inflate",
+            "grow"
+        ],
+        "unicode": "f065",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "share",
+        "tags": [
+            "fa-share",
+            "share",
+            ""
+        ],
+        "unicode": "f064",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrow-down",
+        "tags": [
+            "download",
+            "fa-arrow-down",
+            "arrow-down",
+            "indicator",
+            "directive",
+            "pointer",
+            "bottom",
+            "end"
+        ],
+        "unicode": "f063",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "arrow-up",
+        "tags": [
+            "fa-arrow-up",
+            "arrow-up",
+            "top",
+            "start",
+            "up",
+            ""
+        ],
+        "unicode": "f062",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "arrow-right",
+        "tags": [
+            "next",
+            "forward",
+            "fa-arrow-right",
+            "arrow-right",
+            ""
+        ],
+        "unicode": "f061",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "arrow-left",
+        "tags": [
+            "previous",
+            "back",
+            "fa-arrow-left",
+            "arrow-left"
+        ],
+        "unicode": "f060",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "ban",
+        "tags": [
+            "delete",
+            "remove",
+            "trash",
+            "hide",
+            "block",
+            "stop",
+            "abort",
+            "cancel",
+            "fa-ban",
+            "ban",
+            "forbidden"
+        ],
+        "unicode": "f05e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "film",
+        "tags": [
+            "movie",
+            "fa-film",
+            "film",
+            "strip",
+            "motion",
+            "cinema"
+        ],
+        "unicode": "f008",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "check-circle-o",
+        "tags": [
+            "todo",
+            "done",
+            "agree",
+            "accept",
+            "confirm",
+            "ok",
+            "fa-check-circle-o",
+            "check-circle-o"
+        ],
+        "unicode": "f05d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "times-circle-o",
+        "tags": [
+            "close",
+            "exit",
+            "x",
+            "fa-times-circle-o",
+            "times-circle-o",
+            "cancel"
+        ],
+        "unicode": "f05c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "crosshairs",
+        "tags": [
+            "picker",
+            "fa-crosshairs",
+            "crosshairs",
+            "point",
+            ""
+        ],
+        "unicode": "f05b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "info-circle",
+        "tags": [
+            "help",
+            "information",
+            "more",
+            "details",
+            "fa-info-circle",
+            "info-circle"
+        ],
+        "unicode": "f05a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "question-circle",
+        "tags": [
+            "help",
+            "information",
+            "unknown",
+            "support",
+            "fa-question-circle",
+            "question-circle",
+            "ask",
+            "tip"
+        ],
+        "unicode": "f059",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "check-circle",
+        "tags": [
+            "todo",
+            "done",
+            "agree",
+            "accept",
+            "confirm",
+            "ok",
+            "fa-check-circle",
+            "check-circle"
+        ],
+        "unicode": "f058",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "times-circle",
+        "tags": [
+            "close",
+            "exit",
+            "x",
+            "fa-times-circle",
+            "times-circle",
+            "cancel"
+        ],
+        "unicode": "f057",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "minus-circle",
+        "tags": [
+            "delete",
+            "remove",
+            "trash",
+            "hide",
+            "fa-minus-circle",
+            "minus-circle",
+            "decrease",
+            "forbidden"
+        ],
+        "unicode": "f056",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "plus-circle",
+        "tags": [
+            "add",
+            "new",
+            "create",
+            "expand",
+            "fa-plus-circle",
+            "plus-circle"
+        ],
+        "unicode": "f055",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "chevron-right",
+        "tags": [
+            "bracket",
+            "next",
+            "forward",
+            "fa-chevron-right",
+            "chevron-right"
+        ],
+        "unicode": "f054",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "user",
+        "tags": [
+            "person",
+            "man",
+            "head",
+            "profile",
+            "fa-user",
+            "user",
+            "agent",
+            "admin",
+            "pedestrian"
+        ],
+        "unicode": "f007",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "chevron-left",
+        "tags": [
+            "bracket",
+            "previous",
+            "back",
+            "fa-chevron-left",
+            "chevron-left"
+        ],
+        "unicode": "f053",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "eject",
+        "tags": [
+            "fa-eject",
+            "eject",
+            "extract",
+            "discharge",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f052",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "step-forward",
+        "tags": [
+            "next",
+            "end",
+            "last",
+            "fa-step-forward",
+            "step-forward",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f051",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "fast-forward",
+        "tags": [
+            "next",
+            "end",
+            "last",
+            "fa-fast-forward",
+            "fast-forward",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f050",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "forward",
+        "tags": [
+            "forward",
+            "next",
+            "fa-forward",
+            "forward",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f04e",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "stop",
+        "tags": [
+            "block",
+            "box",
+            "square",
+            "fa-stop",
+            "stop",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f04d",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "pause",
+        "tags": [
+            "wait",
+            "fa-pause",
+            "pause",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f04c",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "play",
+        "tags": [
+            "start",
+            "playing",
+            "music",
+            "sound",
+            "fa-play",
+            "play",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f04b",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "backward",
+        "tags": [
+            "rewind",
+            "previous",
+            "fa-backward",
+            "backward",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f04a",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "fast-backward",
+        "tags": [
+            "rewind",
+            "previous",
+            "beginning",
+            "start",
+            "first",
+            "fa-fast-backward",
+            "fast-backward",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f049",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "star-o",
+        "tags": [
+            "award",
+            "achievement",
+            "night",
+            "rating",
+            "score",
+            "favorite",
+            "fa-star-o",
+            "star-o",
+            "sky"
+        ],
+        "unicode": "f006",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "step-backward",
+        "tags": [
+            "rewind",
+            "previous",
+            "beginning",
+            "start",
+            "first",
+            "fa-step-backward",
+            "step-backward",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f048",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "arrows",
+        "tags": [
+            "move",
+            "reorder",
+            "resize",
+            "fa-arrows",
+            "arrows"
+        ],
+        "unicode": "f047",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "check-square-o",
+        "tags": [
+            "todo",
+            "done",
+            "agree",
+            "accept",
+            "confirm",
+            "ok",
+            "fa-check-square-o",
+            "check-square-o",
+            "checkbox"
+        ],
+        "unicode": "f046",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "share-square-o",
+        "tags": [
+            "social",
+            "send",
+            "arrow",
+            "fa-share-square-o",
+            "share-square-o"
+        ],
+        "unicode": "f045",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "pencil-square-o",
+        "tags": [
+            "write",
+            "edit",
+            "update",
+            "fa-pencil-square-o",
+            "pencil-square-o",
+            "paint",
+            "draw",
+            "retouch",
+            ""
+        ],
+        "unicode": "f044",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tint",
+        "tags": [
+            "raindrop",
+            "waterdrop",
+            "drop",
+            "droplet",
+            "fa-tint",
+            "tint",
+            "paint",
+            "draw",
+            "retouch",
+            ""
+        ],
+        "unicode": "f043",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "themeisle",
+        "tags": [
+            "fa-themeisle",
+            "themeisle"
+        ],
+        "unicode": "f2b2",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "yoast",
+        "tags": [
+            "fa-yoast",
+            "yoast"
+        ],
+        "unicode": "f2b1",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "first-order",
+        "tags": [
+            "fa-first-order",
+            "first-order"
+        ],
+        "unicode": "f2b0",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "adjust",
+        "tags": [
+            "contrast",
+            "fa-adjust",
+            "adjust",
+            "paint",
+            "image",
+            "retouch",
+            "photoshop"
+        ],
+        "unicode": "f042",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "pied-piper",
+        "tags": [
+            "fa-pied-piper",
+            "pied-piper"
+        ],
+        "unicode": "f2ae",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "snapchat-square",
+        "tags": [
+            "fa-snapchat-square",
+            "snapchat-square"
+        ],
+        "unicode": "f2ad",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "snapchat-ghost",
+        "tags": [
+            "fa-snapchat-ghost",
+            "snapchat-ghost"
+        ],
+        "unicode": "f2ac",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "snapchat",
+        "tags": [
+            "fa-snapchat",
+            "snapchat"
+        ],
+        "unicode": "f2ab",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "viadeo-square",
+        "tags": [
+            "fa-viadeo-square",
+            "viadeo-square"
+        ],
+        "unicode": "f2aa",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "viadeo",
+        "tags": [
+            "fa-viadeo",
+            "viadeo"
+        ],
+        "unicode": "f2a9",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "low-vision",
+        "tags": [
+            "fa-low-vision",
+            "low-vision",
+            "eye",
+            "view",
+            "hide",
+            "unvisible",
+            "accesibility"
+        ],
+        "unicode": "f2a8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sign-language",
+        "tags": [
+            "fa-sign-language",
+            "sign-language",
+            "accesibility"
+        ],
+        "unicode": "f2a7",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "glide-g",
+        "tags": [
+            "fa-glide-g",
+            "glide-g"
+        ],
+        "unicode": "f2a6",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "glide",
+        "tags": [
+            "fa-glide",
+            "glide"
+        ],
+        "unicode": "f2a5",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "map-marker",
+        "tags": [
+            "map",
+            "pin",
+            "location",
+            "coordinates",
+            "localize",
+            "address",
+            "travel",
+            "where",
+            "place",
+            "fa-map-marker",
+            "map-marker",
+            "street",
+            "avenue",
+            ""
+        ],
+        "unicode": "f041",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "deaf",
+        "tags": [
+            "fa-deaf",
+            "deaf",
+            "accesibility"
+        ],
+        "unicode": "f2a4",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "american-sign-language-interpreting",
+        "tags": [
+            "fa-american-sign-language-interpreting",
+            "american-sign-language-interpreting",
+            "accesibility"
+        ],
+        "unicode": "f2a3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "assistive-listening-systems",
+        "tags": [
+            "fa-assistive-listening-systems",
+            "assistive-listening-systems",
+            "accesibility"
+        ],
+        "unicode": "f2a2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "braille",
+        "tags": [
+            "fa-braille",
+            "braille",
+            "accesibility"
+        ],
+        "unicode": "f2a1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "volume-control-phone",
+        "tags": [
+            "fa-volume-control-phone",
+            "volume-control-phone",
+            "sound",
+            "audio",
+            "skype",
+            "fon",
+            "accesibility"
+        ],
+        "unicode": "f2a0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "audio-description",
+        "tags": [
+            "fa-audio-description",
+            "audio-description",
+            "accesibility"
+        ],
+        "unicode": "f29e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "blind",
+        "tags": [
+            "fa-blind",
+            "blind",
+            "accesibility"
+        ],
+        "unicode": "f29d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "question-circle-o",
+        "tags": [
+            "fa-question-circle-o",
+            "question-circle-o",
+            "ask",
+            "info"
+        ],
+        "unicode": "f29c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "wheelchair-alt",
+        "tags": [
+            "fa-wheelchair-alt",
+            "wheelchair-alt",
+            "accesibility"
+        ],
+        "unicode": "f29b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "universal-access",
+        "tags": [
+            "fa-universal-access",
+            "universal-access",
+            "accesibility"
+        ],
+        "unicode": "f29a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "pencil",
+        "tags": [
+            "write",
+            "edit",
+            "update",
+            "fa-pencil",
+            "pencil",
+            "photoshop",
+            "retouch",
+            "paint",
+            "draw"
+        ],
+        "unicode": "f040",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "envira",
+        "tags": [
+            "leaf",
+            "fa-envira",
+            "envira",
+            "tree"
+        ],
+        "unicode": "f299",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "wpforms",
+        "tags": [
+            "fa-wpforms",
+            "wpforms"
+        ],
+        "unicode": "f298",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "wpbeginner",
+        "tags": [
+            "fa-wpbeginner",
+            "wpbeginner"
+        ],
+        "unicode": "f297",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "gitlab",
+        "tags": [
+            "fa-gitlab",
+            "gitlab"
+        ],
+        "unicode": "f296",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "percent",
+        "tags": [
+            "fa-percent",
+            "percent",
+            "math",
+            "offer",
+            "sales"
+        ],
+        "unicode": "f295",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bluetooth-b",
+        "tags": [
+            "fa-bluetooth-b",
+            "bluetooth-b",
+            "connection",
+            "wireless"
+        ],
+        "unicode": "f294",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bluetooth",
+        "tags": [
+            "fa-bluetooth",
+            "bluetooth",
+            "connection",
+            "wireless",
+            "transfer"
+        ],
+        "unicode": "f293",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hashtag",
+        "tags": [
+            "fa-hashtag",
+            "hashtag",
+            "twitter",
+            "tweet"
+        ],
+        "unicode": "f292",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "shopping-basket",
+        "tags": [
+            "fa-shopping-basket",
+            "shopping-basket",
+            "prestashop",
+            "magento",
+            "woocommerce",
+            "cart"
+        ],
+        "unicode": "f291",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "shopping-bag",
+        "tags": [
+            "fa-shopping-bag",
+            "shopping-bag",
+            "cart",
+            "basket",
+            "magento",
+            "prestashop",
+            "woocommerce"
+        ],
+        "unicode": "f290",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "picture-o",
+        "tags": [
+            "fa-picture-o",
+            "picture-o",
+            "photo",
+            "frame",
+            "print"
+        ],
+        "unicode": "f03e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "star",
+        "tags": [
+            "award",
+            "achievement",
+            "night",
+            "rating",
+            "score",
+            "favorite",
+            "fa-star",
+            "star",
+            "sky"
+        ],
+        "unicode": "f005",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "stop-circle-o",
+        "tags": [
+            "fa-stop-circle-o",
+            "stop-circle-o",
+            "player",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f28e",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "stop-circle",
+        "tags": [
+            "fa-stop-circle",
+            "stop-circle",
+            "player",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f28d",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "pause-circle-o",
+        "tags": [
+            "fa-pause-circle-o",
+            "pause-circle-o",
+            "player",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f28c",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "pause-circle",
+        "tags": [
+            "fa-pause-circle",
+            "pause-circle",
+            "player",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime"
+        ],
+        "unicode": "f28b",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "scribd",
+        "tags": [
+            "fa-scribd",
+            "scribd"
+        ],
+        "unicode": "f28a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "mixcloud",
+        "tags": [
+            "fa-mixcloud",
+            "mixcloud"
+        ],
+        "unicode": "f289",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "product-hunt",
+        "tags": [
+            "fa-product-hunt",
+            "product-hunt"
+        ],
+        "unicode": "f288",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "usb",
+        "tags": [
+            "fa-usb",
+            "usb",
+            "connection",
+            "port",
+            "computer"
+        ],
+        "unicode": "f287",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "fort-awesome",
+        "tags": [
+            "fa-fort-awesome",
+            "fort-awesome"
+        ],
+        "unicode": "f286",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "modx",
+        "tags": [
+            "fa-modx",
+            "modx"
+        ],
+        "unicode": "f285",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "video-camera",
+        "tags": [
+            "film",
+            "movie",
+            "record",
+            "fa-video-camera",
+            "video-camera",
+            "player",
+            "music",
+            "video",
+            "audio",
+            "gallery",
+            "multimedia",
+            "mp3",
+            "avi",
+            "mov",
+            "mp4",
+            "mpeg",
+            "mpg",
+            "mkv",
+            "aac",
+            "wav",
+            "wmv",
+            "wma",
+            "dvd",
+            "player",
+            "vlc",
+            "quicktime",
+            "capture",
+            "aqcuire"
+        ],
+        "unicode": "f03d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "codiepie",
+        "tags": [
+            "fa-codiepie",
+            "codiepie"
+        ],
+        "unicode": "f284",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "credit-card-alt",
+        "tags": [
+            "money",
+            "buy",
+            "debit",
+            "checkout",
+            "purchase",
+            "payment",
+            "creditcard",
+            "fa-credit-card-alt",
+            "credit-card-alt",
+            "shop",
+            "ecommerce"
+        ],
+        "unicode": "f283",
+        "category": "Payment Icons"
+    },
+    {
+        "name": "edge",
+        "tags": [
+            "browser",
+            "ie",
+            "fa-edge",
+            "edge"
+        ],
+        "unicode": "f282",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "reddit-alien",
+        "tags": [
+            "fa-reddit-alien",
+            "reddit-alien"
+        ],
+        "unicode": "f281",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "fonticons",
+        "tags": [
+            "fa-fonticons",
+            "fonticons"
+        ],
+        "unicode": "f280",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "black-tie",
+        "tags": [
+            "fa-black-tie",
+            "black-tie"
+        ],
+        "unicode": "f27e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "vimeo",
+        "tags": [
+            "fa-vimeo",
+            "vimeo"
+        ],
+        "unicode": "f27d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "houzz",
+        "tags": [
+            "fa-houzz",
+            "houzz"
+        ],
+        "unicode": "f27c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "commenting-o",
+        "tags": [
+            "message",
+            "fa-commenting-o",
+            "commenting-o",
+            "talk"
+        ],
+        "unicode": "f27b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "commenting",
+        "tags": [
+            "message",
+            "fa-commenting",
+            "commenting",
+            "talk"
+        ],
+        "unicode": "f27a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "indent",
+        "tags": [
+            "fa-indent",
+            "indent"
+        ],
+        "unicode": "f03c",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "map",
+        "tags": [
+            "fa-map",
+            "map",
+            "address",
+            "location",
+            "guide",
+            "flyer"
+        ],
+        "unicode": "f279",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "map-o",
+        "tags": [
+            "fa-map-o",
+            "map-o",
+            "location",
+            "guide",
+            "flyer"
+        ],
+        "unicode": "f278",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "map-signs",
+        "tags": [
+            "fa-map-signs",
+            "map-signs",
+            "location",
+            "guide",
+            "forest"
+        ],
+        "unicode": "f277",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "map-pin",
+        "tags": [
+            "fa-map-pin",
+            "map-pin",
+            "address",
+            "location",
+            "point",
+            "coordinates"
+        ],
+        "unicode": "f276",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "industry",
+        "tags": [
+            "factory",
+            "fa-industry",
+            "industry",
+            "corporate",
+            "manufacturer"
+        ],
+        "unicode": "f275",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "calendar-check-o",
+        "tags": [
+            "ok",
+            "fa-calendar-check-o",
+            "calendar-check-o",
+            "date"
+        ],
+        "unicode": "f274",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "calendar-times-o",
+        "tags": [
+            "fa-calendar-times-o",
+            "calendar-times-o",
+            "date",
+            "cancel"
+        ],
+        "unicode": "f273",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "calendar-minus-o",
+        "tags": [
+            "fa-calendar-minus-o",
+            "calendar-minus-o",
+            "date",
+            "substract"
+        ],
+        "unicode": "f272",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "calendar-plus-o",
+        "tags": [
+            "fa-calendar-plus-o",
+            "calendar-plus-o",
+            "date",
+            "add"
+        ],
+        "unicode": "f271",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "amazon",
+        "tags": [
+            ""
+        ],
+        "unicode": "f270",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "outdent",
+        "tags": [
+            "fa-outdent",
+            "outdent",
+            "indent"
+        ],
+        "unicode": "f03b",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "500px",
+        "tags": [
+            "fa-500px",
+            "500px"
+        ],
+        "unicode": "f26e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "contao",
+        "tags": [
+            "fa-contao",
+            "contao"
+        ],
+        "unicode": "f26d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "television",
+        "tags": [
+            "display",
+            "computer",
+            "monitor",
+            "fa-television",
+            "television",
+            "host",
+            "channel"
+        ],
+        "unicode": "f26c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "internet-explorer",
+        "tags": [
+            "browser",
+            "ie",
+            "fa-internet-explorer",
+            "internet-explorer"
+        ],
+        "unicode": "f26b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "opera",
+        "tags": [
+            "fa-opera",
+            "opera"
+        ],
+        "unicode": "f26a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "firefox",
+        "tags": [
+            "browser",
+            "fa-firefox",
+            "firefox"
+        ],
+        "unicode": "f269",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "chrome",
+        "tags": [
+            "browser",
+            "fa-chrome",
+            "chrome",
+            "edge",
+            "explorer"
+        ],
+        "unicode": "f268",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "safari",
+        "tags": [
+            "browser",
+            "fa-safari",
+            "safari",
+            "edge",
+            "explorer"
+        ],
+        "unicode": "f267",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "wikipedia-w",
+        "tags": [
+            "fa-wikipedia-w",
+            "wikipedia-w"
+        ],
+        "unicode": "f266",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "get-pocket",
+        "tags": [
+            "fa-get-pocket",
+            "get-pocket"
+        ],
+        "unicode": "f265",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "list",
+        "tags": [
+            "ul",
+            "ol",
+            "checklist",
+            "finished",
+            "completed",
+            "done",
+            "todo",
+            "fa-list",
+            "list"
+        ],
+        "unicode": "f03a",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "odnoklassniki-square",
+        "tags": [
+            "fa-odnoklassniki-square",
+            "odnoklassniki-square"
+        ],
+        "unicode": "f264",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "odnoklassniki",
+        "tags": [
+            "fa-odnoklassniki",
+            "odnoklassniki"
+        ],
+        "unicode": "f263",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "tripadvisor",
+        "tags": [
+            "fa-tripadvisor",
+            "tripadvisor"
+        ],
+        "unicode": "f262",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "gg-circle",
+        "tags": [
+            "fa-gg-circle",
+            "gg-circle"
+        ],
+        "unicode": "f261",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "gg",
+        "tags": [
+            "fa-gg",
+            "gg"
+        ],
+        "unicode": "f260",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "creative-commons",
+        "tags": [
+            "fa-creative-commons",
+            "creative-commons",
+            "license",
+            "mit",
+            "gnu"
+        ],
+        "unicode": "f25e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "registered",
+        "tags": [
+            "fa-registered",
+            "registered",
+            "license",
+            "mit",
+            "gnu"
+        ],
+        "unicode": "f25d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "trademark",
+        "tags": [
+            "fa-trademark",
+            "trademark",
+            "license"
+        ],
+        "unicode": "f25c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hand-peace-o",
+        "tags": [
+            "fa-hand-peace-o",
+            "hand-peace-o",
+            "victory"
+        ],
+        "unicode": "f25b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hand-pointer-o",
+        "tags": [
+            "fa-hand-pointer-o",
+            "hand-pointer-o",
+            "finger",
+            "touch"
+        ],
+        "unicode": "f25a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "align-justify",
+        "tags": [
+            "text",
+            "fa-align-justify",
+            "align-justify"
+        ],
+        "unicode": "f039",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "hand-spock-o",
+        "tags": [
+            "fa-hand-spock-o",
+            "hand-spock-o"
+        ],
+        "unicode": "f259",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hand-lizard-o",
+        "tags": [
+            "fa-hand-lizard-o",
+            "hand-lizard-o"
+        ],
+        "unicode": "f258",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hand-scissors-o",
+        "tags": [
+            "fa-hand-scissors-o",
+            "hand-scissors-o"
+        ],
+        "unicode": "f257",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hand-paper-o",
+        "tags": [
+            "stop",
+            "fa-hand-paper-o",
+            "hand-paper-o"
+        ],
+        "unicode": "f256",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hand-rock-o",
+        "tags": [
+            "fa-hand-rock-o",
+            "hand-rock-o",
+            "grab"
+        ],
+        "unicode": "f255",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hourglass",
+        "tags": [
+            "fa-hourglass",
+            "hourglass",
+            "time",
+            "wait",
+            "load"
+        ],
+        "unicode": "f254",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hourglass-end",
+        "tags": [
+            "fa-hourglass-end",
+            "hourglass-end",
+            "time",
+            "wait",
+            "load"
+        ],
+        "unicode": "f253",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hourglass-half",
+        "tags": [
+            "fa-hourglass-half",
+            "hourglass-half",
+            "time",
+            "wait",
+            "load"
+        ],
+        "unicode": "f252",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hourglass-start",
+        "tags": [
+            "fa-hourglass-start",
+            "hourglass-start",
+            "time",
+            "wait",
+            "load"
+        ],
+        "unicode": "f251",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hourglass-o",
+        "tags": [
+            "fa-hourglass-o",
+            "hourglass-o",
+            "time",
+            "wait",
+            "load"
+        ],
+        "unicode": "f250",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "align-right",
+        "tags": [
+            "text",
+            "fa-align-right",
+            "align-right"
+        ],
+        "unicode": "f038",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "balance-scale",
+        "tags": [
+            "fa-balance-scale",
+            "balance-scale",
+            "justice",
+            "weight"
+        ],
+        "unicode": "f24e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "clone",
+        "tags": [
+            "copy",
+            "fa-clone",
+            "clone",
+            "duplicate"
+        ],
+        "unicode": "f24d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cc-diners-club",
+        "tags": [
+            "fa-cc-diners-club",
+            "cc-diners-club",
+            "pay",
+            "shop",
+            "card"
+        ],
+        "unicode": "f24c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cc-jcb",
+        "tags": [
+            "fa-cc-jcb",
+            "cc-jcb",
+            "pay",
+            "shop",
+            "card"
+        ],
+        "unicode": "f24b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "sticky-note-o",
+        "tags": [
+            "fa-sticky-note-o",
+            "sticky-note-o",
+            "remember",
+            "todo"
+        ],
+        "unicode": "f24a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sticky-note",
+        "tags": [
+            "fa-sticky-note",
+            "sticky-note",
+            "remember",
+            "todo"
+        ],
+        "unicode": "f249",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "object-ungroup",
+        "tags": [
+            "fa-object-ungroup",
+            "object-ungroup",
+            "edit"
+        ],
+        "unicode": "f248",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "object-group",
+        "tags": [
+            "fa-object-group",
+            "object-group"
+        ],
+        "unicode": "f247",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "i-cursor",
+        "tags": [
+            "fa-i-cursor",
+            "i-cursor"
+        ],
+        "unicode": "f246",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "mouse-pointer",
+        "tags": [
+            "fa-mouse-pointer",
+            "mouse-pointer"
+        ],
+        "unicode": "f245",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "align-center",
+        "tags": [
+            "middle",
+            "text",
+            "fa-align-center",
+            "align-center"
+        ],
+        "unicode": "f037",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "battery-empty",
+        "tags": [
+            "power",
+            "fa-battery-empty",
+            "battery-empty"
+        ],
+        "unicode": "f244",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "battery-quarter",
+        "tags": [
+            "power",
+            "fa-battery-quarter",
+            "battery-quarter"
+        ],
+        "unicode": "f243",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "battery-half",
+        "tags": [
+            "power",
+            "fa-battery-half",
+            "battery-half"
+        ],
+        "unicode": "f242",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "battery-three-quarters",
+        "tags": [
+            "power",
+            "fa-battery-three-quarters",
+            "battery-three-quarters"
+        ],
+        "unicode": "f241",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "battery-full",
+        "tags": [
+            "power",
+            "fa-battery-full",
+            "battery-full"
+        ],
+        "unicode": "f240",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "expeditedssl",
+        "tags": [
+            "fa-expeditedssl",
+            "expeditedssl"
+        ],
+        "unicode": "f23e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "opencart",
+        "tags": [
+            "fa-opencart",
+            "opencart"
+        ],
+        "unicode": "f23d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "optin-monster",
+        "tags": [
+            "fa-optin-monster",
+            "optin-monster"
+        ],
+        "unicode": "f23c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "y-combinator",
+        "tags": [
+            "fa-y-combinator",
+            "y-combinator"
+        ],
+        "unicode": "f23b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "medium",
+        "tags": [
+            "fa-medium",
+            "medium"
+        ],
+        "unicode": "f23a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "align-left",
+        "tags": [
+            "text",
+            "fa-align-left",
+            "align-left"
+        ],
+        "unicode": "f036",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "subway",
+        "tags": [
+            "fa-subway",
+            "subway"
+        ],
+        "unicode": "f239",
+        "category": "Transportation Icons"
+    },
+    {
+        "name": "train",
+        "tags": [
+            "fa-train",
+            "train"
+        ],
+        "unicode": "f238",
+        "category": "Transportation Icons"
+    },
+    {
+        "name": "viacoin",
+        "tags": [
+            "fa-viacoin",
+            "viacoin"
+        ],
+        "unicode": "f237",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bed",
+        "tags": [
+            "travel",
+            "fa-bed",
+            "bed"
+        ],
+        "unicode": "f236",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "user-times",
+        "tags": [
+            "fa-user-times",
+            "user-times"
+        ],
+        "unicode": "f235",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "user-plus",
+        "tags": [
+            "sign up",
+            "signup",
+            "fa-user-plus",
+            "user-plus"
+        ],
+        "unicode": "f234",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "server",
+        "tags": [
+            "fa-server",
+            "server"
+        ],
+        "unicode": "f233",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "whatsapp",
+        "tags": [
+            "fa-whatsapp",
+            "whatsapp"
+        ],
+        "unicode": "f232",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "pinterest-p",
+        "tags": [
+            "fa-pinterest-p",
+            "pinterest-p"
+        ],
+        "unicode": "f231",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "facebook-official",
+        "tags": [
+            "fa-facebook-official",
+            "facebook-official"
+        ],
+        "unicode": "f230",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "text-width",
+        "tags": [
+            "fa-text-width",
+            "text-width"
+        ],
+        "unicode": "f035",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "genderless",
+        "tags": [
+            "fa-genderless",
+            "genderless"
+        ],
+        "unicode": "f22d",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "neuter",
+        "tags": [
+            "fa-neuter",
+            "neuter"
+        ],
+        "unicode": "f22c",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "mars-stroke-h",
+        "tags": [
+            "fa-mars-stroke-h",
+            "mars-stroke-h"
+        ],
+        "unicode": "f22b",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "mars-stroke-v",
+        "tags": [
+            "fa-mars-stroke-v",
+            "mars-stroke-v"
+        ],
+        "unicode": "f22a",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "mars-stroke",
+        "tags": [
+            "fa-mars-stroke",
+            "mars-stroke"
+        ],
+        "unicode": "f229",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "venus-mars",
+        "tags": [
+            "fa-venus-mars",
+            "venus-mars"
+        ],
+        "unicode": "f228",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "mars-double",
+        "tags": [
+            "fa-mars-double",
+            "mars-double"
+        ],
+        "unicode": "f227",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "venus-double",
+        "tags": [
+            "fa-venus-double",
+            "venus-double"
+        ],
+        "unicode": "f226",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "transgender-alt",
+        "tags": [
+            "fa-transgender-alt",
+            "transgender-alt"
+        ],
+        "unicode": "f225",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "transgender",
+        "tags": [
+            "fa-transgender",
+            "transgender"
+        ],
+        "unicode": "f224",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "text-height",
+        "tags": [
+            "fa-text-height",
+            "text-height"
+        ],
+        "unicode": "f034",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "heart",
+        "tags": [
+            "love",
+            "like",
+            "favorite",
+            "fa-heart",
+            "heart"
+        ],
+        "unicode": "f004",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "mercury",
+        "tags": [
+            "transgender",
+            "fa-mercury",
+            "mercury"
+        ],
+        "unicode": "f223",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "mars",
+        "tags": [
+            "male",
+            "fa-mars",
+            "mars"
+        ],
+        "unicode": "f222",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "venus",
+        "tags": [
+            "female",
+            "fa-venus",
+            "venus"
+        ],
+        "unicode": "f221",
+        "category": "Gender Icons"
+    },
+    {
+        "name": "heartbeat",
+        "tags": [
+            "ekg",
+            "fa-heartbeat",
+            "heartbeat"
+        ],
+        "unicode": "f21e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "street-view",
+        "tags": [
+            "map",
+            "fa-street-view",
+            "street-view"
+        ],
+        "unicode": "f21d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "motorcycle",
+        "tags": [
+            "vehicle",
+            "bike",
+            "fa-motorcycle",
+            "motorcycle"
+        ],
+        "unicode": "f21c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "user-secret",
+        "tags": [
+            "whisper",
+            "spy",
+            "incognito",
+            "privacy",
+            "fa-user-secret",
+            "user-secret"
+        ],
+        "unicode": "f21b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "ship",
+        "tags": [
+            "boat",
+            "sea",
+            "fa-ship",
+            "ship"
+        ],
+        "unicode": "f21a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "diamond",
+        "tags": [
+            "gem",
+            "gemstone",
+            "fa-diamond",
+            "diamond"
+        ],
+        "unicode": "f219",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cart-arrow-down",
+        "tags": [
+            "shopping",
+            "fa-cart-arrow-down",
+            "cart-arrow-down"
+        ],
+        "unicode": "f218",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "italic",
+        "tags": [
+            "italics",
+            "fa-italic",
+            "italic"
+        ],
+        "unicode": "f033",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "cart-plus",
+        "tags": [
+            "add",
+            "shopping",
+            "fa-cart-plus",
+            "cart-plus"
+        ],
+        "unicode": "f217",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "skyatlas",
+        "tags": [
+            "fa-skyatlas",
+            "skyatlas"
+        ],
+        "unicode": "f216",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "simplybuilt",
+        "tags": [
+            "fa-simplybuilt",
+            "simplybuilt"
+        ],
+        "unicode": "f215",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "shirtsinbulk",
+        "tags": [
+            "fa-shirtsinbulk",
+            "shirtsinbulk"
+        ],
+        "unicode": "f214",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "sellsy",
+        "tags": [
+            "fa-sellsy",
+            "sellsy"
+        ],
+        "unicode": "f213",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "leanpub",
+        "tags": [
+            "fa-leanpub",
+            "leanpub"
+        ],
+        "unicode": "f212",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "forumbee",
+        "tags": [
+            "fa-forumbee",
+            "forumbee"
+        ],
+        "unicode": "f211",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "dashcube",
+        "tags": [
+            "fa-dashcube",
+            "dashcube"
+        ],
+        "unicode": "f210",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "connectdevelop",
+        "tags": [
+            "fa-connectdevelop",
+            "connectdevelop"
+        ],
+        "unicode": "f20e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "buysellads",
+        "tags": [
+            "fa-buysellads",
+            "buysellads"
+        ],
+        "unicode": "f20d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bold",
+        "tags": [
+            "fa-bold",
+            "bold"
+        ],
+        "unicode": "f032",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "meanpath",
+        "tags": [
+            "fa-meanpath",
+            "meanpath"
+        ],
+        "unicode": "f20c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "ils",
+        "tags": [
+            "fa-ils",
+            "ils"
+        ],
+        "unicode": "f20b",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "cc",
+        "tags": [
+            "fa-cc",
+            "cc"
+        ],
+        "unicode": "f20a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "angellist",
+        "tags": [
+            "fa-angellist",
+            "angellist"
+        ],
+        "unicode": "f209",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "ioxhost",
+        "tags": [
+            "fa-ioxhost",
+            "ioxhost"
+        ],
+        "unicode": "f208",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bus",
+        "tags": [
+            "vehicle",
+            "fa-bus",
+            "bus"
+        ],
+        "unicode": "f207",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bicycle",
+        "tags": [
+            "vehicle",
+            "bike",
+            "fa-bicycle",
+            "bicycle"
+        ],
+        "unicode": "f206",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "toggle-on",
+        "tags": [
+            "fa-toggle-on",
+            "toggle-on"
+        ],
+        "unicode": "f205",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "toggle-off",
+        "tags": [
+            "fa-toggle-off",
+            "toggle-off"
+        ],
+        "unicode": "f204",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "lastfm-square",
+        "tags": [
+            "fa-lastfm-square",
+            "lastfm-square"
+        ],
+        "unicode": "f203",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "font",
+        "tags": [
+            "text",
+            "fa-font",
+            "font"
+        ],
+        "unicode": "f031",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "lastfm",
+        "tags": [
+            "fa-lastfm",
+            "lastfm"
+        ],
+        "unicode": "f202",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "line-chart",
+        "tags": [
+            "graph",
+            "analytics",
+            "fa-line-chart",
+            "line-chart"
+        ],
+        "unicode": "f201",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "pie-chart",
+        "tags": [
+            "graph",
+            "analytics",
+            "fa-pie-chart",
+            "pie-chart"
+        ],
+        "unicode": "f200",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "area-chart",
+        "tags": [
+            "graph",
+            "analytics",
+            "fa-area-chart",
+            "area-chart"
+        ],
+        "unicode": "f1fe",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "birthday-cake",
+        "tags": [
+            "fa-birthday-cake",
+            "birthday-cake"
+        ],
+        "unicode": "f1fd",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "paint-brush",
+        "tags": [
+            "fa-paint-brush",
+            "paint-brush"
+        ],
+        "unicode": "f1fc",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "eyedropper",
+        "tags": [
+            "fa-eyedropper",
+            "eyedropper"
+        ],
+        "unicode": "f1fb",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "at",
+        "tags": [
+            "fa-at",
+            "at"
+        ],
+        "unicode": "f1fa",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "copyright",
+        "tags": [
+            "fa-copyright",
+            "copyright"
+        ],
+        "unicode": "f1f9",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "trash",
+        "tags": [
+            "garbage",
+            "delete",
+            "remove",
+            "hide",
+            "fa-trash",
+            "trash"
+        ],
+        "unicode": "f1f8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "camera",
+        "tags": [
+            "photo",
+            "picture",
+            "record",
+            "fa-camera",
+            "camera"
+        ],
+        "unicode": "f030",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bell-slash-o",
+        "tags": [
+            "fa-bell-slash-o",
+            "bell-slash-o"
+        ],
+        "unicode": "f1f7",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bell-slash",
+        "tags": [
+            "fa-bell-slash",
+            "bell-slash"
+        ],
+        "unicode": "f1f6",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cc-stripe",
+        "tags": [
+            "fa-cc-stripe",
+            "cc-stripe"
+        ],
+        "unicode": "f1f5",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cc-paypal",
+        "tags": [
+            "fa-cc-paypal",
+            "cc-paypal"
+        ],
+        "unicode": "f1f4",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cc-amex",
+        "tags": [
+            "amex",
+            "fa-cc-amex",
+            "cc-amex"
+        ],
+        "unicode": "f1f3",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cc-discover",
+        "tags": [
+            "fa-cc-discover",
+            "cc-discover"
+        ],
+        "unicode": "f1f2",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cc-mastercard",
+        "tags": [
+            "fa-cc-mastercard",
+            "cc-mastercard"
+        ],
+        "unicode": "f1f1",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cc-visa",
+        "tags": [
+            "fa-cc-visa",
+            "cc-visa"
+        ],
+        "unicode": "f1f0",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "google-wallet",
+        "tags": [
+            "fa-google-wallet",
+            "google-wallet"
+        ],
+        "unicode": "f1ee",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "paypal",
+        "tags": [
+            "fa-paypal",
+            "paypal"
+        ],
+        "unicode": "f1ed",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "print",
+        "tags": [
+            "fa-print",
+            "print"
+        ],
+        "unicode": "f02f",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "calculator",
+        "tags": [
+            "fa-calculator",
+            "calculator"
+        ],
+        "unicode": "f1ec",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "wifi",
+        "tags": [
+            "fa-wifi",
+            "wifi"
+        ],
+        "unicode": "f1eb",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "newspaper-o",
+        "tags": [
+            "press",
+            "fa-newspaper-o",
+            "newspaper-o"
+        ],
+        "unicode": "f1ea",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "yelp",
+        "tags": [
+            "fa-yelp",
+            "yelp"
+        ],
+        "unicode": "f1e9",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "twitch",
+        "tags": [
+            "fa-twitch",
+            "twitch"
+        ],
+        "unicode": "f1e8",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "slideshare",
+        "tags": [
+            "fa-slideshare",
+            "slideshare"
+        ],
+        "unicode": "f1e7",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "plug",
+        "tags": [
+            "power",
+            "connect",
+            "fa-plug",
+            "plug"
+        ],
+        "unicode": "f1e6",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "binoculars",
+        "tags": [
+            "fa-binoculars",
+            "binoculars"
+        ],
+        "unicode": "f1e5",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tty",
+        "tags": [
+            "fa-tty",
+            "tty"
+        ],
+        "unicode": "f1e4",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "futbol-o",
+        "tags": [
+            "fa-futbol-o",
+            "futbol-o"
+        ],
+        "unicode": "f1e3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bookmark",
+        "tags": [
+            "save",
+            "fa-bookmark",
+            "bookmark"
+        ],
+        "unicode": "f02e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bomb",
+        "tags": [
+            "fa-bomb",
+            "bomb"
+        ],
+        "unicode": "f1e2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "share-alt-square",
+        "tags": [
+            "fa-share-alt-square",
+            "share-alt-square"
+        ],
+        "unicode": "f1e1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "share-alt",
+        "tags": [
+            "fa-share-alt",
+            "share-alt"
+        ],
+        "unicode": "f1e0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sliders",
+        "tags": [
+            "settings",
+            "fa-sliders",
+            "sliders"
+        ],
+        "unicode": "f1de",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "paragraph",
+        "tags": [
+            "fa-paragraph",
+            "paragraph"
+        ],
+        "unicode": "f1dd",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "header",
+        "tags": [
+            "heading",
+            "fa-header",
+            "header"
+        ],
+        "unicode": "f1dc",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "circle-thin",
+        "tags": [
+            "fa-circle-thin",
+            "circle-thin"
+        ],
+        "unicode": "f1db",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "history",
+        "tags": [
+            "fa-history",
+            "history"
+        ],
+        "unicode": "f1da",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "paper-plane-o",
+        "tags": [
+            "fa-paper-plane-o",
+            "paper-plane-o"
+        ],
+        "unicode": "f1d9",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "paper-plane",
+        "tags": [
+            "fa-paper-plane",
+            "paper-plane"
+        ],
+        "unicode": "f1d8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "book",
+        "tags": [
+            "read",
+            "documentation",
+            "fa-book",
+            "book"
+        ],
+        "unicode": "f02d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "weixin",
+        "tags": [
+            "fa-weixin",
+            "weixin"
+        ],
+        "unicode": "f1d7",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "qq",
+        "tags": [
+            "fa-qq",
+            "qq"
+        ],
+        "unicode": "f1d6",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "tencent-weibo",
+        "tags": [
+            "fa-tencent-weibo",
+            "tencent-weibo"
+        ],
+        "unicode": "f1d5",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "hacker-news",
+        "tags": [
+            "fa-hacker-news",
+            "hacker-news"
+        ],
+        "unicode": "f1d4",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "git",
+        "tags": [
+            "fa-git",
+            "git"
+        ],
+        "unicode": "f1d3",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "git-square",
+        "tags": [
+            "fa-git-square",
+            "git-square"
+        ],
+        "unicode": "f1d2",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "empire",
+        "tags": [
+            "fa-empire",
+            "empire"
+        ],
+        "unicode": "f1d1",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "rebel",
+        "tags": [
+            "fa-rebel",
+            "rebel"
+        ],
+        "unicode": "f1d0",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "circle-o-notch",
+        "tags": [
+            "fa-circle-o-notch",
+            "circle-o-notch"
+        ],
+        "unicode": "f1ce",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "life-ring",
+        "tags": [
+            "fa-life-ring",
+            "life-ring"
+        ],
+        "unicode": "f1cd",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tags",
+        "tags": [
+            "labels",
+            "fa-tags",
+            "tags"
+        ],
+        "unicode": "f02c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "jsfiddle",
+        "tags": [
+            "fa-jsfiddle",
+            "jsfiddle"
+        ],
+        "unicode": "f1cc",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "codepen",
+        "tags": [
+            "fa-codepen",
+            "codepen"
+        ],
+        "unicode": "f1cb",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "vine",
+        "tags": [
+            "fa-vine",
+            "vine"
+        ],
+        "unicode": "f1ca",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "file-code-o",
+        "tags": [
+            "fa-file-code-o",
+            "file-code-o"
+        ],
+        "unicode": "f1c9",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-video-o",
+        "tags": [
+            "fa-file-video-o",
+            "file-video-o"
+        ],
+        "unicode": "f1c8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-audio-o",
+        "tags": [
+            "fa-file-audio-o",
+            "file-audio-o"
+        ],
+        "unicode": "f1c7",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-archive-o",
+        "tags": [
+            "fa-file-archive-o",
+            "file-archive-o"
+        ],
+        "unicode": "f1c6",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-image-o",
+        "tags": [
+            "fa-file-image-o",
+            "file-image-o"
+        ],
+        "unicode": "f1c5",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-powerpoint-o",
+        "tags": [
+            "fa-file-powerpoint-o",
+            "file-powerpoint-o"
+        ],
+        "unicode": "f1c4",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-excel-o",
+        "tags": [
+            "fa-file-excel-o",
+            "file-excel-o"
+        ],
+        "unicode": "f1c3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tag",
+        "tags": [
+            "label",
+            "fa-tag",
+            "tag"
+        ],
+        "unicode": "f02b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-word-o",
+        "tags": [
+            "fa-file-word-o",
+            "file-word-o"
+        ],
+        "unicode": "f1c2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-pdf-o",
+        "tags": [
+            "fa-file-pdf-o",
+            "file-pdf-o"
+        ],
+        "unicode": "f1c1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "database",
+        "tags": [
+            "fa-database",
+            "database"
+        ],
+        "unicode": "f1c0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "soundcloud",
+        "tags": [
+            "fa-soundcloud",
+            "soundcloud"
+        ],
+        "unicode": "f1be",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "deviantart",
+        "tags": [
+            "fa-deviantart",
+            "deviantart"
+        ],
+        "unicode": "f1bd",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "spotify",
+        "tags": [
+            "fa-spotify",
+            "spotify"
+        ],
+        "unicode": "f1bc",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "tree",
+        "tags": [
+            "fa-tree",
+            "tree"
+        ],
+        "unicode": "f1bb",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "taxi",
+        "tags": [
+            "vehicle",
+            "fa-taxi",
+            "taxi"
+        ],
+        "unicode": "f1ba",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "car",
+        "tags": [
+            "vehicle",
+            "fa-car",
+            "car"
+        ],
+        "unicode": "f1b9",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "recycle",
+        "tags": [
+            "fa-recycle",
+            "recycle"
+        ],
+        "unicode": "f1b8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "barcode",
+        "tags": [
+            "scan",
+            "fa-barcode",
+            "barcode"
+        ],
+        "unicode": "f02a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "envelope-o",
+        "tags": [
+            "email",
+            "support",
+            "e-mail",
+            "letter",
+            "mail",
+            "notification",
+            "fa-envelope-o",
+            "envelope-o"
+        ],
+        "unicode": "f003",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "steam-square",
+        "tags": [
+            "fa-steam-square",
+            "steam-square"
+        ],
+        "unicode": "f1b7",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "steam",
+        "tags": [
+            "fa-steam",
+            "steam"
+        ],
+        "unicode": "f1b6",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "behance-square",
+        "tags": [
+            "fa-behance-square",
+            "behance-square"
+        ],
+        "unicode": "f1b5",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "behance",
+        "tags": [
+            "fa-behance",
+            "behance"
+        ],
+        "unicode": "f1b4",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "cubes",
+        "tags": [
+            "fa-cubes",
+            "cubes"
+        ],
+        "unicode": "f1b3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cube",
+        "tags": [
+            "fa-cube",
+            "cube"
+        ],
+        "unicode": "f1b2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "spoon",
+        "tags": [
+            "fa-spoon",
+            "spoon"
+        ],
+        "unicode": "f1b1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "paw",
+        "tags": [
+            "pet",
+            "fa-paw",
+            "paw"
+        ],
+        "unicode": "f1b0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "child",
+        "tags": [
+            "fa-child",
+            "child"
+        ],
+        "unicode": "f1ae",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "building",
+        "tags": [
+            "work",
+            "business",
+            "apartment",
+            "office",
+            "company",
+            "fa-building",
+            "building"
+        ],
+        "unicode": "f1ad",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "qrcode",
+        "tags": [
+            "scan",
+            "fa-qrcode",
+            "qrcode"
+        ],
+        "unicode": "f029",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "fax",
+        "tags": [
+            "fa-fax",
+            "fax"
+        ],
+        "unicode": "f1ac",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "language",
+        "tags": [
+            "fa-language",
+            "language"
+        ],
+        "unicode": "f1ab",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "joomla",
+        "tags": [
+            "fa-joomla",
+            "joomla"
+        ],
+        "unicode": "f1aa",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "drupal",
+        "tags": [
+            "fa-drupal",
+            "drupal"
+        ],
+        "unicode": "f1a9",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "pied-piper-alt",
+        "tags": [
+            "fa-pied-piper-alt",
+            "pied-piper-alt"
+        ],
+        "unicode": "f1a8",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "pied-piper-pp",
+        "tags": [
+            "fa-pied-piper-pp",
+            "pied-piper-pp"
+        ],
+        "unicode": "f1a7",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "digg",
+        "tags": [
+            "fa-digg",
+            "digg"
+        ],
+        "unicode": "f1a6",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "delicious",
+        "tags": [
+            "fa-delicious",
+            "delicious"
+        ],
+        "unicode": "f1a5",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "stumbleupon",
+        "tags": [
+            "fa-stumbleupon",
+            "stumbleupon"
+        ],
+        "unicode": "f1a4",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "stumbleupon-circle",
+        "tags": [
+            "fa-stumbleupon-circle",
+            "stumbleupon-circle"
+        ],
+        "unicode": "f1a3",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "volume-up",
+        "tags": [
+            "audio",
+            "higher",
+            "louder",
+            "sound",
+            "music",
+            "fa-volume-up",
+            "volume-up"
+        ],
+        "unicode": "f028",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "reddit-square",
+        "tags": [
+            "fa-reddit-square",
+            "reddit-square"
+        ],
+        "unicode": "f1a2",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "reddit",
+        "tags": [
+            "fa-reddit",
+            "reddit"
+        ],
+        "unicode": "f1a1",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "google",
+        "tags": [
+            "fa-google",
+            "google"
+        ],
+        "unicode": "f1a0",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "yahoo",
+        "tags": [
+            "fa-yahoo",
+            "yahoo"
+        ],
+        "unicode": "f19e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "graduation-cap",
+        "tags": [
+            "learning",
+            "school",
+            "student",
+            "fa-graduation-cap",
+            "graduation-cap"
+        ],
+        "unicode": "f19d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "university",
+        "tags": [
+            "fa-university",
+            "university"
+        ],
+        "unicode": "f19c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "openid",
+        "tags": [
+            "fa-openid",
+            "openid"
+        ],
+        "unicode": "f19b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "wordpress",
+        "tags": [
+            "fa-wordpress",
+            "wordpress"
+        ],
+        "unicode": "f19a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "envelope-square",
+        "tags": [
+            "fa-envelope-square",
+            "envelope-square"
+        ],
+        "unicode": "f199",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "slack",
+        "tags": [
+            "hashtag",
+            "anchor",
+            "hash",
+            "fa-slack",
+            "slack"
+        ],
+        "unicode": "f198",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "volume-down",
+        "tags": [
+            "audio",
+            "lower",
+            "quieter",
+            "sound",
+            "music",
+            "fa-volume-down",
+            "volume-down"
+        ],
+        "unicode": "f027",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "space-shuttle",
+        "tags": [
+            "fa-space-shuttle",
+            "space-shuttle"
+        ],
+        "unicode": "f197",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "plus-square-o",
+        "tags": [
+            "add",
+            "new",
+            "create",
+            "expand",
+            "fa-plus-square-o",
+            "plus-square-o"
+        ],
+        "unicode": "f196",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "try",
+        "tags": [
+            "fa-try",
+            "try"
+        ],
+        "unicode": "f195",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "vimeo-square",
+        "tags": [
+            "fa-vimeo-square",
+            "vimeo-square"
+        ],
+        "unicode": "f194",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "wheelchair",
+        "tags": [
+            "handicap",
+            "person",
+            "accessibility",
+            "accessibile",
+            "fa-wheelchair",
+            "wheelchair"
+        ],
+        "unicode": "f193",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "dot-circle-o",
+        "tags": [
+            "target",
+            "bullseye",
+            "notification",
+            "fa-dot-circle-o",
+            "dot-circle-o"
+        ],
+        "unicode": "f192",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "caret-square-o-left",
+        "tags": [
+            "previous",
+            "back",
+            "fa-caret-square-o-left",
+            "caret-square-o-left"
+        ],
+        "unicode": "f191",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrow-circle-o-left",
+        "tags": [
+            "previous",
+            "back",
+            "fa-arrow-circle-o-left",
+            "arrow-circle-o-left"
+        ],
+        "unicode": "f190",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "arrow-circle-o-right",
+        "tags": [
+            "next",
+            "forward",
+            "fa-arrow-circle-o-right",
+            "arrow-circle-o-right"
+        ],
+        "unicode": "f18e",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "stack-exchange",
+        "tags": [
+            "fa-stack-exchange",
+            "stack-exchange"
+        ],
+        "unicode": "f18d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "volume-off",
+        "tags": [
+            "audio",
+            "mute",
+            "sound",
+            "music",
+            "fa-volume-off",
+            "volume-off"
+        ],
+        "unicode": "f026",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "pagelines",
+        "tags": [
+            "leaf",
+            "leaves",
+            "tree",
+            "plant",
+            "eco",
+            "nature",
+            "fa-pagelines",
+            "pagelines"
+        ],
+        "unicode": "f18c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "renren",
+        "tags": [
+            "fa-renren",
+            "renren"
+        ],
+        "unicode": "f18b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "weibo",
+        "tags": [
+            "fa-weibo",
+            "weibo"
+        ],
+        "unicode": "f18a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "vk",
+        "tags": [
+            "fa-vk",
+            "vk"
+        ],
+        "unicode": "f189",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bug",
+        "tags": [
+            "report",
+            "insect",
+            "fa-bug",
+            "bug"
+        ],
+        "unicode": "f188",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "archive",
+        "tags": [
+            "box",
+            "storage",
+            "fa-archive",
+            "archive"
+        ],
+        "unicode": "f187",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "moon-o",
+        "tags": [
+            "night",
+            "darker",
+            "contrast",
+            "fa-moon-o",
+            "moon-o"
+        ],
+        "unicode": "f186",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sun-o",
+        "tags": [
+            "weather",
+            "contrast",
+            "lighter",
+            "brighten",
+            "day",
+            "fa-sun-o",
+            "sun-o"
+        ],
+        "unicode": "f185",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "gratipay",
+        "tags": [
+            "heart",
+            "like",
+            "favorite",
+            "love",
+            "fa-gratipay",
+            "gratipay"
+        ],
+        "unicode": "f184",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "male",
+        "tags": [
+            "man",
+            "user",
+            "person",
+            "profile",
+            "fa-male",
+            "male"
+        ],
+        "unicode": "f183",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "headphones",
+        "tags": [
+            "sound",
+            "listen",
+            "music",
+            "audio",
+            "fa-headphones",
+            "headphones"
+        ],
+        "unicode": "f025",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "female",
+        "tags": [
+            "woman",
+            "user",
+            "person",
+            "profile",
+            "fa-female",
+            "female"
+        ],
+        "unicode": "f182",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "trello",
+        "tags": [
+            "fa-trello",
+            "trello"
+        ],
+        "unicode": "f181",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "foursquare",
+        "tags": [
+            "fa-foursquare",
+            "foursquare"
+        ],
+        "unicode": "f180",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "skype",
+        "tags": [
+            "fa-skype",
+            "skype"
+        ],
+        "unicode": "f17e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "dribbble",
+        "tags": [
+            "fa-dribbble",
+            "dribbble"
+        ],
+        "unicode": "f17d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "linux",
+        "tags": [
+            "tux",
+            "fa-linux",
+            "linux"
+        ],
+        "unicode": "f17c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "android",
+        "tags": [
+            "robot",
+            "fa-android",
+            "android"
+        ],
+        "unicode": "f17b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "windows",
+        "tags": [
+            "microsoft",
+            "fa-windows",
+            "windows"
+        ],
+        "unicode": "f17a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "apple",
+        "tags": [
+            "osx",
+            "food",
+            "fa-apple",
+            "apple"
+        ],
+        "unicode": "f179",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "long-arrow-right",
+        "tags": [
+            "fa-long-arrow-right",
+            "long-arrow-right"
+        ],
+        "unicode": "f178",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "flag",
+        "tags": [
+            "report",
+            "notification",
+            "notify",
+            "fa-flag",
+            "flag"
+        ],
+        "unicode": "f024",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "long-arrow-left",
+        "tags": [
+            "previous",
+            "back",
+            "fa","long","arrow","left",
+            "long","arrow","left"
+        ],
+        "unicode": "f177",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "long-arrow-up",
+        "tags": [
+            "fa-long-arrow-up",
+            "long-arrow-up"
+        ],
+        "unicode": "f176",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "long-arrow-down",
+        "tags": [
+            "fa-long-arrow-down",
+            "long-arrow-down"
+        ],
+        "unicode": "f175",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "tumblr-square",
+        "tags": [
+            "fa-tumblr-square",
+            "tumblr-square"
+        ],
+        "unicode": "f174",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "tumblr",
+        "tags": [
+            "fa-tumblr",
+            "tumblr"
+        ],
+        "unicode": "f173",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bitbucket-square",
+        "tags": [
+            "git",
+            "fa-bitbucket-square",
+            "bitbucket-square"
+        ],
+        "unicode": "f172",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bitbucket",
+        "tags": [
+            "git",
+            "fa-bitbucket",
+            "bitbucket"
+        ],
+        "unicode": "f171",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "adn",
+        "tags": [
+            "fa-adn",
+            "adn"
+        ],
+        "unicode": "f170",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "flickr",
+        "tags": [
+            "fa-flickr",
+            "flickr"
+        ],
+        "unicode": "f16e",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "instagram",
+        "tags": [
+            "fa-instagram",
+            "instagram"
+        ],
+        "unicode": "f16d",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "lock",
+        "tags": [
+            "protect",
+            "admin",
+            "fa-lock",
+            "lock"
+        ],
+        "unicode": "f023",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "stack-overflow",
+        "tags": [
+            "fa-stack-overflow",
+            "stack-overflow"
+        ],
+        "unicode": "f16c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "dropbox",
+        "tags": [
+            "fa-dropbox",
+            "dropbox"
+        ],
+        "unicode": "f16b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "youtube-play",
+        "tags": [
+            "start",
+            "playing",
+            "fa-youtube-play",
+            "youtube-play"
+        ],
+        "unicode": "f16a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "xing-square",
+        "tags": [
+            "fa-xing-square",
+            "xing-square"
+        ],
+        "unicode": "f169",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "xing",
+        "tags": [
+            "fa-xing",
+            "xing"
+        ],
+        "unicode": "f168",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "youtube",
+        "tags": [
+            "video",
+            "film",
+            "fa-youtube",
+            "youtube"
+        ],
+        "unicode": "f167",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "youtube-square",
+        "tags": [
+            "video",
+            "film",
+            "fa-youtube-square",
+            "youtube-square"
+        ],
+        "unicode": "f166",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "thumbs-down",
+        "tags": [
+            "dislike",
+            "disapprove",
+            "disagree",
+            "hand",
+            "fa-thumbs-down",
+            "thumbs-down"
+        ],
+        "unicode": "f165",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "thumbs-up",
+        "tags": [
+            "like",
+            "favorite",
+            "approve",
+            "agree",
+            "hand",
+            "fa-thumbs-up",
+            "thumbs-up"
+        ],
+        "unicode": "f164",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-numeric-desc",
+        "tags": [
+            "numbers",
+            "fa-sort-numeric-desc",
+            "sort-numeric-desc"
+        ],
+        "unicode": "f163",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "list-alt",
+        "tags": [
+            "ul",
+            "ol",
+            "checklist",
+            "finished",
+            "completed",
+            "done",
+            "todo",
+            "fa-list-alt",
+            "list-alt"
+        ],
+        "unicode": "f022",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "sort-numeric-asc",
+        "tags": [
+            "numbers",
+            "fa-sort-numeric-asc",
+            "sort-numeric-asc"
+        ],
+        "unicode": "f162",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-amount-desc",
+        "tags": [
+            "fa-sort-amount-desc",
+            "sort-amount-desc"
+        ],
+        "unicode": "f161",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-amount-asc",
+        "tags": [
+            "fa-sort-amount-asc",
+            "sort-amount-asc"
+        ],
+        "unicode": "f160",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-alpha-desc",
+        "tags": [
+            "fa-sort-alpha-desc",
+            "sort-alpha-desc"
+        ],
+        "unicode": "f15e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-alpha-asc",
+        "tags": [
+            "fa-sort-alpha-asc",
+            "sort-alpha-asc"
+        ],
+        "unicode": "f15d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-text",
+        "tags": [
+            "new",
+            "page",
+            "pdf",
+            "document",
+            "fa-file-text",
+            "file-text"
+        ],
+        "unicode": "f15c",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "file",
+        "tags": [
+            "new",
+            "page",
+            "pdf",
+            "document",
+            "fa-file",
+            "file"
+        ],
+        "unicode": "f15b",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "btc",
+        "tags": [
+            "fa-btc",
+            "btc"
+        ],
+        "unicode": "f15a",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "krw",
+        "tags": [
+            "fa-krw",
+            "krw"
+        ],
+        "unicode": "f159",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "rub",
+        "tags": [
+            "fa-rub",
+            "rub"
+        ],
+        "unicode": "f158",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "refresh",
+        "tags": [
+            "reload",
+            "sync",
+            "fa-refresh",
+            "refresh"
+        ],
+        "unicode": "f021",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "jpy",
+        "tags": [
+            "fa-jpy",
+            "jpy"
+        ],
+        "unicode": "f157",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "inr",
+        "tags": [
+            "fa-inr",
+            "inr"
+        ],
+        "unicode": "f156",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "usd",
+        "tags": [
+            "fa-usd",
+            "usd"
+        ],
+        "unicode": "f155",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "gbp",
+        "tags": [
+            "fa-gbp",
+            "gbp"
+        ],
+        "unicode": "f154",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "eur",
+        "tags": [
+            "fa-eur",
+            "eur"
+        ],
+        "unicode": "f153",
+        "category": "Currency Icons"
+    },
+    {
+        "name": "caret-square-o-right",
+        "tags": [
+            "next",
+            "forward",
+            "fa-caret-square-o-right",
+            "caret-square-o-right"
+        ],
+        "unicode": "f152",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "caret-square-o-up",
+        "tags": [
+            "fa-caret-square-o-up",
+            "caret-square-o-up"
+        ],
+        "unicode": "f151",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "caret-square-o-down",
+        "tags": [
+            "more",
+            "dropdown",
+            "menu",
+            "fa-caret-square-o-down",
+            "caret-square-o-down"
+        ],
+        "unicode": "f150",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "compass",
+        "tags": [
+            "safari",
+            "directory",
+            "menu",
+            "location",
+            "fa-compass",
+            "compass"
+        ],
+        "unicode": "f14e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "share-square",
+        "tags": [
+            "social",
+            "send",
+            "fa-share-square",
+            "share-square"
+        ],
+        "unicode": "f14d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "repeat",
+        "tags": [
+            "redo",
+            "forward",
+            "fa-repeat",
+            "repeat"
+        ],
+        "unicode": "f01e",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "search",
+        "tags": [
+            "magnify",
+            "zoom",
+            "enlarge",
+            "bigger",
+            "fa-search",
+            "search"
+        ],
+        "unicode": "f002",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "external-link-square",
+        "tags": [
+            "open",
+            "new",
+            "fa-external-link-square",
+            "external-link-square"
+        ],
+        "unicode": "f14c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "pencil-square",
+        "tags": [
+            "write",
+            "edit",
+            "update",
+            "fa-pencil-square",
+            "pencil-square"
+        ],
+        "unicode": "f14b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "check-square",
+        "tags": [
+            "checkmark",
+            "done",
+            "todo",
+            "agree",
+            "accept",
+            "confirm",
+            "ok",
+            "fa-check-square",
+            "check-square"
+        ],
+        "unicode": "f14a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "level-down",
+        "tags": [
+            "arrow",
+            "fa-level-down",
+            "level-down"
+        ],
+        "unicode": "f149",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "level-up",
+        "tags": [
+            "arrow",
+            "fa-level-up",
+            "level-up"
+        ],
+        "unicode": "f148",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "minus-square-o",
+        "tags": [
+            "hide",
+            "minify",
+            "delete",
+            "remove",
+            "trash",
+            "hide",
+            "collapse",
+            "fa-minus-square-o",
+            "minus-square-o"
+        ],
+        "unicode": "f147",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "minus-square",
+        "tags": [
+            "hide",
+            "minify",
+            "delete",
+            "remove",
+            "trash",
+            "hide",
+            "collapse",
+            "fa-minus-square",
+            "minus-square"
+        ],
+        "unicode": "f146",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "ticket",
+        "tags": [
+            "movie",
+            "pass",
+            "support",
+            "fa-ticket",
+            "ticket"
+        ],
+        "unicode": "f145",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "play-circle",
+        "tags": [
+            "start",
+            "playing",
+            "fa-play-circle",
+            "play-circle"
+        ],
+        "unicode": "f144",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "rss-square",
+        "tags": [
+            "feed",
+            "blog",
+            "fa-rss-square",
+            "rss-square"
+        ],
+        "unicode": "f143",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "play-circle-o",
+        "tags": [
+            "fa-play-circle-o",
+            "play-circle-o"
+        ],
+        "unicode": "f01d",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "ellipsis-v",
+        "tags": [
+            "dots",
+            "fa-ellipsis-v",
+            "ellipsis-v"
+        ],
+        "unicode": "f142",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "ellipsis-h",
+        "tags": [
+            "dots",
+            "fa-ellipsis-h",
+            "ellipsis-h"
+        ],
+        "unicode": "f141",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bullseye",
+        "tags": [
+            "target",
+            "fa-bullseye",
+            "bullseye"
+        ],
+        "unicode": "f140",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "unlock-alt",
+        "tags": [
+            "protect",
+            "admin",
+            "password",
+            "lock",
+            "fa-unlock-alt",
+            "unlock-alt"
+        ],
+        "unicode": "f13e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "anchor",
+        "tags": [
+            "link",
+            "fa-anchor",
+            "anchor"
+        ],
+        "unicode": "f13d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "css3",
+        "tags": [
+            "code",
+            "fa-css3",
+            "css3"
+        ],
+        "unicode": "f13c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "html5",
+        "tags": [
+            "fa-html5",
+            "html5"
+        ],
+        "unicode": "f13b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "chevron-circle-down",
+        "tags": [
+            "more",
+            "dropdown",
+            "menu",
+            "arrow",
+            "fa-chevron-circle-down",
+            "chevron-circle-down"
+        ],
+        "unicode": "f13a",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "chevron-circle-up",
+        "tags": [
+            "arrow",
+            "fa-chevron-circle-up",
+            "chevron-circle-up"
+        ],
+        "unicode": "f139",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "chevron-circle-right",
+        "tags": [
+            "next",
+            "forward",
+            "arrow",
+            "fa-chevron-circle-right",
+            "chevron-circle-right"
+        ],
+        "unicode": "f138",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "inbox",
+        "tags": [
+            "fa-inbox",
+            "inbox"
+        ],
+        "unicode": "f01c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "chevron-circle-left",
+        "tags": [
+            "previous",
+            "back",
+            "arrow",
+            "fa-chevron-circle-left",
+            "chevron-circle-left"
+        ],
+        "unicode": "f137",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "maxcdn",
+        "tags": [
+            "fa-maxcdn",
+            "maxcdn"
+        ],
+        "unicode": "f136",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "rocket",
+        "tags": [
+            "app",
+            "fa-rocket",
+            "rocket"
+        ],
+        "unicode": "f135",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "fire-extinguisher",
+        "tags": [
+            "fa-fire-extinguisher",
+            "fire-extinguisher"
+        ],
+        "unicode": "f134",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "calendar-o",
+        "tags": [
+            "date",
+            "time",
+            "when",
+            "event",
+            "fa-calendar-o",
+            "calendar-o"
+        ],
+        "unicode": "f133",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "shield",
+        "tags": [
+            "award",
+            "achievement",
+            "winner",
+            "fa-shield",
+            "shield"
+        ],
+        "unicode": "f132",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "microphone-slash",
+        "tags": [
+            "record",
+            "voice",
+            "sound",
+            "mute",
+            "fa-microphone-slash",
+            "microphone-slash"
+        ],
+        "unicode": "f131",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "microphone",
+        "tags": [
+            "record",
+            "voice",
+            "sound",
+            "fa-microphone",
+            "microphone"
+        ],
+        "unicode": "f130",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "puzzle-piece",
+        "tags": [
+            "addon",
+            "add-on",
+            "section",
+            "fa-puzzle-piece",
+            "puzzle-piece"
+        ],
+        "unicode": "f12e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "eraser",
+        "tags": [
+            "remove",
+            "delete",
+            "fa-eraser",
+            "eraser"
+        ],
+        "unicode": "f12d",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "arrow-circle-o-up",
+        "tags": [
+            "fa-arrow-circle-o-up",
+            "arrow-circle-o-up"
+        ],
+        "unicode": "f01b",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "subscript",
+        "tags": [
+            "fa-subscript",
+            "subscript"
+        ],
+        "unicode": "f12c",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "superscript",
+        "tags": [
+            "exponential",
+            "fa-superscript",
+            "superscript"
+        ],
+        "unicode": "f12b",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "exclamation",
+        "tags": [
+            "warning",
+            "error",
+            "problem",
+            "notification",
+            "notify",
+            "alert",
+            "fa-exclamation",
+            "exclamation"
+        ],
+        "unicode": "f12a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "info",
+        "tags": [
+            "help",
+            "information",
+            "more",
+            "details",
+            "fa-info",
+            "info"
+        ],
+        "unicode": "f129",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "question",
+        "tags": [
+            "help",
+            "information",
+            "unknown",
+            "support",
+            "fa-question",
+            "question"
+        ],
+        "unicode": "f128",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "chain-broken",
+        "tags": [
+            "remove",
+            "fa-chain-broken",
+            "chain-broken"
+        ],
+        "unicode": "f127",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "code-fork",
+        "tags": [
+            "git",
+            "fork",
+            "vcs",
+            "svn",
+            "github",
+            "rebase",
+            "version",
+            "merge",
+            "fa-code-fork",
+            "code-fork"
+        ],
+        "unicode": "f126",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "crop",
+        "tags": [
+            "fa-crop",
+            "crop"
+        ],
+        "unicode": "f125",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "location-arrow",
+        "tags": [
+            "map",
+            "coordinates",
+            "location",
+            "address",
+            "place",
+            "where",
+            "fa-location-arrow",
+            "location-arrow"
+        ],
+        "unicode": "f124",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "star-half-o",
+        "tags": [
+            "award",
+            "achievement",
+            "rating",
+            "score",
+            "fa-star-half-o",
+            "star-half-o"
+        ],
+        "unicode": "f123",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrow-circle-o-down",
+        "tags": [
+            "download",
+            "fa-arrow-circle-o-down",
+            "arrow-circle-o-down"
+        ],
+        "unicode": "f01a",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "reply-all",
+        "tags": [
+            "fa-reply-all",
+            "reply-all"
+        ],
+        "unicode": "f122",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "code",
+        "tags": [
+            "html",
+            "brackets",
+            "fa-code",
+            "code"
+        ],
+        "unicode": "f121",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "terminal",
+        "tags": [
+            "command",
+            "prompt",
+            "code",
+            "fa-terminal",
+            "terminal"
+        ],
+        "unicode": "f120",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "flag-checkered",
+        "tags": [
+            "report",
+            "notification",
+            "notify",
+            "fa-flag-checkered",
+            "flag-checkered"
+        ],
+        "unicode": "f11e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "flag-o",
+        "tags": [
+            "report",
+            "notification",
+            "fa-flag-o",
+            "flag-o"
+        ],
+        "unicode": "f11d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "keyboard-o",
+        "tags": [
+            "type",
+            "input",
+            "fa-keyboard-o",
+            "keyboard-o"
+        ],
+        "unicode": "f11c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "gamepad",
+        "tags": [
+            "controller",
+            "fa-gamepad",
+            "gamepad"
+        ],
+        "unicode": "f11b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "meh-o",
+        "tags": [
+            "face",
+            "emoticon",
+            "rating",
+            "neutral",
+            "fa-meh-o",
+            "meh-o"
+        ],
+        "unicode": "f11a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "frown-o",
+        "tags": [
+            "face",
+            "emoticon",
+            "sad",
+            "disapprove",
+            "rating",
+            "fa-frown-o",
+            "frown-o"
+        ],
+        "unicode": "f119",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "smile-o",
+        "tags": [
+            "face",
+            "emoticon",
+            "happy",
+            "approve",
+            "satisfied",
+            "rating",
+            "fa-smile-o",
+            "smile-o"
+        ],
+        "unicode": "f118",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "download",
+        "tags": [
+            "import",
+            "fa-download",
+            "download"
+        ],
+        "unicode": "f019",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "folder-open-o",
+        "tags": [
+            "fa-folder-open-o",
+            "folder-open-o"
+        ],
+        "unicode": "f115",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "folder-o",
+        "tags": [
+            "fa-folder-o",
+            "folder-o"
+        ],
+        "unicode": "f114",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "github-alt",
+        "tags": [
+            "octocat",
+            "fa-github-alt",
+            "github-alt"
+        ],
+        "unicode": "f113",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "reply",
+        "tags": [
+            "fa-reply",
+            "reply"
+        ],
+        "unicode": "f112",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "circle",
+        "tags": [
+            "dot",
+            "notification",
+            "fa-circle",
+            "circle"
+        ],
+        "unicode": "f111",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "spinner",
+        "tags": [
+            "loading",
+            "progress",
+            "fa-spinner",
+            "spinner"
+        ],
+        "unicode": "f110",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "quote-right",
+        "tags": [
+            "fa-quote-right",
+            "quote-right"
+        ],
+        "unicode": "f10e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "quote-left",
+        "tags": [
+            "fa-quote-left",
+            "quote-left"
+        ],
+        "unicode": "f10d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "circle-o",
+        "tags": [
+            "fa-circle-o",
+            "circle-o"
+        ],
+        "unicode": "f10c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "mobile",
+        "tags": [
+            "cell phone",
+            "cellphone",
+            "text",
+            "call",
+            "iphone",
+            "number",
+            "fa-mobile",
+            "mobile"
+        ],
+        "unicode": "f10b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "road",
+        "tags": [
+            "street",
+            "fa-road",
+            "road"
+        ],
+        "unicode": "f018",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tablet",
+        "tags": [
+            "ipad",
+            "device",
+            "fa-tablet",
+            "tablet"
+        ],
+        "unicode": "f10a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "laptop",
+        "tags": [
+            "demo",
+            "computer",
+            "device",
+            "fa-laptop",
+            "laptop"
+        ],
+        "unicode": "f109",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "desktop",
+        "tags": [
+            "monitor",
+            "screen",
+            "desktop",
+            "computer",
+            "demo",
+            "device",
+            "fa-desktop",
+            "desktop"
+        ],
+        "unicode": "f108",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "angle-down",
+        "tags": [
+            "arrow",
+            "fa-angle-down",
+            "angle-down"
+        ],
+        "unicode": "f107",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "angle-up",
+        "tags": [
+            "arrow",
+            "fa-angle-up",
+            "angle-up"
+        ],
+        "unicode": "f106",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "angle-right",
+        "tags": [
+            "next",
+            "forward",
+            "arrow",
+            "fa-angle-right",
+            "angle-right"
+        ],
+        "unicode": "f105",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "angle-left",
+        "tags": [
+            "previous",
+            "back",
+            "arrow",
+            "fa-angle-left",
+            "angle-left"
+        ],
+        "unicode": "f104",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "angle-double-down",
+        "tags": [
+            "arrows",
+            "fa-angle-double-down",
+            "angle-double-down"
+        ],
+        "unicode": "f103",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "angle-double-up",
+        "tags": [
+            "arrows",
+            "fa-angle-double-up",
+            "angle-double-up"
+        ],
+        "unicode": "f102",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "angle-double-right",
+        "tags": [
+            "raquo",
+            "quote",
+            "next",
+            "forward",
+            "arrows",
+            "fa-angle-double-right",
+            "angle-double-right"
+        ],
+        "unicode": "f101",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "clock-o",
+        "tags": [
+            "watch",
+            "timer",
+            "late",
+            "timestamp",
+            "fa-clock-o",
+            "clock-o"
+        ],
+        "unicode": "f017",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "angle-double-left",
+        "tags": [
+            "laquo",
+            "quote",
+            "previous",
+            "back",
+            "arrows",
+            "fa-angle-double-left",
+            "angle-double-left"
+        ],
+        "unicode": "f100",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "plus-square",
+        "tags": [
+            "add",
+            "new",
+            "create",
+            "expand",
+            "fa-plus-square",
+            "plus-square"
+        ],
+        "unicode": "f0fe",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "h-square",
+        "tags": [
+            "hospital",
+            "hotel",
+            "fa-h-square",
+            "h-square"
+        ],
+        "unicode": "f0fd",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "beer",
+        "tags": [
+            "alcohol",
+            "stein",
+            "drink",
+            "mug",
+            "bar",
+            "liquor",
+            "fa-beer",
+            "beer"
+        ],
+        "unicode": "f0fc",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "fighter-jet",
+        "tags": [
+            "fly",
+            "plane",
+            "airplane",
+            "quick",
+            "fast",
+            "travel",
+            "fa-fighter-jet",
+            "fighter-jet"
+        ],
+        "unicode": "f0fb",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "medkit",
+        "tags": [
+            "first aid",
+            "firstaid",
+            "help",
+            "support",
+            "health",
+            "fa-medkit",
+            "medkit"
+        ],
+        "unicode": "f0fa",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "ambulance",
+        "tags": [
+            "vehicle",
+            "support",
+            "help",
+            "fa-ambulance",
+            "ambulance"
+        ],
+        "unicode": "f0f9",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "hospital-o",
+        "tags": [
+            "building",
+            "fa-hospital-o",
+            "hospital-o"
+        ],
+        "unicode": "f0f8",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "building-o",
+        "tags": [
+            "work",
+            "business",
+            "apartment",
+            "office",
+            "company",
+            "fa-building-o",
+            "building-o"
+        ],
+        "unicode": "f0f7",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "file-text-o",
+        "tags": [
+            "new",
+            "page",
+            "pdf",
+            "document",
+            "fa-file-text-o",
+            "file-text-o"
+        ],
+        "unicode": "f0f6",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "file-o",
+        "tags": [
+            "new",
+            "page",
+            "pdf",
+            "document",
+            "fa-file-o",
+            "file-o"
+        ],
+        "unicode": "f016",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "cutlery",
+        "tags": [
+            "food",
+            "restaurant",
+            "spoon",
+            "knife",
+            "dinner",
+            "eat",
+            "fa-cutlery",
+            "cutlery"
+        ],
+        "unicode": "f0f5",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "coffee",
+        "tags": [
+            "morning",
+            "mug",
+            "breakfast",
+            "tea",
+            "drink",
+            "cafe",
+            "fa-coffee",
+            "coffee"
+        ],
+        "unicode": "f0f4",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bell-o",
+        "tags": [
+            "alert",
+            "reminder",
+            "notification",
+            "fa-bell-o",
+            "bell-o"
+        ],
+        "unicode": "f0a2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "suitcase",
+        "tags": [
+            "trip",
+            "luggage",
+            "travel",
+            "move",
+            "baggage",
+            "fa-suitcase",
+            "suitcase"
+        ],
+        "unicode": "f0f2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "stethoscope",
+        "tags": [
+            "fa-stethoscope",
+            "stethoscope"
+        ],
+        "unicode": "f0f1",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "user-md",
+        "tags": [
+            "doctor",
+            "profile",
+            "medical",
+            "nurse",
+            "fa-user-md",
+            "user-md"
+        ],
+        "unicode": "f0f0",
+        "category": "Medical Icons"
+    },
+    {
+        "name": "cloud-upload",
+        "tags": [
+            "import",
+            "fa-cloud-upload",
+            "cloud-upload"
+        ],
+        "unicode": "f0ee",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cloud-download",
+        "tags": [
+            "import",
+            "fa-cloud-download",
+            "cloud-download"
+        ],
+        "unicode": "f0ed",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "exchange",
+        "tags": [
+            "transfer",
+            "arrows",
+            "arrow",
+            "fa-exchange",
+            "exchange"
+        ],
+        "unicode": "f0ec",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "lightbulb-o",
+        "tags": [
+            "idea",
+            "inspiration",
+            "fa-lightbulb-o",
+            "lightbulb-o"
+        ],
+        "unicode": "f0eb",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "home",
+        "tags": [
+            "main",
+            "house",
+            "fa-home",
+            "home"
+        ],
+        "unicode": "f015",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "clipboard",
+        "tags": [
+            "copy",
+            "fa-clipboard",
+            "clipboard"
+        ],
+        "unicode": "f0ea",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "umbrella",
+        "tags": [
+            "fa-umbrella",
+            "umbrella"
+        ],
+        "unicode": "f0e9",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sitemap",
+        "tags": [
+            "directory",
+            "hierarchy",
+            "organization",
+            "fa-sitemap",
+            "sitemap"
+        ],
+        "unicode": "f0e8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bolt",
+        "tags": [
+            "lightning",
+            "weather",
+            "fa-bolt",
+            "bolt"
+        ],
+        "unicode": "f0e7",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "comments-o",
+        "tags": [
+            "conversation",
+            "notification",
+            "notes",
+            "message",
+            "texting",
+            "sms",
+            "chat",
+            "fa-comments-o",
+            "comments-o"
+        ],
+        "unicode": "f0e6",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "comment-o",
+        "tags": [
+            "speech",
+            "notification",
+            "note",
+            "chat",
+            "bubble",
+            "feedback",
+            "message",
+            "texting",
+            "sms",
+            "fa-comment-o",
+            "comment-o"
+        ],
+        "unicode": "f0e5",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tachometer",
+        "tags": [
+            "fa-tachometer",
+            "tachometer"
+        ],
+        "unicode": "f0e4",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "gavel",
+        "tags": [
+            "fa-gavel",
+            "gavel"
+        ],
+        "unicode": "f0e3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "undo",
+        "tags": [
+            "back",
+            "fa-undo",
+            "undo"
+        ],
+        "unicode": "f0e2",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "linkedin",
+        "tags": [
+            "fa-linkedin",
+            "linkedin"
+        ],
+        "unicode": "f0e1",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "trash-o",
+        "tags": [
+            "garbage",
+            "delete",
+            "remove",
+            "trash",
+            "hide",
+            "fa-trash-o",
+            "trash-o"
+        ],
+        "unicode": "f014",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "music",
+        "tags": [
+            "note",
+            "sound",
+            "fa-music",
+            "music"
+        ],
+        "unicode": "f001",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "envelope",
+        "tags": [
+            "email",
+            "e-mail",
+            "letter",
+            "support",
+            "mail",
+            "notification",
+            "fa-envelope",
+            "envelope"
+        ],
+        "unicode": "f0e0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-asc",
+        "tags": [
+            "arrow",
+            "fa-sort-asc",
+            "sort-asc"
+        ],
+        "unicode": "f0de",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort-desc",
+        "tags": [
+            "dropdown",
+            "more",
+            "menu",
+            "arrow",
+            "fa-sort-desc",
+            "sort-desc"
+        ],
+        "unicode": "f0dd",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sort",
+        "tags": [
+            "order",
+            "fa-sort",
+            "sort"
+        ],
+        "unicode": "f0dc",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "columns",
+        "tags": [
+            "split",
+            "panes",
+            "fa-columns",
+            "columns"
+        ],
+        "unicode": "f0db",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "caret-right",
+        "tags": [
+            "next",
+            "forward",
+            "triangle right",
+            "arrow",
+            "fa-caret-right",
+            "caret-right"
+        ],
+        "unicode": "f0da",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "caret-left",
+        "tags": [
+            "previous",
+            "back",
+            "triangle left",
+            "arrow",
+            "fa-caret-left",
+            "caret-left"
+        ],
+        "unicode": "f0d9",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "caret-up",
+        "tags": [
+            "triangle up",
+            "arrow",
+            "fa-caret-up",
+            "caret-up"
+        ],
+        "unicode": "f0d8",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "caret-down",
+        "tags": [
+            "more",
+            "dropdown",
+            "menu",
+            "triangle down",
+            "arrow",
+            "fa-caret-down",
+            "caret-down"
+        ],
+        "unicode": "f0d7",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "money",
+        "tags": [
+            "cash",
+            "money",
+            "buy",
+            "checkout",
+            "purchase",
+            "payment",
+            "fa-money",
+            "money"
+        ],
+        "unicode": "f0d6",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cog",
+        "tags": [
+            "settings",
+            "fa-cog",
+            "cog"
+        ],
+        "unicode": "f013",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "google-plus",
+        "tags": [
+            "social network",
+            "fa-google-plus",
+            "google-plus"
+        ],
+        "unicode": "f0d5",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "google-plus-square",
+        "tags": [
+            "social network",
+            "fa-google-plus-square",
+            "google-plus-square"
+        ],
+        "unicode": "f0d4",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "pinterest-square",
+        "tags": [
+            "fa-pinterest-square",
+            "pinterest-square"
+        ],
+        "unicode": "f0d3",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "pinterest",
+        "tags": [
+            "fa-pinterest",
+            "pinterest"
+        ],
+        "unicode": "f0d2",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "truck",
+        "tags": [
+            "shipping",
+            "fa-truck",
+            "truck"
+        ],
+        "unicode": "f0d1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "magic",
+        "tags": [
+            "wizard",
+            "automatic",
+            "autocomplete",
+            "fa-magic",
+            "magic"
+        ],
+        "unicode": "f0d0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "table",
+        "tags": [
+            "data",
+            "excel",
+            "spreadsheet",
+            "fa-table",
+            "table"
+        ],
+        "unicode": "f0ce",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "underline",
+        "tags": [
+            "fa-underline",
+            "underline"
+        ],
+        "unicode": "f0cd",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "strikethrough",
+        "tags": [
+            "fa-strikethrough",
+            "strikethrough"
+        ],
+        "unicode": "f0cc",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "list-ol",
+        "tags": [
+            "ul",
+            "ol",
+            "checklist",
+            "list",
+            "todo",
+            "list",
+            "numbers",
+            "fa-list-ol",
+            "list-ol"
+        ],
+        "unicode": "f0cb",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "signal",
+        "tags": [
+            "graph",
+            "bars",
+            "fa-signal",
+            "signal"
+        ],
+        "unicode": "f012",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "list-ul",
+        "tags": [
+            "ul",
+            "ol",
+            "checklist",
+            "todo",
+            "list",
+            "fa-list-ul",
+            "list-ul"
+        ],
+        "unicode": "f0ca",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "bars",
+        "tags": [
+            "menu",
+            "drag",
+            "reorder",
+            "settings",
+            "list",
+            "ul",
+            "ol",
+            "checklist",
+            "todo",
+            "list",
+            "hamburger",
+            "fa-bars",
+            "bars"
+        ],
+        "unicode": "f0c9",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "square",
+        "tags": [
+            "block",
+            "box",
+            "fa-square",
+            "square"
+        ],
+        "unicode": "f0c8",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "floppy-o",
+        "tags": [
+            "fa-floppy-o",
+            "floppy-o"
+        ],
+        "unicode": "f0c7",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "paperclip",
+        "tags": [
+            "attachment",
+            "fa-paperclip",
+            "paperclip"
+        ],
+        "unicode": "f0c6",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "files-o",
+        "tags": [
+            "duplicate",
+            "clone",
+            "copy",
+            "fa-files-o",
+            "files-o"
+        ],
+        "unicode": "f0c5",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "scissors",
+        "tags": [
+            "fa-scissors",
+            "scissors"
+        ],
+        "unicode": "f0c4",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "flask",
+        "tags": [
+            "science",
+            "beaker",
+            "experimental",
+            "labs",
+            "fa-flask",
+            "flask"
+        ],
+        "unicode": "f0c3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cloud",
+        "tags": [
+            "save",
+            "fa-cloud",
+            "cloud"
+        ],
+        "unicode": "f0c2",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "link",
+        "tags": [
+            "chain",
+            "fa-link",
+            "link"
+        ],
+        "unicode": "f0c1",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "power-off",
+        "tags": [
+            "on",
+            "fa-power-off",
+            "power-off"
+        ],
+        "unicode": "f011",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "users",
+        "tags": [
+            "people",
+            "profiles",
+            "persons",
+            "fa-users",
+            "users"
+        ],
+        "unicode": "f0c0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrows-alt",
+        "tags": [
+            "expand",
+            "enlarge",
+            "fullscreen",
+            "bigger",
+            "move",
+            "reorder",
+            "resize",
+            "arrow",
+            "fa-arrows-alt",
+            "arrows-alt"
+        ],
+        "unicode": "f0b2",
+        "category": "Video Player Icons"
+    },
+    {
+        "name": "briefcase",
+        "tags": [
+            "work",
+            "business",
+            "office",
+            "luggage",
+            "bag",
+            "fa-briefcase",
+            "briefcase"
+        ],
+        "unicode": "f0b1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "filter",
+        "tags": [
+            "funnel",
+            "options",
+            "fa-filter",
+            "filter"
+        ],
+        "unicode": "f0b0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "tasks",
+        "tags": [
+            "progress",
+            "loading",
+            "downloading",
+            "downloads",
+            "settings",
+            "fa-tasks",
+            "tasks"
+        ],
+        "unicode": "f0ae",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "wrench",
+        "tags": [
+            "settings",
+            "fix",
+            "update",
+            "fa-wrench",
+            "wrench"
+        ],
+        "unicode": "f0ad",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "globe",
+        "tags": [
+            "world",
+            "planet",
+            "map",
+            "place",
+            "travel",
+            "earth",
+            "global",
+            "translate",
+            "all",
+            "language",
+            "localize",
+            "location",
+            "coordinates",
+            "country",
+            "fa-globe",
+            "globe"
+        ],
+        "unicode": "f0ac",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrow-circle-down",
+        "tags": [
+            "download",
+            "fa-arrow-circle-down",
+            "arrow-circle-down"
+        ],
+        "unicode": "f0ab",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "arrow-circle-up",
+        "tags": [
+            "fa-arrow-circle-up",
+            "arrow-circle-up"
+        ],
+        "unicode": "f0aa",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "arrow-circle-right",
+        "tags": [
+            "next",
+            "forward",
+            "fa-arrow-circle-right",
+            "arrow-circle-right"
+        ],
+        "unicode": "f0a9",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "search-minus",
+        "tags": [
+            "magnify",
+            "minify",
+            "zoom",
+            "smaller",
+            "fa-search-minus",
+            "search-minus"
+        ],
+        "unicode": "f010",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrow-circle-left",
+        "tags": [
+            "previous",
+            "back",
+            "fa-arrow-circle-left",
+            "arrow-circle-left"
+        ],
+        "unicode": "f0a8",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "hand-o-down",
+        "tags": [
+            "point",
+            "finger",
+            "fa-hand-o-down",
+            "hand-o-down"
+        ],
+        "unicode": "f0a7",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "hand-o-up",
+        "tags": [
+            "point",
+            "finger",
+            "fa-hand-o-up",
+            "hand-o-up"
+        ],
+        "unicode": "f0a6",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "hand-o-left",
+        "tags": [
+            "point",
+            "left",
+            "previous",
+            "back",
+            "finger",
+            "fa-hand-o-left",
+            "hand-o-left"
+        ],
+        "unicode": "f0a5",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "hand-o-right",
+        "tags": [
+            "point",
+            "right",
+            "next",
+            "forward",
+            "finger",
+            "fa-hand-o-right",
+            "hand-o-right"
+        ],
+        "unicode": "f0a4",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "certificate",
+        "tags": [
+            "badge",
+            "star",
+            "fa-certificate",
+            "certificate"
+        ],
+        "unicode": "f0a3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bell",
+        "tags": [
+            "alert",
+            "reminder",
+            "notification",
+            "fa-bell",
+            "bell"
+        ],
+        "unicode": "f0f3",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bullhorn",
+        "tags": [
+            "announcement",
+            "share",
+            "broadcast",
+            "louder",
+            "fa-bullhorn",
+            "bullhorn"
+        ],
+        "unicode": "f0a1",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "hdd-o",
+        "tags": [
+            "harddrive",
+            "hard drive",
+            "storage",
+            "save",
+            "fa-hdd-o",
+            "hdd-o"
+        ],
+        "unicode": "f0a0",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "rss",
+        "tags": [
+            "blog",
+            "fa-rss",
+            "rss"
+        ],
+        "unicode": "f09e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "search-plus",
+        "tags": [
+            "magnify",
+            "zoom",
+            "enlarge",
+            "bigger",
+            "fa-search-plus",
+            "search-plus"
+        ],
+        "unicode": "f00e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "credit-card",
+        "tags": [
+            "money",
+            "buy",
+            "debit",
+            "checkout",
+            "purchase",
+            "payment",
+            "fa-credit-card",
+            "credit-card"
+        ],
+        "unicode": "f09d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "unlock",
+        "tags": [
+            "protect",
+            "admin",
+            "password",
+            "lock",
+            "fa-unlock",
+            "unlock"
+        ],
+        "unicode": "f09c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "github",
+        "tags": [
+            "octocat",
+            "fa-github",
+            "github"
+        ],
+        "unicode": "f09b",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "facebook",
+        "tags": [
+            "social network",
+            "fa-facebook",
+            "facebook"
+        ],
+        "unicode": "f09a",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "twitter",
+        "tags": [
+            "tweet",
+            "social network",
+            "fa-twitter",
+            "twitter"
+        ],
+        "unicode": "f099",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "phone-square",
+        "tags": [
+            "call",
+            "voice",
+            "number",
+            "support",
+            "fa-phone-square",
+            "phone-square"
+        ],
+        "unicode": "f098",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "bookmark-o",
+        "tags": [
+            "save",
+            "fa-bookmark-o",
+            "bookmark-o"
+        ],
+        "unicode": "f097",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "square-o",
+        "tags": [
+            "block",
+            "square",
+            "box",
+            "fa-square-o",
+            "square-o"
+        ],
+        "unicode": "f096",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "phone",
+        "tags": [
+            "call",
+            "voice",
+            "number",
+            "support",
+            "earphone",
+            "fa-phone",
+            "phone"
+        ],
+        "unicode": "f095",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "lemon-o",
+        "tags": [
+            "food",
+            "fa-lemon-o",
+            "lemon-o"
+        ],
+        "unicode": "f094",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "times",
+        "tags": [
+            "close",
+            "exit",
+            "x",
+            "cross",
+            "fa-times",
+            "times"
+        ],
+        "unicode": "f00d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "upload",
+        "tags": [
+            "import",
+            "fa-upload",
+            "upload"
+        ],
+        "unicode": "f093",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "github-square",
+        "tags": [
+            "octocat",
+            "fa-github-square",
+            "github-square"
+        ],
+        "unicode": "f092",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "trophy",
+        "tags": [
+            "award",
+            "achievement",
+            "winner",
+            "game",
+            "fa-trophy",
+            "trophy"
+        ],
+        "unicode": "f091",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "sign-in",
+        "tags": [
+            "enter",
+            "join",
+            "log in",
+            "login",
+            "sign up",
+            "sign in",
+            "signin",
+            "signup",
+            "arrow",
+            "fa-sign-in",
+            "sign-in"
+        ],
+        "unicode": "f090",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "external-link",
+        "tags": [
+            "open",
+            "new",
+            "fa-external-link",
+            "external-link"
+        ],
+        "unicode": "f08e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "thumb-tack",
+        "tags": [
+            "marker",
+            "pin",
+            "location",
+            "coordinates",
+            "fa-thumb-tack",
+            "thumb-tack"
+        ],
+        "unicode": "f08d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "linkedin-square",
+        "tags": [
+            "fa-linkedin-square",
+            "linkedin-square"
+        ],
+        "unicode": "f08c",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "sign-out",
+        "tags": [
+            "log out",
+            "logout",
+            "leave",
+            "exit",
+            "arrow",
+            "fa-sign-out",
+            "sign-out"
+        ],
+        "unicode": "f08b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "heart-o",
+        "tags": [
+            "love",
+            "like",
+            "favorite",
+            "fa-heart-o",
+            "heart-o"
+        ],
+        "unicode": "f08a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "star-half",
+        "tags": [
+            "award",
+            "achievement",
+            "rating",
+            "score",
+            "fa-star-half",
+            "star-half"
+        ],
+        "unicode": "f089",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "check",
+        "tags": [
+            "checkmark",
+            "done",
+            "todo",
+            "agree",
+            "accept",
+            "confirm",
+            "tick",
+            "ok",
+            "fa-check",
+            "check"
+        ],
+        "unicode": "f00c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "thumbs-o-down",
+        "tags": [
+            "dislike",
+            "disapprove",
+            "disagree",
+            "hand",
+            "fa-thumbs-o-down",
+            "thumbs-o-down"
+        ],
+        "unicode": "f088",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "thumbs-o-up",
+        "tags": [
+            "like",
+            "approve",
+            "favorite",
+            "agree",
+            "hand",
+            "fa-thumbs-o-up",
+            "thumbs-o-up"
+        ],
+        "unicode": "f087",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "comments",
+        "tags": [
+            "conversation",
+            "notification",
+            "notes",
+            "message",
+            "texting",
+            "sms",
+            "chat",
+            "fa-comments",
+            "comments"
+        ],
+        "unicode": "f086",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "cogs",
+        "tags": [
+            "settings",
+            "fa-cogs",
+            "cogs"
+        ],
+        "unicode": "f085",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "key",
+        "tags": [
+            "unlock",
+            "password",
+            "fa-key",
+            "key"
+        ],
+        "unicode": "f084",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "camera-retro",
+        "tags": [
+            "photo",
+            "picture",
+            "record",
+            "fa-camera-retro",
+            "camera-retro"
+        ],
+        "unicode": "f083",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "facebook-square",
+        "tags": [
+            "social network",
+            "fa-facebook-square",
+            "facebook-square"
+        ],
+        "unicode": "f082",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "twitter-square",
+        "tags": [
+            "tweet",
+            "social network",
+            "fa-twitter-square",
+            "twitter-square"
+        ],
+        "unicode": "f081",
+        "category": "Brand Icons"
+    },
+    {
+        "name": "bar-chart",
+        "tags": [
+            "graph",
+            "analytics",
+            "fa-bar-chart",
+            "bar-chart"
+        ],
+        "unicode": "f080",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "arrows-h",
+        "tags": [
+            "resize",
+            "fa-arrows-h",
+            "arrows-h"
+        ],
+        "unicode": "f07e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "th-list",
+        "tags": [
+            "ul",
+            "ol",
+            "checklist",
+            "finished",
+            "completed",
+            "done",
+            "todo",
+            "fa-th-list",
+            "th-list"
+        ],
+        "unicode": "f00b",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "arrows-v",
+        "tags": [
+            "resize",
+            "fa-arrows-v",
+            "arrows-v"
+        ],
+        "unicode": "f07d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "folder-open",
+        "tags": [
+            "fa-folder-open",
+            "folder-open"
+        ],
+        "unicode": "f07c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "folder",
+        "tags": [
+            "fa-folder",
+            "folder"
+        ],
+        "unicode": "f07b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "shopping-cart",
+        "tags": [
+            "checkout",
+            "buy",
+            "purchase",
+            "payment",
+            "fa-shopping-cart",
+            "shopping-cart"
+        ],
+        "unicode": "f07a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "retweet",
+        "tags": [
+            "refresh",
+            "reload",
+            "share",
+            "fa-retweet",
+            "retweet"
+        ],
+        "unicode": "f079",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "chevron-down",
+        "tags": [
+            "fa-chevron-down",
+            "chevron-down"
+        ],
+        "unicode": "f078",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "chevron-up",
+        "tags": [
+            "fa-chevron-up",
+            "chevron-up"
+        ],
+        "unicode": "f077",
+        "category": "Directional Icons"
+    },
+    {
+        "name": "magnet",
+        "tags": [
+            "fa-magnet",
+            "magnet"
+        ],
+        "unicode": "f076",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "comment",
+        "tags": [
+            "speech",
+            "notification",
+            "note",
+            "chat",
+            "bubble",
+            "feedback",
+            "message",
+            "texting",
+            "sms",
+            "fa-comment",
+            "comment"
+        ],
+        "unicode": "f075",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "random",
+        "tags": [
+            "sort",
+            "shuffle",
+            "fa-random",
+            "random"
+        ],
+        "unicode": "f074",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "th",
+        "tags": [
+            "blocks",
+            "squares",
+            "boxes",
+            "grid",
+            "fa-th",
+            "th"
+        ],
+        "unicode": "f00a",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "calendar",
+        "tags": [
+            "date",
+            "time",
+            "when",
+            "event",
+            "fa-calendar",
+            "calendar"
+        ],
+        "unicode": "f073",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "plane",
+        "tags": [
+            "travel",
+            "trip",
+            "location",
+            "destination",
+            "airplane",
+            "fly",
+            "mode",
+            "fa-plane",
+            "plane"
+        ],
+        "unicode": "f072",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "exclamation-triangle",
+        "tags": [
+            "warning",
+            "error",
+            "problem",
+            "notification",
+            "alert",
+            "fa-exclamation-triangle",
+            "exclamation-triangle"
+        ],
+        "unicode": "f071",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "eye-slash",
+        "tags": [
+            "toggle",
+            "show",
+            "hide",
+            "visible",
+            "visiblity",
+            "views",
+            "fa-eye-slash",
+            "eye-slash"
+        ],
+        "unicode": "f070",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "eye",
+        "tags": [
+            "show",
+            "visible",
+            "views",
+            "fa-eye",
+            "eye"
+        ],
+        "unicode": "f06e",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "fire",
+        "tags": [
+            "flame",
+            "hot",
+            "popular",
+            "fa-fire",
+            "fire"
+        ],
+        "unicode": "f06d",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "leaf",
+        "tags": [
+            "eco",
+            "nature",
+            "plant",
+            "fa-leaf",
+            "leaf"
+        ],
+        "unicode": "f06c",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "gift",
+        "tags": [
+            "present",
+            "fa-gift",
+            "gift"
+        ],
+        "unicode": "f06b",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "exclamation-circle",
+        "tags": [
+            "warning",
+            "error",
+            "problem",
+            "notification",
+            "alert",
+            "fa-exclamation-circle",
+            "exclamation-circle"
+        ],
+        "unicode": "f06a",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "asterisk",
+        "tags": [
+            "details",
+            "fa-asterisk",
+            "asterisk"
+        ],
+        "unicode": "f069",
+        "category": "Web Application Icons"
+    },
+    {
+        "name": "th-large",
+        "tags": [
+            "blocks",
+            "squares",
+            "boxes",
+            "grid",
+            "fa-th-large",
+            "th-large"
+        ],
+        "unicode": "f009",
+        "category": "Text Editor Icons"
+    },
+    {
+        "name": "glass",
+        "tags": [
+            "martini",
+            "drink",
+            "bar",
+            "alcohol",
+            "liquor",
+            "fa-glass",
+            "glass"
+        ],
+        "unicode": "f000",
+        "category": "Web Application Icons"
+    }
+]

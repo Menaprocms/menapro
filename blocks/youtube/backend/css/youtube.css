@@ -1,0 +1,10 @@
+.eYoutubePreviewSrc{
+    color:#BBB
+}
+/*****Imported from editor css************/
+.ePreview.eYoutube {
+    padding: 21px 13px; }
+.eRow .eIcoYoutube:after {
+    content: "\F167"; }
+.eRow .ePanel:hover .eIco.eIcoYoutube {
+    color: #b31217; }

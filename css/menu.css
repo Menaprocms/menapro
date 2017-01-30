@@ -1,0 +1,92 @@
+#menu {
+  background: #333;
+  padding: 0 20px; }
+  #menu input[type="checkbox"] {
+    display: none; }
+  #menu label {
+    display: none; }
+  @media screen and (min-width: 970px) {
+    #menu label {
+      display: none !important; } }
+  #menu ul {
+    padding: 0px;
+    transition: all 0.1s;
+    transition-delay: 0.2s; }
+  #menu ul.main-menu {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: auto;
+    height: 40px;
+    box-sizing: content-box; }
+    #menu ul.main-menu:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0; }
+    #menu ul.main-menu a {
+      color: #333; }
+      #menu ul.main-menu a:hover {
+        text-decoration: none; }
+    #menu ul.main-menu ul {
+      opacity: 0;
+      max-height: 0px;
+      overflow: hidden;
+      position: absolute;
+      min-width: 11em;
+      z-index: 25; }
+    #menu ul.main-menu li {
+      list-style: none;
+      list-style-position: inside;
+      vertical-align: top;
+      position: relative; }
+      #menu ul.main-menu li span.drop-icon,
+      #menu ul.main-menu li label.drop-icon {
+        height: 20px;
+        width: 20px;
+        float: right;
+        margin-left: 10px;
+        vertical-align: middle;
+        background-size: contain;
+        background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0ODUgNDg1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUgNDg1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPHBhdGggZD0iTTQxMy45NzQsNzEuMDI2QzM2OC4xNzEsMjUuMjI1LDMwNy4yNzQsMCwyNDIuNSwwUzExNi44MjksMjUuMjI1LDcxLjAyNiw3MS4wMjZDMjUuMjI1LDExNi44MjksMCwxNzcuNzI2LDAsMjQyLjUgICBzMjUuMjI1LDEyNS42NzEsNzEuMDI2LDE3MS40NzRDMTE2LjgyOSw0NTkuNzc1LDE3Ny43MjYsNDg1LDI0Mi41LDQ4NXMxMjUuNjcxLTI1LjIyNSwxNzEuNDc0LTcxLjAyNiAgIEM0NTkuNzc1LDM2OC4xNzEsNDg1LDMwNy4yNzQsNDg1LDI0Mi41UzQ1OS43NzUsMTE2LjgyOSw0MTMuOTc0LDcxLjAyNnogTTI0Mi41LDQ1NUMxMjUuMzI3LDQ1NSwzMCwzNTkuNjczLDMwLDI0Mi41ICAgUzEyNS4zMjcsMzAsMjQyLjUsMzBTNDU1LDEyNS4zMjcsNDU1LDI0Mi41UzM1OS42NzMsNDU1LDI0Mi41LDQ1NXoiIGZpbGw9IiNGRkZGRkYiLz4KCTxwb2x5Z29uIHBvaW50cz0iMjQyLjUsMjk5Ljc5MSAxMzUuNTg5LDE5My4yMjggMTE0LjQxMSwyMTQuNDc2IDI0Mi41LDM0Mi4xNDggMzcwLjU4OSwyMTQuNDc2IDM0OS40MTEsMTkzLjIyOCAgIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==); }
+      #menu ul.main-menu li span.drop-icon {
+        display: inline-block; }
+      #menu ul.main-menu li a {
+        padding: 10px;
+        color: #fff;
+        display: block; }
+    #menu ul.main-menu > li {
+      display: inline-block;
+      width: auto; }
+      #menu ul.main-menu > li li {
+        border-bottom: 1px solid #333; }
+        #menu ul.main-menu > li li:last-child {
+          border-bottom: none; }
+        #menu ul.main-menu > li li:last-child ul {
+          background: #f00;
+          left: auto;
+          right: 100%; }
+        #menu ul.main-menu > li li ul {
+          left: 100% !important;
+          top: 0;
+          width: 100%; }
+        #menu ul.main-menu > li li a {
+          background-color: rgba(0, 0, 0, 0.9); }
+      #menu ul.main-menu > li:hover > ul {
+        top: 100%;
+        max-height: 1000px;
+        overflow: visible;
+        opacity: 1;
+        width: 100%; }
+        #menu ul.main-menu > li:hover > ul > li:hover ul {
+          opacity: 1; }
+        #menu ul.main-menu > li:hover > ul > li ul {
+          overflow: visible;
+          max-height: 900px; }
+
+/*# sourceMappingURL=menu.css.map */

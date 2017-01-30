@@ -1,0 +1,15 @@
+/*****Imported from editor.css************/
+.eRow .eIcoCallToAction:after {
+    content: "\f0a1"; }
+
+/*****Imported from common.css************/
+.eCall2Action{
+    /* border: 1px solid gray !important; */
+    /* text-align: center !important; */
+    /* padding: 1em !important; */
+}
+.eCall2Action .row{
+    border:none !important;
+    padding:0px !important;
+
+}

@@ -1,0 +1,20 @@
+.cd_social a{
+    color:#333333;
+}
+.cd_social i{
+    font-size: 50px;
+    padding: 18px 18px 5px 0px;
+}
+.cd_element i{
+    width: 30px;
+    text-align: center;
+}
+
+.eContactdata ul{
+    list-style: none !important;
+    margin-top: 20px;
+}
+.contactdata_label{
+    display: inline-block;
+    width: 80px;
+}

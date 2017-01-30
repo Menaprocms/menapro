@@ -1,0 +1,899 @@
+/*
+ * Banana FileManager Css.
+ * Icons made by Freepik, distributed by Flaticon.
+ */
+@font-face {
+  font-family: "banana";
+  src: url("../font/banana.eot");
+  src: url("../font/banana.eot?#iefix") format("embedded-opentype"), url("../font/banana.woff") format("woff"), url("../font/banana.ttf") format("truetype"), url("../font/banana.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "banana";
+    src: url("../font/banana.svg#banana") format("svg"); } }
+/*Banana rules*/
+.clearfix {
+  clear: left; }
+
+#banana {
+  position: fixed;
+  color: #000;
+  z-index: 65539;
+  display: none;
+  height: 500px;
+  width: 353px;
+  transform: scale(1);
+  transition-duration: 0.3s !important;
+  -webkit-transition-duration: 0.3s !important;
+  transform-origin: top;
+  opacity: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 23px 73px 0px rgba(0, 0, 0, 0.29); }
+  #banana.bye {
+    transform: scale(0.5);
+    opacity: 0; }
+  #banana *:not(.newFolderForm *) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  #banana .bananaContainer {
+    border: 1px solid #FFFFFF;
+    width: 353px;
+    height: 500px;
+    background-color: #fff;
+    padding: 40px 12px 40px 12px;
+    overflow: visible;
+    overflow-y: scroll;
+    border-radius: 3px;
+    box-sizing: border-box;
+    z-index: 9999; }
+    #banana .bananaContainer.bnscrolled .menu {
+      box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.26); }
+  #banana #currentFolder {
+    line-height: 40px;
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    width: 160px;
+    overflow: hidden;
+    text-transform: uppercase;
+    white-space: nowrap; }
+
+.overflowShadow {
+  box-shadow: inset 0px -36px 18px 0px #FFF;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 330px;
+  z-index: 900;
+  height: 50px; }
+  .overflowShadow.top {
+    top: 31px;
+    box-shadow: inset 0px 13px 7px 0px #FFFFFF;
+    height: 17px; }
+
+.bananimate, .bananimate:after, .bananimate:before, .bananimatechilds * {
+  transition: opacity 0.5s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-size 0.3s ease;
+  -webkit-transition: all 0.5s ease, opacity 0.5s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-size 0.3s ease;
+  -o-transition: opacity 0.5s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-size 0.3s ease;
+  -moz-transition: opacity 0.5s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-size 0.3s ease;
+  -ms-transition: opacity 0.5s ease, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-size 0.3s ease; }
+
+.delayed {
+  transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s; }
+
+.fastEnd:hover {
+  transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s; }
+
+/* Pictures*/
+#banana ul.pictures {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  z-index: 5; }
+  #banana ul.pictures li:hover .bn_label {
+    transform: translateX(0) scale(1);
+    pointer-events: none; }
+  #banana ul.pictures li:nth-child(3n+3) .bn_label {
+    top: 30px;
+    right: 75px; }
+  #banana ul.pictures li:nth-child(3n+1) .bn_label {
+    top: 30px;
+    left: 75px; }
+    #banana ul.pictures li:nth-child(3n+1) .bn_label:after {
+      left: -5px;
+      transform: rotateZ(180deg); }
+  #banana ul.pictures li:nth-child(3n+2) .bn_label {
+    top: -25px;
+    left: 50%; }
+    #banana ul.pictures li:nth-child(3n+2) .bn_label:after {
+      left: 50%;
+      top: 17px;
+      transform: rotateZ(90deg); }
+  #banana ul.pictures li:nth-child(3n+2):hover .bn_label {
+    transform: translateX(-50%) scale(1); }
+#banana .bn_label {
+  transform: translateX(0) scale(0);
+  transform-origin: center;
+  transition: all 0.3s ease;
+  position: absolute;
+  white-space: nowrap;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  border: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.7);
+  color: #6b6b6b;
+  padding: 3px 10px;
+  border-radius: 3px;
+  z-index: 9999; }
+  #banana .bn_label:after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #888; }
+  #banana .bn_label * {
+    pointer-events: none; }
+#banana .bneditmode .bndeleteFolder {
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right; }
+  #banana .bneditmode .bndeleteFolder:before {
+    content: "\f112";
+    color: #f00 !important; }
+#banana .bneditmode ul.folders li:before {
+  content: initial; }
+#banana .bndeleteImg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(220, 13, 13, 0.7);
+  border-radius: 100%;
+  transform: scale(0);
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px; }
+  #banana .bndeleteImg:before {
+    content: "\f112";
+    line-height: 40px;
+    color: #fff !important; }
+#banana .bneditmode .bndeleteImg {
+  transform: scale(1);
+  opacity: 1; }
+#banana ul.pictures li.minimized {
+  border-color: transparent;
+  opacity: 0;
+  transform: rotate(0deg) scale(1.114) skew(0deg) translate(0px, 40px);
+  -webkit-transform: rotate(0deg) scale(1.814) skew(0deg) translate(0px, 40px);
+  -moz-transform: rotate(0deg) scale(1.114) skew(0deg) translate(0px, 40px);
+  -o-transform: rotate(0deg) scale(1.114) skew(0deg) translate(0px, 40px);
+  -ms-transform: rotate(0deg) scale(1.114) skew(0deg) translate(0px, 40px); }
+#banana ul.pictures li {
+  opacity: 1;
+  width: 75px;
+  height: 75px;
+  float: left;
+  background-size: cover;
+  margin: 13px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0px;
+  position: relative;
+  text-align: center; }
+  #banana ul.pictures li:hover {
+    cursor: pointer;
+    background-size: auto 100%; }
+#banana .multiple ul.pictures li {
+  border: 1px solid #c6c6c6;
+  border-radius: 6px;
+  background-size: contain !important; }
+  #banana .multiple ul.pictures li:first-child {
+    border: none !important;
+    border-radius: 0px; }
+
+.la-ball-clip-rotate-multiple {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  margin-top: -48px;
+  margin-left: -48px; }
+
+#banana ul.pictures #bananaUploadContainer {
+  background-color: #FFF; }
+#banana ul.pictures .la-ball-clip-rotate-multiple {
+  margin: 13px; }
+#banana ul.pictures .upload {
+  padding: 0px !important;
+  position: relative;
+  overflow: hidden; }
+  #banana ul.pictures .upload .bananaUpload {
+    position: absolute;
+    font-size: 43px;
+    top: 0px;
+    left: 0px;
+    opacity: 0; }
+    #banana ul.pictures .upload .bananaUpload:hover {
+      cursor: pointer; }
+  #banana ul.pictures .upload span {
+    text-align: center;
+    display: block;
+    width: 75px;
+    border: 1px solid #ADADAD;
+    color: #969595;
+    box-sizing: border-box;
+    height: 75px;
+    pointer-events: none;
+    position: relative; }
+    #banana ul.pictures .upload span:before {
+      content: "\f108";
+      font-size: 50px;
+      line-height: 50px;
+      height: 50px;
+      width: 50px;
+      display: block;
+      top: 50%;
+      left: 50%;
+      margin-top: -25px;
+      margin-left: -25px;
+      position: absolute; }
+  #banana ul.pictures .upload:hover span {
+    color: #333;
+    transform: scale(1.6);
+    cursor: pointer; }
+#banana ul.pictures li.deleted {
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -ms-transition: all 0.3s ease !important;
+  width: 0px;
+  opacity: 0;
+  padding: 0px !important;
+  margin: 0px;
+  background-size: 0% !important; }
+  #banana ul.pictures li.deleted * {
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0; }
+#banana ul.pictures li:hover {
+  cursor: pointer;
+  background-size: contain;
+  position: relative;
+  padding: 14px; }
+#banana ul.pictures li.selected {
+  background-color: #009688;
+  background-blend-mode: luminosity; }
+  #banana ul.pictures li.selected:after {
+    background: url("imgs/success.png") no-repeat center center;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    content: "";
+    width: 100%; }
+#banana ul.pictures li .info {
+  background-color: #EEE;
+  position: absolute;
+  padding: 0px;
+  border: 0px solid #BFBFBF;
+  z-index: 10000;
+  margin-left: 60px;
+  width: 0px;
+  height: 0px;
+  font-size: 11px;
+  overflow: hidden;
+  z-index: 50;
+  text-transform: uppercase;
+  text-align: center;
+  color: #868686; }
+#banana ul.pictures li:hover .info {
+  display: block;
+  height: 43px;
+  width: 160px;
+  padding: 4px 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  z-index: 99999; }
+#banana ul.folders li.newFolderForm {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  height: 45px; }
+  #banana ul.folders li.newFolderForm:hover input {
+    color: #333; }
+#banana .newFolderForm {
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+  max-width: 500px;
+  outline: none; }
+  #banana .newFolderForm input {
+    width: 60%;
+    line-height: 25px;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    height: 25px;
+    border: 1px solid #00C0C5;
+    border-right: none;
+    text-align: center;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline-width: 0; }
+    #banana .newFolderForm input:hover {
+      color: #333; }
+  #banana .newFolderForm button {
+    font-size: 15px;
+    line-height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 17px;
+    background-color: #00C7A8;
+    border: 1px solid #00C0C5;
+    border-left: none;
+    color: #fff;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+#banana .searchResults .searchPreview {
+  width: 39px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px; }
+#banana ul.folders, #banana ul.searchResults {
+  list-style-type: none;
+  padding: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px; }
+#banana ul.folders li {
+  height: 35px;
+  opacity: 1;
+  background-color: #FFFFFF;
+  margin: 2px 0px 2px 0px;
+  width: 100%;
+  line-height: 35px;
+  padding: 0px 4px 0px 8px;
+  font-size: 15px;
+  color: #676767;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  word-break: break-all; }
+  #banana ul.folders li.minimized {
+    opacity: 0; }
+#banana .searchResults li {
+  height: 35px;
+  opacity: 1;
+  background-color: #FFFFFF;
+  margin: 2px 0px 2px 0px;
+  width: 100%;
+  line-height: 35px;
+  padding: 0px 4px 0px 8px;
+  font-size: 15px;
+  color: #676767;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  word-break: break-all; }
+#banana ul.folders li:hover, #banana .searchResults li:hover {
+  cursor: pointer;
+  color: #fff !important;
+  background-color: #00D0C6; }
+#banana ul.folders li {
+  position: relative; }
+  #banana ul.folders li:before {
+    content: "\f115";
+    position: absolute;
+    font-family: banana;
+    color: #d1d1d1 !important;
+    transform: rotateY(180deg);
+    right: 0px;
+    display: block;
+    color: #666;
+    font-size: 20px;
+    font-style: normal; }
+#banana .bnNewFolder {
+  float: right; }
+  #banana .bnNewFolder:before {
+    content: "\f10f"; }
+  #banana .bnNewFolder:hover {
+    cursor: pointer; }
+#banana .bnConfirmSelection {
+  transform: scale(0.9);
+  display: inline-block;
+  float: right;
+  height: 40px;
+  width: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+  padding-left: 5px;
+  border-left: 1px solid #ddd; }
+  #banana .bnConfirmSelection:before {
+    content: "\f123";
+    color: #eee !important;
+    padding: 1px; }
+  #banana .bnConfirmSelection.on {
+    transform: scale(1); }
+    #banana .bnConfirmSelection.on:before {
+      color: #fff !important;
+      background: #009688 !important;
+      border-radius: 1000%; }
+#banana ul.folders .upload {
+  border: 1px solid #eee;
+  color: #FFF !important; }
+  #banana ul.folders .upload span {
+    vertical-align: middle;
+    text-align: center;
+    color: #969595;
+    display: block;
+    line-height: 30px;
+    font-size: 20px; }
+  #banana ul.folders .upload:hover span {
+    font-size: 40px;
+    color: #FFF;
+    line-height: 28px; }
+#banana .otherTitles {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #07A9A1;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #07A9A1; }
+#banana li:hover .otherName:after {
+  box-shadow: inset -50px 0px 26px -26px #00D0C6; }
+#banana .otherName {
+  width: 240px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  #banana .otherName:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: -4px;
+    box-shadow: inset -50px 0px 26px -26px #FFF;
+    margin: 0px;
+    padding: 0px; }
+#banana ul.other {
+  list-style-type: none;
+  padding: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px; }
+  #banana ul.other li {
+    height: 35px;
+    opacity: 1;
+    background-color: #FFFFFF;
+    margin: 2px 0px 2px 0px;
+    width: 100%;
+    line-height: 35px;
+    padding: 0px 0px 0px 3px;
+    font-size: 15px;
+    color: #676767;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    text-transform: lowercase;
+    white-space: nowrap;
+    position: relative; }
+    #banana ul.other li:last-child {
+      border-bottom: none; }
+    #banana ul.other li.minimized {
+      opacity: 0; }
+    #banana ul.other li.selected {
+      color: #0031ff;
+      padding-left: 38px; }
+      #banana ul.other li.selected:after {
+        background: url("imgs/success.png") no-repeat center center;
+        background-size: 23px;
+        display: block;
+        background-color: #464646;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        height: 29px;
+        content: "";
+        width: 29px;
+        opacity: 1;
+        border-radius: 100%; }
+    #banana ul.other li:hover {
+      cursor: pointer;
+      color: #fff !important;
+      background-color: #00D0C6; }
+#banana .bnIco:before {
+  font-family: banana;
+  color: #666;
+  font-size: 20px;
+  font-style: normal; }
+#banana ul.bn_icons {
+  padding: 0px; }
+  #banana ul.bn_icons li {
+    width: 75px;
+    height: 75px;
+    margin: 13px;
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #eee;
+    text-align: center;
+    border-radius: 6px; }
+    #banana ul.bn_icons li i {
+      font-size: 50px;
+      text-align: center;
+      line-height: 75px; }
+    #banana ul.bn_icons li:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      background-color: #333; }
+      #banana ul.bn_icons li:hover i {
+        color: #fff; }
+
+/* Folders */
+/* Others*/
+@media screen and (max-width: 500px) {
+  .bananaOpened {
+    height: 100% !important;
+    overflow: hidden !important; }
+
+  #banana {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: 1050;
+    border-radius: 0px; }
+    #banana .bnclose {
+      display: block !important;
+      height: 40px !important;
+      width: 35px !important;
+      background-size: 80% !important;
+      margin-right: 20px !important; }
+    #banana .overflowShadow {
+      display: none; }
+    #banana .bananaContainer {
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      padding-top: 52px;
+      padding-bottom: 0px;
+      border-radius: 0px; }
+    #banana div.menu {
+      width: 100% !important;
+      box-shadow: none !important; }
+    #banana ul.pictures li, #banana ul.pictures .upload span {
+      width: 90px;
+      height: 90px; } }
+/*Common*/
+#banana div.menu {
+  border-bottom: 1px solid #DCDCDC;
+  position: absolute;
+  background-color: #FFF;
+  margin: 0px 0px;
+  z-index: 950;
+  width: 334px;
+  top: 1px;
+  left: 1px;
+  padding: 0px;
+  height: 40px;
+  box-shadow: 0px 0px 0px 0px transparent; }
+  #banana div.menu .bnIco {
+    margin: 0px 4px; }
+    #banana div.menu .bnIco:before {
+      font-size: 26px; }
+#banana .bnclose {
+  float: right;
+  margin: 0px;
+  display: none;
+  background-size: 60%; }
+  #banana .bnclose:before {
+    content: "\f10a";
+    color: #a10000; }
+#banana .bneditmode .edit:before {
+  color: #f00;
+  display: inline-block;
+  transform: rotate(-40deg); }
+#banana .edit {
+  display: inline-block;
+  float: right;
+  height: 30px;
+  width: 30px; }
+  #banana .edit:before {
+    content: "\f10c" !important; }
+#banana span.back:hover, #banana .bnclose:hover, #banana .edit {
+  cursor: pointer; }
+#banana span.back:before {
+  content: "\f115"; }
+#banana span.tree:hover {
+  cursor: pointer; }
+#banana span.tree:before {
+  content: "\f101"; }
+
+#bananaProgress {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: #00C7A8;
+  display: block !important;
+  top: 0%;
+  left: 0px;
+  border: none !important; }
+
+#banana .error {
+  width: 90%;
+  margin: 5px auto;
+  text-align: center;
+  border-bottom: 1px solid #D40202;
+  padding: 10px 5px;
+  color: #5F0A0A; }
+#banana .bananaTree {
+  padding: 0px;
+  margin: 0px -11px; }
+  #banana .bananaTree li {
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    text-transform: Capitalize; }
+    #banana .bananaTree li:hover {
+      cursor: pointer;
+      color: #FFFFFF;
+      background-color: #00C0C5; }
+    #banana .bananaTree li:before {
+      content: ""; }
+  #banana .bananaTree .filesNumber {
+    background-color: #FFFFFF;
+    display: inline-block;
+    height: 16px;
+    width: 28px;
+    vertical-align: middle;
+    line-height: 15px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 16px;
+    color: #ABABAA;
+    border: 1px solid #DADADA; }
+    #banana .bananaTree .filesNumber:empty {
+      display: none; }
+#banana .dragEnter {
+  border: 2px dashed #f00;
+  background-color: #eee; }
+#banana .searchDiv {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #EEE;
+  margin: 0px -5px; }
+#banana .searchInput {
+  display: block;
+  width: 60%;
+  margin: 6px auto;
+  max-width: 205px;
+  padding: 3px;
+  border-radius: 31px;
+  border: 1px solid #00C0C5;
+  text-align: center;
+  outline-width: 0; }
+#banana .bn_previewFile .extension:before {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 100px;
+  left: 0;
+  top: 0px;
+  background: #283c51;
+  font-size: 100px !important; }
+#banana .other li:before, #banana .extension:before {
+  font-family: banana;
+  font-size: 26px;
+  vertical-align: middle;
+  margin-right: 6px;
+  font-style: normal;
+  font-weight: initial; }
+#banana .other li.pdf:before, #banana .extension.pdf:before {
+  content: "\f11c"; }
+#banana .other li.doc:before, #banana .other li.docx:before, #banana .other li.pages:before, #banana .other li.odt:before, #banana .extension.doc:before, #banana .extension.docx:before, #banana .extension.pages:before, #banana .extension.odt:before {
+  content: "\f11f"; }
+#banana .other li.xls:before, #banana .other li.xlsx:before, #banana .other li.csv:before, #banana .other li.numbers:before, #banana .extension.xls:before, #banana .extension.xlsx:before, #banana .extension.csv:before, #banana .extension.numbers:before {
+  content: "\f124"; }
+#banana .other li.mp3:before, #banana .other li.wav:before, #banana .extension.mp3:before, #banana .extension.wav:before {
+  content: "\f119"; }
+#banana .other li.mp4:before, #banana .other li.flv:before, #banana .extension.mp4:before, #banana .extension.flv:before {
+  content: "\f127"; }
+#banana .other li.psb:before, #banana .other li.psd:before, #banana .extension.psb:before, #banana .extension.psd:before {
+  content: "\f114"; }
+#banana .other li.kml:before, #banana .extension.kml:before {
+  content: "\f11d"; }
+#banana .other li.sql:before, #banana .extension.sql:before {
+  content: "\f10b"; }
+#banana .other li.eml:before, #banana .extension.eml:before {
+  content: "\f120"; }
+#banana .other li.ai:before, #banana .other li.eps:before, #banana .other li.cdr:before, #banana .extension.ai:before, #banana .extension.eps:before, #banana .extension.cdr:before {
+  content: "\f126"; }
+#banana .other li.ppt:before, #banana .other li.pps:before, #banana .other li.pptx:before, #banana .other li.key:before, #banana .extension.ppt:before, #banana .extension.pps:before, #banana .extension.pptx:before, #banana .extension.key:before {
+  content: "\f106"; }
+#banana .other li.dwg:before, #banana .other li.dxf:before, #banana .extension.dwg:before, #banana .extension.dxf:before {
+  content: "\f104"; }
+#banana .other li.vcs:before, #banana .other li.ical:before, #banana .extension.vcs:before, #banana .extension.ical:before {
+  content: "\f107"; }
+#banana .other li.html:before, #banana .other li.css:before, #banana .other li.php:before, #banana .other li.js:before, #banana .other li.scss:before, #banana .other li.less:before, #banana .other li.sass:before, #banana .extension.html:before, #banana .extension.css:before, #banana .extension.php:before, #banana .extension.js:before, #banana .extension.scss:before, #banana .extension.less:before, #banana .extension.sass:before {
+  content: "\f109"; }
+
+/* Tree */
+/*drag and drop*/
+/*Search*/
+/* Formats*/
+/*.pictures li:not(:first-child):after {*/
+.pictures li[style~=".png"] {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("imgs/checkers.png");
+  left: 0;
+  top: 0;
+  z-index: -1; }
+
+.bn_previewImage {
+  display: block;
+  max-width: 250px;
+  max-width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: auto;
+  padding: 6px;
+  background: #e8e8e8;
+  border-radius: 2px;
+  margin-top: 20px;
+  box-shadow: 0px 12px 41px 0px rgba(0, 0, 0, 0.71);
+  transform: perspective(355px); }
+
+.bn_previewwrapper {
+  min-height: 170px;
+  width: 270px;
+  margin: auto; }
+
+#banana .bananaContainer.bnpreview {
+  padding: 0px !important;
+  border: none;
+  background: #283c51;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position: center center; }
+
+span.bn_btnok, span.bn_btnko {
+  height: 60px;
+  width: 80px;
+  display: block;
+  background: #fff;
+  box-shadow: 0px 12px 41px 0px rgba(0, 0, 0, 0.71);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; }
+  span.bn_btnok:before, span.bn_btnko:before {
+    width: 40px;
+    height: 40px;
+    font-size: 35px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -25px; }
+  span.bn_btnok:hover, span.bn_btnko:hover {
+    cursor: pointer; }
+
+.bn_btn_cont {
+  margin: 25px 0px; }
+
+span.bn_btnko {
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px; }
+  span.bn_btnko:before {
+    content: "\f10d";
+    position: absolute;
+    color: #d80027 !important; }
+span.bn_btnok {
+  float: right;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px; }
+  span.bn_btnok:before {
+    content: "\f123";
+    color: #91dc5a !important; }
+
+.bn_properties {
+  padding: 20px 10px;
+  background: white;
+  position: relative;
+  min-height: 200px; }
+
+.bn_property {
+  padding: 5px;
+  margin: auto;
+  color: #4b4a4a; }
+
+span.bn_prop_title {
+  width: 40%;
+  text-align: left;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #0ccbc5;
+  padding-right: 7px;
+  padding-left: 6%; }
+
+.bn_previewFile {
+  width: 100%;
+  text-align: center;
+  padding: 14px 5px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0px #000;
+  color: #fff; }
+
+span.bn_prop_value {
+  width: 50%;
+  display: inline-block; }
+
+@keyframes bamboleo {
+  0% {
+    transform: perspective(355px) rotateX(20deg) translateY(50px) scale(1.2);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: perspective(355px) rotateX(0deg) translateY(0px) scale(1); } }
+.bn_previewFile .extension {
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #1e2e3f;
+  position: relative;
+  text-shadow: 1px 1px 0px #2f465e;
+  font-weight: bold; }
+
+/*# sourceMappingURL=banana.css.map */

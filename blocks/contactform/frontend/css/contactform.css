@@ -1,0 +1,11 @@
+.cfs_tip{
+    font-size: 14px;
+    color: #9A9A9A;
+    display: block;
+}
+#send_button{
+    margin-bottom: 20px;
+}
+input[name="captcha"]{
+    max-width: 205px;
+}

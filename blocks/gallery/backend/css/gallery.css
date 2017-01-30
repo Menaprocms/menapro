@@ -1,0 +1,77 @@
+#proBox-gallery .eHandler {
+  margin-top: 45px; }
+  #proBox-gallery .eHandler span {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 3px;
+    width: 100%;
+    display: block; }
+  #proBox-gallery .eHandler:hover {
+    cursor: move; }
+#proBox-gallery #gallery_images {
+  position: relative; }
+#proBox-gallery .gallery_slide {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px; }
+#proBox-gallery .ui-sortable-helper {
+  border-bottom: 7px solid #5b5b5b;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4); }
+#proBox-gallery .ui-sortable-placeholder {
+  background: #dfdfdf;
+  height: 122px;
+  width: 100%;
+  display: block;
+  visibility: visible !important;
+  box-shadow: inset 0px 6px 6px 0px rgba(0, 0, 0, 0.4) !important; }
+
+.images_preview {
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+  list-style: none;
+  padding: 0;
+  text-align: center; }
+  .images_preview.half .gallery_preview {
+    width: 14%; }
+
+.gallery_preview {
+  display: inline-block;
+  background-color: #f3f3f3;
+  height: 80px;
+  width: 24%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 8px solid #fff;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  position: relative; }
+  .gallery_preview:first-child {
+    margin-left: 0px; }
+
+#gallery_browse {
+  margin: auto;
+  display: block;
+  width: 150px;
+  margin-bottom: 10px; }
+
+.ePanel .images_preview {
+  transition-delay: 1s !important;
+  transition-duration: 1s !important;
+  -webkit-transition-delay: 1s !important; }
+.ePanel:hover .images_preview {
+  transform: translateY(-90%);
+  transition-delay: 1s !important;
+  -webkit-transition-delay: 1s !important; }
+
+/*****Imported from editor2 css************/
+/*eGallery*/
+
+/*# sourceMappingURL=gallery.css.map */
