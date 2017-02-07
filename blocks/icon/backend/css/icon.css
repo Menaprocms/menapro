@@ -1,0 +1,23 @@
+.ePreview.eIcon a{
+    color:#14c7bb;
+}
+.ePreview.eIcon i{
+    color:#14c7bb;
+}
+
+/* ePreview eIcon*/
+.ePreview.eIcon {
+    padding: 6px 21px; }
+
+#trash .eIcon-icon {
+    font-size: 83px; }
+
+.ePreview.eIcon .eIcon-text {
+    color: #BBB; }
+.ePreview.eIcon .eIcon-icon {
+    display: block;
+    font-size: 110px;
+    color: #E6E6E6;
+    text-shadow: center; }
+.ePreview.eIcon a:hover {
+    text-decoration: none; }

@@ -1,0 +1,165 @@
+
+#menu {
+  background: #333;
+  padding: 0 20px;
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+
+  //  Desktop
+  @media screen and (min-width: 970px) {
+    label {
+      display: none !important;
+    }
+  }
+
+  ul {
+    padding: 0px;
+    transition: all 0.1s;
+    transition-delay: 0.2s;
+  }
+
+  ul.main-menu {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    width: auto;
+    height: 40px;
+    box-sizing: content-box;
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0
+    }
+    a {
+      color: #333;
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+    ul {
+      opacity: 0;
+      max-height: 0px;
+      overflow: hidden;
+      position: absolute;
+      min-width: 11em;
+      z-index: 25;
+
+    }
+    //    Common styles
+    li {
+      list-style: none;
+      list-style-position: inside;
+      vertical-align: top;
+      position: relative;
+
+
+      span.drop-icon,
+      label.drop-icon {
+        height: 20px;
+        width: 20px;
+        float: right;
+        margin-left: 10px;
+        vertical-align: middle;
+        background-size: contain;
+        background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0ODUgNDg1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODUgNDg1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPHBhdGggZD0iTTQxMy45NzQsNzEuMDI2QzM2OC4xNzEsMjUuMjI1LDMwNy4yNzQsMCwyNDIuNSwwUzExNi44MjksMjUuMjI1LDcxLjAyNiw3MS4wMjZDMjUuMjI1LDExNi44MjksMCwxNzcuNzI2LDAsMjQyLjUgICBzMjUuMjI1LDEyNS42NzEsNzEuMDI2LDE3MS40NzRDMTE2LjgyOSw0NTkuNzc1LDE3Ny43MjYsNDg1LDI0Mi41LDQ4NXMxMjUuNjcxLTI1LjIyNSwxNzEuNDc0LTcxLjAyNiAgIEM0NTkuNzc1LDM2OC4xNzEsNDg1LDMwNy4yNzQsNDg1LDI0Mi41UzQ1OS43NzUsMTE2LjgyOSw0MTMuOTc0LDcxLjAyNnogTTI0Mi41LDQ1NUMxMjUuMzI3LDQ1NSwzMCwzNTkuNjczLDMwLDI0Mi41ICAgUzEyNS4zMjcsMzAsMjQyLjUsMzBTNDU1LDEyNS4zMjcsNDU1LDI0Mi41UzM1OS42NzMsNDU1LDI0Mi41LDQ1NXoiIGZpbGw9IiNGRkZGRkYiLz4KCTxwb2x5Z29uIHBvaW50cz0iMjQyLjUsMjk5Ljc5MSAxMzUuNTg5LDE5My4yMjggMTE0LjQxMSwyMTQuNDc2IDI0Mi41LDM0Mi4xNDggMzcwLjU4OSwyMTQuNDc2IDM0OS40MTEsMTkzLjIyOCAgIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+      }
+
+      span.drop-icon {
+        display: inline-block;
+
+      }
+      //      First-level link
+      a {
+        padding: 10px;
+        color: #fff;
+        display: block;
+      }
+
+    }
+
+
+
+    //    Levels management
+    //    First level
+    > li {
+      display: inline-block;
+      width: auto;
+
+      a {
+
+      }
+      li {
+        border-bottom: 1px solid #333;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:last-child {
+          ul {
+            background: #f00;
+            left:auto;
+            right: 100%;
+          }
+        }
+        ul {
+          left: 100% !important;
+          top: 0;
+          width: 100%;
+        }
+        a {
+          background-color: rgba(#000,0.9);
+        }
+      }
+//      Hovered events
+      &:hover {
+
+        > ul {
+          top: 100%;
+          max-height: 1000px;
+          overflow: visible;
+          opacity: 1;
+          width: 100%;
+          a {
+          }
+          //          Second level
+          > li {
+
+
+            &:hover {
+
+              ul {
+                opacity: 1;
+              }
+            }
+
+            //            Third level
+            ul {
+              overflow: visible;
+              max-height: 900px;
+
+
+            }
+
+          }
+        }
+      }
+
+    }
+
+  }
+
+  //  End desktop
+
+  //  Animation
+}

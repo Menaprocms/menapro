@@ -1,0 +1,12 @@
+#wrapper{
+    display:none;
+}
+.topbar{
+    display:none;
+}
+#browser_error{
+    display: block !important;
+    max-width: 600px;
+    margin-left: 33%;
+    text-align:center;
+}

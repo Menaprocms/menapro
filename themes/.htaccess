@@ -1,0 +1,5 @@
+
+Require all denied
+<FilesMatch ".*(?i)\.(css|js|json|jpeg|jpg|png|svg|gif|less|mov|flv|wav|mp3|mp4|mpeg|mpg|eot|woff|woff2|ttf|otf|bm)$">
+Require all granted
+</FilesMatch>
