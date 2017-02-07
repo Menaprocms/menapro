@@ -5,7 +5,6 @@
     "homepage": "http://www.menapro.com/",
     "type": "project",
     "license": "CC Non-commercial",
-    "version": "1.0.0",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.10",
