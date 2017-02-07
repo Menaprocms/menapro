@@ -1,5 +1,5 @@
 {
-    "name": "menapro",
+    "name": "menaprocms/menapro",
     "description": "MenaPRO cms",
     "keywords": ["mena", "cms", "website", "builder"],
     "homepage": "http://www.menapro.com/",
@@ -14,15 +14,13 @@
         "components/bootstrap": "^3.3",
         "skeeks/yii2-assets-auto-compress": "*",
         "yiisoft/yii2-jui": "^2.0",
-        "twbs/bootstrap": "4.0.0-alpha.4",
-        "yiisoft/yii2-imagine": "^2.0"
-    },
-    "minimum-stability": "stable",
-    "require-dev": {
+        "yiisoft/yii2-imagine": "^2.0",
         "yiisoft/yii2-debug": "~2.0.0"
     },
+    "minimum-stability": "dev",
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "vendor-dir": "menacore/vendor"
     },
     "extra": {
         "asset-installer-paths": {
