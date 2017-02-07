@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "config": {
         "process-timeout": 1800,
-        "vendor-dir": "menacore"
+        "vendor-dir": "menacore/vendor"
     },
     "extra": {
         "asset-installer-paths": {
