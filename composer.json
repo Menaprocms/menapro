@@ -16,7 +16,7 @@
         "twbs/bootstrap": "4.0.0-alpha.4",
         "yiisoft/yii2-imagine": "^2.0"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0"
     },
