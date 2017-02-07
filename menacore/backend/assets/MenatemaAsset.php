@@ -24,11 +24,13 @@ class MenatemaAsset extends AssetBundle
         'css/menaproadmin.css',
         'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700',
         'css/simple-sidebar.css',
-        'js/customScrollbar/css/jquery.mCustomScrollbar.min.css'
+        'js/customScrollbar/css/jquery.mCustomScrollbar.min.css',
+        'css/jquery-ui.min.css',
+        'css/jquery-ui.theme.min.css'
     ];
 
     public $js = [
-        'js/jquery.js',
+        //'js/jquery.js',
         'js/content/jquery-ui.min.js',
         'js/jquery.mjs.nestedSortable-modified.js',
         'js/customScrollbar/jquery.mCustomScrollbar.min.js',
