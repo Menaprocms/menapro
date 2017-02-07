@@ -4,16 +4,13 @@
 
 $(document).ready(function () {
 	cms.availablePages=availablePages;
-    console.log('doc ready menacoreE');
     cms.fillLangArray();
     cms.init();
-
 });
 
 
 var cms = {
     options: {
-        //file_aux: '',
         autosave: false,
         tiny: 0,
         cms_id: 0,
@@ -21,7 +18,6 @@ var cms = {
         debug: false,
         last_copy: '',
         work_in: {row: 0, col: 0, lang: 0},
-        //link: {type: 0},
         social: {type: ''},
         uploader: '',
         hasChanges: false,
@@ -40,10 +36,6 @@ var cms = {
             themes: '../themes/'
 
         },
-        //_templates: '',
-        //_icons: '',
-        //_themes: [],
-        //_rowOptionsByTheme: {},
         _langs: []
     },
     model: {},

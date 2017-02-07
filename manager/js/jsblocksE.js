@@ -416,6 +416,7 @@ var JSBlocks = {
      */
     loadData: function () {
         if (this.getCurrentTarget().content) {
+            console.log(this.getCurrentTarget().content);
             this.getCurBlock().data = $.extend(true, {}, this.getCurrentTarget().content)
         } else {
             this.copyBasicData();
@@ -455,6 +456,7 @@ var JSBlocks = {
                     }
                 } else {
                     var el = $(selector);
+                    self.log(el);
                     if (el.length) {
                         self._setInputValue(el, v);
                     } else {
@@ -473,13 +475,17 @@ var JSBlocks = {
      * @private
      */
     _loadArrayData: function (param) {
+
+
         var cb = this.getCurBlock();
+
         var cont = $('#' + cb.name + '_' + param);
         $.each(cb.data[param], function (k, v) {
             var li = $('<li>', {
                 class: 'list-group-item ' + cb.name + '_' + param
             }).appendTo(cont);
             var html = cb['get' + param + 'licontent'](k, v, li);
+
             li.html(html);
         });
     },
@@ -614,7 +620,9 @@ var JSBlocks = {
                     el.val(value ? value : "");
                 }
                 break;
-
+            case "SPAN":
+                el.html(value);
+                break;
             case "TEXTAREA":
             case "SELECT":
                 el.val(value);
@@ -656,6 +664,9 @@ var JSBlocks = {
             case "TEXTAREA":
             case "SELECT":
                 return el.val();
+                break;
+            case "SPAN":
+                return el.html().trim();
                 break;
             default:
                 this.log("Unrecognized tag type " + el.prop("tagName") + " - < This was the tag", 'warn');
@@ -723,9 +734,9 @@ var JSBlocks = {
 
             self.log("Start collecting data", "info");
 
-
             if (self.hasFunction("collect" + k)) {
                 self.log("Calling collect" + k + "() of " + self.currentBlock, "info");
+
                 cb['collect' + k](v);
             } else {
                 var selector = "#" + cb.name + "_" + k;
