@@ -416,7 +416,6 @@ var JSBlocks = {
      */
     loadData: function () {
         if (this.getCurrentTarget().content) {
-            console.log(this.getCurrentTarget().content);
             this.getCurBlock().data = $.extend(true, {}, this.getCurrentTarget().content)
         } else {
             this.copyBasicData();
@@ -499,12 +498,17 @@ var JSBlocks = {
      * @private
      */
     _validateAndGet: function (param, key) {
+
         var sel = param + (typeof (key) != 'undefined' && key !== "" ? '_' + key : '');
         var value = this._getInputValue(sel);
-        if (typeof (this.getCurBlock().dataStructure[param]) != 'undefined' && typeof (this.getCurBlock().dataStructure[param].validator) != 'undefined') {
-            var validator = this.getCurBlock().dataStructure[param].validator;
-            if (!this._validate(validator, param, value)) {
-                var elm = $('#' + this.currentBlock + '_' + key);
+
+
+        if (typeof (this.getCurBlock().dataStructure[param]) != 'undefined' && (typeof (this.getCurBlock().dataStructure[param].validator) != 'undefined' || typeof (this.getCurBlock().dataStructure[param].required) != 'undefined'))  {
+            var validator = typeof this.getCurBlock().dataStructure[param].validator!= 'undefined'? this.getCurBlock().dataStructure[param].validator:false;
+            var required= typeof this.getCurBlock().dataStructure[param].required!= 'undefined'? this.getCurBlock().dataStructure[param].required:false;
+            if (!this._validate(validator,required, param, value)) {
+
+                var elm = $('#' + this.currentBlock +"_"+ sel);
                 this.setErrorClass('add', elm, param);
             }
         }
@@ -521,56 +525,61 @@ var JSBlocks = {
      * @returns {boolean} true if it is a valid value, false if it is not.
      * @private
      */
-    _validate: function (type, param, value) {
+    _validate: function (validator,required, param, value) {
         var check_ok = true;
-        switch (type) {
-            case 'number':
-                check_ok = true;
-                break;
-            case 'int':
-                check_ok = true;
-                break;
-            case 'float':
-                check_ok = true;
-                break;
-            case 'string':
-                check_ok = true;
-                value = value.trim();
-                break;
-            case 'boolean':
-                check_ok = true;
-                break;
-            case 'url':
-                check_ok = true;
-                break;
-            case 'date':
-                check_ok = true;
-                break;
-            case 'own':
-                if (this.hasFunction('validate' + param)) {
-                    check_ok = this.getCurBlock()['validate' + param](value);
-                } else {
+        if(validator!=false) {
+            switch (validator) {
+                case 'number':
                     check_ok = true;
-                }
-                break;
+                    break;
+                case 'int':
+                    check_ok = true;
+                    break;
+                case 'float':
+                    check_ok = true;
+                    break;
+                case 'string':
+                    check_ok = true;
+                    value = value.trim();
+                    break;
+                case 'boolean':
+                    check_ok = true;
+                    break;
+                case 'url':
+                    check_ok = true;
+                    break;
+                case 'date':
+                    check_ok = true;
+                    break;
+                case 'own':
+                    if (this.hasFunction('validate' + param)) {
+                        check_ok = this.getCurBlock()['validate' + param](value);
+                    } else {
+                        check_ok = true;
+                    }
+                    break;
 
+            }
+            if (!check_ok) {
+                this.errors.push('El parámetro ' + param + ' no es valido. Debe ser ' + type + '.');
+            }
         }
-        if (!check_ok) {
-            this.errors.push('El parámetro ' + param + ' no es valido. Debe ser ' + type + '.');
-        }
-        if (this.getCurBlock().dataStructure[param].required) {
-            if (param == 'elink') {
-                if (value.type == 'none') {
-                    check_ok = false;
-                    this.errors.push('El parámetro ' + param + ' es requerido.');
-                }
-            } else {
-                if (value == "") {
-                    check_ok = false;
-                    this.errors.push('El parámetro ' + param + ' es requerido.');
+        if(required!=false) {
+            if (this.getCurBlock().dataStructure[param].required) {
+
+                if (param == 'elink') {
+                    if (value.type == 'none') {
+                        check_ok = false;
+                        this.errors.push('El parámetro ' + param + ' es requerido.');
+                    }
+                } else {
+                    if (value == "") {
+
+                        check_ok = false;
+                        this.errors.push('El parámetro ' + param + ' es requerido.');
+                    }
                 }
             }
-
         }
         return check_ok;
     },
@@ -583,7 +592,7 @@ var JSBlocks = {
         var self = this;
         var paramData = this.popCommonOptions(param);
 
-        if ($.isEmptyObject(paramData)) {//|| param=='elink'
+        if ($.isEmptyObject(paramData)) {
             return 'string';
         } else {
             return 'object';
@@ -643,6 +652,7 @@ var JSBlocks = {
      */
     _getInputValue: function (key) {
         var el = $('#' + this.currentBlock + '_' + key);
+
         switch (el.prop("tagName")) {
             case "DIV":
                 if (el.prop('class').indexOf('_elink') != -1) {
@@ -680,6 +690,7 @@ var JSBlocks = {
      * @param el element with error
      */
     setErrorClass: function (action, el, param) {
+
         if (this.hasFunction("setErrorClass" + param)) {
             this.getCurBlock()['setErrorClass' + param](action, el);
         }
@@ -978,6 +989,7 @@ var JSBlocks = {
      * @returns {*|jQuery|HTMLElement} linkButton element
      */
     linkButton: function (block, param, index, content, container, append) {
+
         var with_cont = true;
         if (content == '' || typeof(content) == 'undefined' || typeof(content.elink) == 'undefined') {
             with_cont = false;
@@ -1255,6 +1267,7 @@ var JSBlocks = {
      * @returns object which contains linkButton data like this {{type: *, url: *, page: *, newpage: *}}
      */
     getLinkData: function (container) {
+
         var type = container.find('[class*="_elink_type"]').val();
         var selectPage = container.find('[class*="_elink_page"]');
         var urlInput = container.find('[class*="_elink_url"]');
