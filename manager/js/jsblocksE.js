@@ -399,14 +399,18 @@ var JSBlocks = {
         var cb = this.getCurBlock();
         var self = this;
 
+        cb.data = {};
         $.each(cb.dataStructure, function (k, v) {
-            cb.data = {};
+
+
             if (self.checkParamType(k) == "object") {
+
                 cb.data[k] = [];
             } else {
                 cb.data[k] = null;
             }
         });
+
     },
     /**
      * @todo: Create col structure must set content to null by default
@@ -751,6 +755,7 @@ var JSBlocks = {
                 cb['collect' + k](v);
             } else {
                 var selector = "#" + cb.name + "_" + k;
+
                 if (self.checkParamType(k) == "object") {
                     self.log("Es un objeto");
                     self._collectObjectData(cb, selector, k);
@@ -1337,6 +1342,5 @@ var JSBlocks = {
         }
 
     }
-
 
 };
