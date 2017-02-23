@@ -153,7 +153,7 @@ var JSBlocks = {
                 self.log("The block " + k + " have not the property group defined", 'error');
                 return false;
             }
-
+            console.log()
             if (typeof v.getIcon == "function") {
                 self.categories[v.group].push(v.getIcon())
             } else {
@@ -804,6 +804,7 @@ var JSBlocks = {
      * @returns {boolean}
      */
     hasFunction: function (name) {
+
         return typeof this.getCurBlock()[name] == "function";
     },
     /**
@@ -955,7 +956,13 @@ var JSBlocks = {
         if (append) {
             icon.appendTo(container);
         }
-        container.banana(JSBlocks.getIconBananaSettings(target));
+        var settings="";
+        if (typeof JSBlocks.blocks[block]["getIconBananaSettings"] == "function") {
+            settings=JSBlocks.blocks[block]["getIconBananaSettings"](target);
+        }else{
+            settings=JSBlocks.getIconBananaSettings(target);
+        }
+        container.banana(settings);
         if (!append) {
             return icon;
         }
