@@ -29,7 +29,7 @@ var cp = {
             //This function is bigger so moved to main class
             cms.loadPageCallback(data, sender);
         },
-		cb_deletelang:function(data,sender){
+        cb_deletelang:function(data,sender){
             if(data.success){
                 $('#lang_item_'+data.id_lang).remove();
                 $('#tlang_'+data.id_lang).remove();
@@ -75,19 +75,19 @@ var cp = {
                 cms.modelLang=data.model;
                 sender.val(data.model.link_rewrite);
                 cms.model.link_rewrite = data.link_rewrite;
-                var regExp=/New(\s|-)Page(\s|-)[\d]{1,3}/i;
+                //var regExp=/New(\s|-)Page(\s|-)[\d]{1,3}/i;
                 var liveviewlink=$('#submitLiveview');
                 var link=$("#contentlang-link_rewrite");
-                if(liveviewlink.data('url').match(regExp) != null)
-                {
-                    var nUrl=liveviewlink.data('url').split("/");
-                    var l=nUrl.length - 1;
-                    nUrl[l]=link.val()+'.html';
+                //if(liveviewlink.data('url').match(regExp) != null)
+                //{
+                var nUrl=liveviewlink.data('url').split("/");
+                var l=nUrl.length - 1;
+                nUrl[l]=link.val()+'.html';
 
-                    var res= nUrl.join('/');
-                    liveviewlink.data('url',res);
-                }
-                   
+                var res= nUrl.join('/');
+                liveviewlink.data('url',res);
+                //}
+
 
             }else{
                 sender.val(cms.modelLang.link_rewrite)
@@ -111,13 +111,13 @@ var cp = {
             var html=[];
             $.each(data.messages, function (k,v) {
 
-              if(k!=0)
-              {
-                  html.push($("<span>",{
-                      class:"label label-"+status[k],
-                      html: [v.length , "<i class='fa fa-exclamation-triangle'></i>"," "]
-                  }))
-              }
+                if(k!=0)
+                {
+                    html.push($("<span>",{
+                        class:"label label-"+status[k],
+                        html: [v.length , "<i class='fa fa-exclamation-triangle'></i>"," "]
+                    }))
+                }
 
             });
             cont.html(html);
@@ -163,6 +163,15 @@ var cp = {
                     if(thumbtext.html().match(regExp) != null)
                     {
                         thumbtext.html(data.model.title)
+                    }
+                    if(liveviewlink.data('url').match(regExp) != null)
+                    {
+                        var nUrl=liveviewlink.data('url').split("/");
+                        var l=nUrl.length - 1;
+                        nUrl[l]=link.val()+'.html';
+
+                        var res= nUrl.join('/');
+                        liveviewlink.data('url',res);
                     }
                 }
 
@@ -269,7 +278,7 @@ var cp = {
                     })
                     ]
                 }).appendTo('#selLang');
-            
+
                 $('<li>', {
                     id: 'lang_item_' + data.id,
                     class: 'list-group-item',
@@ -314,13 +323,13 @@ var cp = {
 
         },
         cb_toggleactivelang:function(data,sender){
-		
+
             var el=$('#lang_item_'+data.id).find('span');
             if(data.status==0){
                 $('#tlang_'+data.id).remove();
                 $('#lang_'+data.id).closest('li').remove();
             }else{
-             
+
                 $('<li>',{
                     class:'list-group-item',
                     html:[$('<input>',{
@@ -706,9 +715,9 @@ var cp = {
                     cp._appendAjaxError(sender, data.error);
                     return;
                 }
-				if (typeof(data.availablePages) != 'undefined') {
-                   cms.availablePages=JSON.parse(data.availablePages);
-                   JSBlocks.refreshAvailablePages();
+                if (typeof(data.availablePages) != 'undefined') {
+                    cms.availablePages=JSON.parse(data.availablePages);
+                    JSBlocks.refreshAvailablePages();
 
                 }
 
@@ -765,6 +774,7 @@ var cp = {
                 menacsrf: csrfToken
             }
         });
+
         $.ajax(config).fail(function (jqXHR, textStatus, errorThrown) {
             cp.log.error(jqXHR, textStatus, errorThrown);
         });
@@ -780,7 +790,7 @@ var cp = {
      */
     _getInputValue: function (el) {
         if(typeof(el.data('field'))!='undefined'){
-          el=$(el.data('field'));
+            el=$(el.data('field'));
         }
         switch ("Property name", el.prop("tagName")) {
             case "INPUT":

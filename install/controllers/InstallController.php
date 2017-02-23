@@ -5,8 +5,8 @@
 
 class InstallController
 {
-   public  $db;
-   public $installed_languages=[
+    public  $db;
+    public $installed_languages=[
         ["iso"=>"es-ES","name"=>"Español","id"=>1],
 
         ["iso"=>"en-US","name"=>"‭English (American)","id"=>2],
@@ -115,71 +115,74 @@ class InstallController
         die(json_encode($response));
     }
     public function runAction($action){
-		date_default_timezone_set('UTC');
+        date_default_timezone_set('UTC');
         $baseDir = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' : 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
         $partial=false;
         $success=false;
         switch($action) {
             case 'index':
 
-                 $checkWritable = array();
-                 $checkWritable[]=__DIR__.'/../../config/config_data.php';
-                 $checkWritable[]=__DIR__.'/../../config/core_routes.php';
-                 $checkWritable[]=__DIR__.'/../../config/core_hashes.php';
-                 $checkWritable[]=__DIR__.'/../../config/';
-                 $checkWritable[]=__DIR__.'/../../manager/';
-                 $checkWritable[]=__DIR__.'/../../manager/assets/';
-                 $checkWritable[]=__DIR__.'/../../'.CORE_ROUTE.'/';
-                 $checkWritable[]=__DIR__.'/../';//install
-                 $checkWritable[]=__DIR__.'/../../';//rootfolder
+                $checkWritable = array();
+                $checkWritable[]=__DIR__.'/../../config/config_data.php';
+                $checkWritable[]=__DIR__.'/../../config/core_routes.php';
+                $checkWritable[]=__DIR__.'/../../config/core_hashes.php';
+                $checkWritable[]=__DIR__.'/../../config/';
+                $checkWritable[]=__DIR__.'/../../manager/';
+                $checkWritable[]=__DIR__.'/../../manager/assets/';
+                $checkWritable[]=__DIR__.'/../../'.CORE_ROUTE.'/';
+                $checkWritable[]=__DIR__.'/../';//install
+                $checkWritable[]=__DIR__.'/../../';//rootfolder
 
 
-                 $give_permissions=array();
+                $give_permissions=array();
 
-                 $permissions_ok=true;
-                 foreach($checkWritable as $k=>$v){
+                $permissions_ok=true;
+
+                $baseToReplace=$_SERVER['DOCUMENT_ROOT'];
+                foreach($checkWritable as $k=>$v){
                     if(!is_writable($v)){
                         $permissions_ok=false;
-                        $give_permissions[]=$v;
+
+                        $give_permissions[]=str_replace($baseToReplace,'',realpath($v));
                     }
                 }
-               if($permissions_ok) {
+                if($permissions_ok) {
 
-                   if(is_dir(__DIR__ . '/../../menacore')) {
-                       $oldname = __DIR__ . '/../../menacore';
-                       $newName = $this->generate_random_password(6);
+                    if(is_dir(__DIR__ . '/../../menacore')) {
+                        $oldname = __DIR__ . '/../../menacore';
+                        $newName = $this->generate_random_password(6);
 
 
-                       if (!$rename = @rename($oldname, $oldname . $newName)) {
-                           echo 'Could not rename menacore folder';
-                       } else {
-                           $path = __DIR__ . '/../../config/core_routes.php';
-                           $text = "<?php
+                        if (!$rename = @rename($oldname, $oldname . $newName)) {
+                            echo 'Could not rename menacore folder';
+                        } else {
+                            $path = __DIR__ . '/../../config/core_routes.php';
+                            $text = "<?php
 
                         if(defined('MENAPRO675')){
                                 defined('CORE_ROUTE') or define('CORE_ROUTE','menacore" . $newName . "');
                             }else{
                             die();
                         }";
-                           if (file_put_contents($path, $text) == false) {
-                               echo 'no copia el archivo core_routes.php';
-                           }
-                       }
-                   }
-                   $view = 'index.php';
-                   include(__DIR__ . '/../views/layouts/main.php');
+                            if (file_put_contents($path, $text) == false) {
+                                echo 'no copia el archivo core_routes.php';
+                            }
+                        }
+                    }
+                    $view = 'index.php';
+                    include(__DIR__ . '/../views/layouts/main.php');
                 }else{
-                   if(sizeof($give_permissions)>1){
-                       $html="Please give permissions to these files:<br>";
-                   }else{
-                       $html="Please give permissions to this file:<br>";
-                   }
+                    if(sizeof($give_permissions)>1){
+                        $html="Please give permissions to these files:<br>";
+                    }else{
+                        $html="Please give permissions to this file:<br>";
+                    }
 
-                   foreach($give_permissions as $k=>$v){
-                       $html.= '- '.$v.'<br>';
+                    foreach($give_permissions as $k=>$v){
+                        $html.= '- '.$v.'<br>';
 
-                   }
-                   echo $html;
+                    }
+                    echo $html;
                 }
                 break;
             case 'license';
@@ -199,7 +202,7 @@ class InstallController
                 $this->jsonResponse(true,array('view'=>$view));
                 break;
             case 'secondstep':
-               $this->secondstep();
+                $this->secondstep();
                 break;
             case 'checkdb':
                 $data=$_POST['data'];
@@ -302,70 +305,75 @@ class InstallController
         $db=$this->getConnectionDb($data);
         $prefix=$data['db_prefix'];
         $query="UPDATE ".$prefix."configuration SET value='".$id_lang."' WHERE name LIKE '_DEFAULT_LANG_'";
-       if(!$db->query($query)){
-           $db->close();
-           return false; 
-       }
-       $db->close();
-       return true;
+        if(!$db->query($query)){
+            $db->close();
+            return false;
+        }
+        $query2="UPDATE ".$prefix."language SET active=1 WHERE id_lang=".$id_lang.";";
+        if(!$db->query($query2)){
+            $db->close();
+            return false;
+        }
+        $db->close();
+        return true;
     }
-	 public function otherLangDbData($data){
-		$prefix=$data['db_prefix'];
-		$lang=$data['language'];
+    public function otherLangDbData($data){
+        $prefix=$data['db_prefix'];
+        $lang=$data['language'];
         $lang=$this->findLangData($lang);
 
         $iso=explode("-",$lang['iso']);
 
         $country_code=$iso[1];
         $iso=$iso[0];
-  
-		$db=$this->getConnectionDb($data);
-        $query="INSERT INTO ".$prefix."language (`id_lang`, `iso_code`, `country_code`, `name`, `img`,`active`) VALUES ('5','".$iso."','".$country_code."','".$lang['name']."','other.png','1')";       
-	   if(!$db->query($query)){
 
-		   return false;  
-	   }else{
-		    $query2="SELECT * FROM ".$prefix."block_lang WHERE id_lang=2";       
-		   if(!$result=$db->query($query2)){
-			   return false;
-		   }else{
-			  while ($row = mysqli_fetch_array($result)) {
-					$id_block=$row['id_block'];
-					$name=$row['name'];		
-				    $query="INSERT INTO ".$prefix."block_lang (`id_block`, `id_lang`, `name`) VALUES ('".$id_block."','5','".$name."')";
-					if(!$db->query($query)){
-						return false;
-					}		
-			  }
-			  $query3="SELECT * FROM ".$prefix."content_lang WHERE id_lang=2";
-			  if(!$result2=$db->query($query3)){
-					return false;
-			  }else{
-				    while ($row = mysqli_fetch_array($result2)) {
-						$id_content=$row['id_content'];
-						$title=$row['title'];		
-						$meta_title=$row['meta_title'];		
-						$meta_description=$row['meta_description'];		
-						$link_rewrite=$row['link_rewrite'];		
-						$menu_text=$row['menu_text'];		
-						$query="INSERT INTO ".$prefix."content_lang (`id_block`, `id_lang`, `title`, `meta_title`, `meta_description`, `link_rewrite`, `menu_text`) VALUES ('".$id_content."','5','".$title."','".$meta_title."','".$meta_description."','".$link_rewrite."','".$menu_text."')";       		
-						if(!$db->query($query)){
-							return false;
-						}	
-				  }
-			  }
-			
-		   }
-		   $db->close();
-           if($this->setDefaultLang(5,$data)){
-                 return true;
-           }
-           return false;
-		  
-	   }		
-         
+        $db=$this->getConnectionDb($data);
+        $query="INSERT INTO ".$prefix."language (`id_lang`, `iso_code`, `country_code`, `name`, `img`,`active`) VALUES ('5','".$iso."','".$country_code."','".$lang['name']."','other.png','0')";
+        if(!$db->query($query)){
+
+            return false;
+        }else{
+            $query2="SELECT * FROM ".$prefix."block_lang WHERE id_lang=2";
+            if(!$result=$db->query($query2)){
+                return false;
+            }else{
+                while ($row = mysqli_fetch_array($result)) {
+                    $id_block=$row['id_block'];
+                    $name=$row['name'];
+                    $query="INSERT INTO ".$prefix."block_lang (`id_block`, `id_lang`, `name`) VALUES ('".$id_block."','5','".$name."')";
+                    if(!$db->query($query)){
+                        return false;
+                    }
+                }
+                $query3="SELECT * FROM ".$prefix."content_lang WHERE id_lang=2";
+                if(!$result2=$db->query($query3)){
+                    return false;
+                }else{
+                    while ($row = mysqli_fetch_array($result2)) {
+                        $id_content=$row['id_content'];
+                        $title=$row['title'];
+                        $meta_title=$row['meta_title'];
+                        $meta_description=$row['meta_description'];
+                        $link_rewrite=$row['link_rewrite'];
+                        $menu_text=$row['menu_text'];
+                        $query="INSERT INTO ".$prefix."content_lang (`id_block`, `id_lang`, `title`, `meta_title`, `meta_description`, `link_rewrite`, `menu_text`) VALUES ('".$id_content."','5','".$title."','".$meta_title."','".$meta_description."','".$link_rewrite."','".$menu_text."')";
+                        if(!$db->query($query)){
+                            return false;
+                        }
+                    }
+                }
+
+            }
+            $db->close();
+            if($this->setDefaultLang(5,$data)){
+                return true;
+            }
+            return false;
+
+        }
+
     }
-	/*This function is not used*/
+    /*This function is not used*/
     /*public function getDbBasicData($prefix,$lang){
 
         $lang=$this->findLangData($lang);
@@ -430,16 +438,16 @@ class InstallController
         if (function_exists('random_bytes')) {
             $key= random_bytes($length);
         }else{
-           if(function_exists('openssl_random_pseudo_bytes')){
+            if(function_exists('openssl_random_pseudo_bytes')){
 
-               $key=openssl_random_pseudo_bytes($length,$cryptoStrong);
-               if ($cryptoStrong === false) {
-                   $this->jsonResponse(false,['errormsg'=>'openssl_random_pseudo_bytes() set $crypto_strong false. Your PHP setup is insecure.']);
-               }
+                $key=openssl_random_pseudo_bytes($length,$cryptoStrong);
+                if ($cryptoStrong === false) {
+                    $this->jsonResponse(false,['errormsg'=>'openssl_random_pseudo_bytes() set $crypto_strong false. Your PHP setup is insecure.']);
+                }
 
             }
         }
-       return strtr(substr(base64_encode($key), 0, $length), '+/', '_-');
+        return strtr(substr(base64_encode($key), 0, $length), '+/', '_-');
     }
     public function generatePasswordHash($password, $cost = null)
     {
@@ -479,7 +487,7 @@ class InstallController
     public function createUser($data){
 
         $hash = $this->generatePasswordHash($data['password']);
-        
+
         $username=$data['user'];
         $email=$data['email'];
 
@@ -507,7 +515,7 @@ class InstallController
             if(!$db->query($query)){
                 return false;
             }else{
-				$db->close();
+                $db->close();
                 return true;
             }
 
@@ -532,7 +540,7 @@ class InstallController
                 $db1=$this->getConnectionDb($data);
                 $query='SELECT * FROM '.$prefix.$table;
                 $cols = $db1->query($query);
-				
+
                 if($cols->num_rows < $ncols){
                     $ok=false;
                 }
@@ -553,40 +561,40 @@ class InstallController
     }
     public function delete_directory($dirname,&$deleted)
     {
-		if(!is_link($dirname)){
-			if (is_dir($dirname)) {
-				@chmod($dirname, 0777);
-				$dir_handle = opendir($dirname);
-			}
-			if (!$dir_handle)
-				return false;
-			while ($file = readdir($dir_handle)) {
-				if ($file != "." && $file != "..") {
-					if (!is_dir($dirname . "/". $file)) {
-					
-						@chmod($dirname . "/" . $file, 0777);
-						$deleted[$dirname][]= "/" .$file;
-						if (!@unlink($dirname . "/" . $file)) {
-							
-							return false;
-						}else{
-							$deleted['files_deleted'][]=$dirname . "/". $file;
-						}
-					} else {
-						$deleted['id_dir'][]=$dirname ."/". $file;
-						$this->delete_directory($dirname ."/". $file,$deleted);
-					}
-				}
-			}
-			closedir($dir_handle);
-			if (!@rmdir($dirname)) {
-				return false;
-			} else {
-				return true;
-			}
-		}else{
-			return false;
-		}
+        if(!is_link($dirname)){
+            if (is_dir($dirname)) {
+                @chmod($dirname, 0777);
+                $dir_handle = opendir($dirname);
+            }
+            if (!$dir_handle)
+                return false;
+            while ($file = readdir($dir_handle)) {
+                if ($file != "." && $file != "..") {
+                    if (!is_dir($dirname . "/". $file)) {
+
+                        @chmod($dirname . "/" . $file, 0777);
+                        $deleted[$dirname][]= "/" .$file;
+                        if (!@unlink($dirname . "/" . $file)) {
+
+                            return false;
+                        }else{
+                            $deleted['files_deleted'][]=$dirname . "/". $file;
+                        }
+                    } else {
+                        $deleted['id_dir'][]=$dirname ."/". $file;
+                        $this->delete_directory($dirname ."/". $file,$deleted);
+                    }
+                }
+            }
+            closedir($dir_handle);
+            if (!@rmdir($dirname)) {
+                return false;
+            } else {
+                return true;
+            }
+        }else{
+            return false;
+        }
 
     }
     /****************INSTALL STEPS*********************/
@@ -599,41 +607,41 @@ class InstallController
                 if(!$query=$this->getDbStructure($data['db_prefix'])){
                     $this->jsonResponse(false,['errormsg'=>'Error get db structure']);
                 }else{
-                   if(!$db=$this->getConnectionDb($data)){
+                    if(!$db=$this->getConnectionDb($data)){
 
-                       $this->jsonResponse(false,['errormsg'=>'Error getting connection db. ']);
-                   }else{
-					$db->set_charset("utf8");
-                    if(!$db->multi_query($query)){
-                        $this->jsonResponse(false,['errormsg'=>'Error trying to create db structure. '.var_dump($db->error_list)]);
+                        $this->jsonResponse(false,['errormsg'=>'Error getting connection db. ']);
                     }else{
-						do{						  
-						} while ($db->more_results() && $db->next_result());
+                        $db->set_charset("utf8");
+                        if(!$db->multi_query($query)){
+                            $this->jsonResponse(false,['errormsg'=>'Error trying to create db structure. '.var_dump($db->error_list)]);
+                        }else{
+                            do{
+                            } while ($db->more_results() && $db->next_result());
 
-						$lang=$this->findLangData($data['language']);
-						if(!$lang || !(isset($lang['id']))){
-							//si no es lang de los que vienen por defecto							
-							if(!$d=$this->otherLangDbData($data)){
-								$this->jsonResponse(false,['errormsg'=>'Error writing lang fields.'.var_dump($d)]);
-							}
-						}else{
-                           if(!$this->setDefaultLang($lang['id'],$data)){
-                                $this->jsonResponse(false,['errormsg'=>'Error setting default lang']);
+                            $lang=$this->findLangData($data['language']);
+                            if(!$lang || !(isset($lang['id']))){
+                                //si no es lang de los que vienen por defecto
+                                if(!$d=$this->otherLangDbData($data)){
+                                    $this->jsonResponse(false,['errormsg'=>'Error writing lang fields.'.var_dump($d)]);
+                                }
+                            }else{
+                                if(!$this->setDefaultLang($lang['id'],$data)){
+                                    $this->jsonResponse(false,['errormsg'=>'Error setting default lang']);
+                                }
                             }
+                            if($this->createUser($data)){
+                                if($this->checkIntegrity($data)){
+                                    $this->finishstep();
+                                }else{
+                                    $this->jsonResponse(false,['errormsg'=>'Error integrity']);
+                                }
+                            }else{
+                                $this->jsonResponse(false,['errormsg'=>'Error creating user '.$this->db]);
+                            }
+
                         }
-						if($this->createUser($data)){
-							if($this->checkIntegrity($data)){
-								$this->finishstep();
-							}else{
-								$this->jsonResponse(false,['errormsg'=>'Error integrity']);
-							}
-						}else{
-							$this->jsonResponse(false,['errormsg'=>'Error creating user '.$this->db]);
-						}
-						
-					}
-				}
-              }
+                    }
+                }
             }else{
                 $this->jsonResponse(false,['errormsg'=>'Error writing config data']);
             }
@@ -658,7 +666,7 @@ class InstallController
         $this->jsonResponse(true,['rename' => $rename, 'delete' => false, 'newname' => $newName,'view'=>$view]);
     }
     public function removeinstall(){
-		$deleted=[];
+        $deleted=[];
         $delete_dir =realpath(__DIR__.'/../../install');
         $delete_install =$this->delete_directory($delete_dir,$deleted);
         if($delete_install){
@@ -671,6 +679,6 @@ class InstallController
 
 
     }
-  /**************************************************************/
+    /**************************************************************/
 }
 

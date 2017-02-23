@@ -219,7 +219,7 @@ INSERT INTO `{PREFIX}configuration` (`id_configuration`, `name`, `value`) VALUES
 (20, '_ENABLE_CACHE_', '0');
 
 INSERT INTO `{PREFIX}language` (`id_lang`, `iso_code`, `country_code`, `name`, `img`,`active`) VALUES
-(1, 'es', 'ES', 'Castellano', 'es.png',1),
-(2, 'en', 'US', 'English', 'en.png',1),
-(3, 'de', 'DE', 'Deutsch', 'de.png',1),
-(4, 'fr', 'FR', 'Français', 'fr.png',1); 
+(1, 'es', 'ES', 'Castellano', 'es.png',0),
+(2, 'en', 'US', 'English', 'en.png',0),
+(3, 'de', 'DE', 'Deutsch', 'de.png',0),
+(4, 'fr', 'FR', 'Français', 'fr.png',0);
