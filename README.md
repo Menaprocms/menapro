@@ -1,3 +1,5 @@
+[[https://github.com/Menaprocms/menapro/blob/master/img/logo.png|alt=MenaPro]]
+
 Menapro
 =======
 
