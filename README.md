@@ -1,4 +1,4 @@
-[[https://github.com/Menaprocms/menapro/blob/master/img/logo.png|alt=MenaPro]]
+![alt tag](https://github.com/Menaprocms/menapro/blob/master/img/logo.png)
 
 Menapro
 =======
