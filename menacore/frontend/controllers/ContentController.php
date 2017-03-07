@@ -264,6 +264,7 @@ class ContentController extends Controller
                     'model' => $model,
                     'proCmsData' => $eData,
                     'userLang' => $lang,
+                    'theme'=>$theme,
                     'activePage'=>$this->activePage,
                     'defaultLang'=>Yii::$app->params['default_lang'],
                     'show_signing' => true,
@@ -293,14 +294,6 @@ class ContentController extends Controller
         }else{
 
             $this->actionNotfound();
-//            $theme =$this->config['_DEFAULT_THEME_'];
-//            Yii::$app->view->theme = Yii::createObject([
-//                'class' => '\yii\base\Theme',
-//                'baseUrl' => '@menaThemes/' . $theme,
-//                'basePath' => '@menaThemes/' . $theme,
-//                'pathMap' => ['@app/views' => '@menaThemes/' . $theme . '/views'],
-//            ]);
-//            throw new \yii\web\NotFoundHttpException(Yii::t('app','The requested page does not exist.'));
         }
 
     }
