@@ -70,6 +70,7 @@ var proB = {
     },
     _triggerOutClick: function () {
         $(document).click(function (event) {
+
             if ($(proB.uid).is(":visible") && !proB.locked) {
                 if (!$(event.target).closest(proB.uid).length
                     && event.target != $('div[class*="mce"]')
@@ -77,6 +78,7 @@ var proB = {
                     && !$(event.target).closest('div[id="banana"]').length
                     && !$(event.target).closest('.gmap_autocomplete').length
                     && !$(event.target).closest('.gmapmulti_autocomplete').length
+                    && !$(event.target).find('.sp-container').length//for colorpicker box
 
                 //&& !$(event.target).closest('#bestsByCategory').length
                     //&& !$(event.target).closest('.tt-suggestion').length

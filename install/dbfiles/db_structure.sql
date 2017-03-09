@@ -73,6 +73,30 @@ CREATE TABLE `{PREFIX}user` (
   `updated_at` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+CREATE TABLE `{PREFIX}news_post` (
+  `id` int(11) NOT NULL,
+  `title` varchar(128) NOT NULL,
+  `friendly_url` varchar(128) NOT NULL,
+  `content` text NOT NULL,
+  `author` int(11) NOT NULL,
+  `published` int(11) NOT NULL,
+  `date_add` datetime NOT NULL,
+  `date_upd` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `{PREFIX}news_post_tag` (
+  `id_tag` int(11) NOT NULL,
+  `id_post` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `{PREFIX}news_tag` (
+  `id` int(11) NOT NULL,
+  `id_lang` int(11) NOT NULL,
+  `name` varchar(128) NOT NULL,
+  `friendly_url` varchar(128) NOT NULL,
+  `description` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 
 ALTER TABLE `{PREFIX}block`
   ADD PRIMARY KEY (`id`);
@@ -114,7 +138,22 @@ ALTER TABLE `{PREFIX}user`
   ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
   
 ALTER TABLE `{PREFIX}user`  
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;  
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `{PREFIX}news_post`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `{PREFIX}news_post_tag`
+  ADD PRIMARY KEY (`id_tag`,`id_post`);
+
+ALTER TABLE `{PREFIX}news_tag`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `{PREFIX}news_post`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+ALTER TABLE `{PREFIX}news_tag`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
  
 INSERT INTO `{PREFIX}block` (`id`, `prefix`, `active`, `configurable`, `position`, `version`, `block_default`, `date_upd`) VALUES
 (1, 'call2action', 1, 1, 0, '0.1',1, '2016-04-06 09:21:36'),
@@ -131,7 +170,8 @@ INSERT INTO `{PREFIX}block` (`id`, `prefix`, `active`, `configurable`, `position
 (12, 'line', 1, 0, 0, '0.1',1, '2016-04-06 09:23:09'),
 (13, 'googlemap', 1, 1, 0, '0.1',1, '2016-04-06 09:23:09'),
 (14, 'customhtml', 1, 1, 0, '0.1',1, '2016-04-06 09:23:09'),
-(15, 'contactdata', 1, 1, 0, '0.1',1, '2016-04-06 09:23:09');
+(15, 'contactdata', 1, 1, 0, '0.1',1, '2016-04-06 09:23:09'),
+(16, 'news', 1, 1, 0, '0.1',1, '2016-04-06 09:23:09');
 
 
 INSERT INTO `{PREFIX}block_lang` (`id_block`, `id_lang`, `name`) VALUES
@@ -150,6 +190,7 @@ INSERT INTO `{PREFIX}block_lang` (`id_block`, `id_lang`, `name`) VALUES
 (13, 1, 'Mapa Google'),
 (14, 1, 'Custom Html'),
 (15, 1, 'Datos de contacto'),
+(16, 1, 'Noticias'),
 (1, 2, 'Call to action'),
 (2, 2, 'Dailymotion'),
 (3, 2, 'Gallery'),
@@ -165,6 +206,7 @@ INSERT INTO `{PREFIX}block_lang` (`id_block`, `id_lang`, `name`) VALUES
 (13, 2, 'Google Map'),
 (14, 2, 'Custom Html'),
 (15,2, 'Contact data'),
+(16,2, 'News'),
 (1, 3, 'Aufruf zum Handeln'),
 (2, 3, 'Dailymotion'),
 (3, 3, 'Galerie'),
@@ -180,6 +222,7 @@ INSERT INTO `{PREFIX}block_lang` (`id_block`, `id_lang`, `name`) VALUES
 (13, 3, 'Google Karte'),
 (14, 3, 'Brauch Html'),
 (15,3, 'Kontaktdaten'),
+(16,3, 'Nachrichten'),
 (1, 4, 'Appel à l&#39action'),
 (2, 4, 'Dailymotion'),
 (3, 4, 'Galerie'),
@@ -194,7 +237,8 @@ INSERT INTO `{PREFIX}block_lang` (`id_block`, `id_lang`, `name`) VALUES
 (12, 4, 'Ligne'),
 (13, 4, 'Google Map'),
 (14, 4, 'Html personnalisé'),
-(15,4, 'Données de contact');
+(15,4, 'Données de contact'),
+(16,4, 'Informations');
 
 INSERT INTO `{PREFIX}configuration` (`id_configuration`, `name`, `value`) VALUES
 (1, '_DEFAULT_THEME_', 'starter'),

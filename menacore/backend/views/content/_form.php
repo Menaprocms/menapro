@@ -8,6 +8,12 @@ use backend\assets\ContentAsset;
 /* @var $this yii\web\View */
 /* @var $model common\models\Content */
 /* @var $form yii\widgets\ActiveForm */
+$msgs = [
+    "show_in_menu_text" => Yii::t('app', 'The page will appear in menu as'),
+    "not_show_in_menu_text" => Yii::t('app', 'The page will not be available in menu'),
+    'copyFrom' => Yii::t('app', 'Copy structure from ')
+];
+$this->registerJs("var menacoreE_lang=" . json_encode($msgs) . ";", $this::POS_END, "menacoreE_lang");
 
 if($menapro_lastversion!=false && $menapro_lastversion > $menapro_currentversion) {
     ?>

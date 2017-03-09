@@ -36,6 +36,7 @@ use common\models\Content;
 use common\models\ContentLang;
 use common\models\Block;
 use common\models\Language;
+use common\models\Tag;
 use common\models\Configuration;
 use common\components\ProcmsCommon;
 use yii\data\ActiveDataProvider;
@@ -107,7 +108,6 @@ class ContentController extends Controller
             'baseDir' => Yii::$app->request->baseUrl,
             'langs' => $lngA,
             'protocol' => "http://",
-            'copyFrom' => Yii::t('app', 'Copy structure from '),
             'theme_default' => $theme,
             'csrfToken' => Yii::$app->request->getCsrfToken(),
             'uTok' => LIVEVIEW_HASH,
@@ -493,39 +493,62 @@ class ContentController extends Controller
         $curL = (int)$post['work_lang'];
 
 
-        $id = $post['id'];
+        $id = (int)$post['id'];
 
         Yii::$app->session['_worklang'] = $curL;
         Yii::$app->params['app_lang'] = $curL;
 
-        $model = $this->findModel($id);
 
         $urlPrefix = "";
         if (Yii::$app->session['_worklang'] != $this->default_lang) {
             $urlPrefix = Yii::$app->params['active_langs'][Yii::$app->session['_worklang']]['iso_code'] . "/";
         }
 
+        if ($id != false) {
 
-        if (sizeof($model->langFields) == 0) {
-            $model_lang = new ContentLang();
-            $dataL['ContentLang']['id_lang'] = $curL;
-            $dataL['ContentLang']['id_content'] = $id;
-            $dataL['ContentLang']['title'] = 'New Page ' . $id;
-            $dataL['ContentLang']['menu_text'] = 'New Page ' . $id;
-            $dataL['ContentLang']['meta_title'] = 'New Page ' . $id;
-            $dataL['ContentLang']['link_rewrite'] = 'new-page-' . $id;
+            $model = $this->findModel($id);
+
+            if (sizeof($model->langFields) == 0) {
+                $model_lang = new ContentLang();
+                $dataL['ContentLang']['id_lang'] = $curL;
+                $dataL['ContentLang']['id_content'] = $id;
+                $dataL['ContentLang']['title'] = 'New Page ' . $id;
+                $dataL['ContentLang']['menu_text'] = 'New Page ' . $id;
+                $dataL['ContentLang']['meta_title'] = 'New Page ' . $id;
+                $dataL['ContentLang']['link_rewrite'] = 'new-page-' . $id;
 
 
-            if ($model_lang->load($dataL) && $model_lang->save()) {
-                die(json_encode(array('success' => true, 'session_lang' => Yii::$app->session['_worklang'], 'urlPrefix' => $urlPrefix, 'modelLang' => $model->langFields[0]->getAttributes())));
+                if ($model_lang->load($dataL) && $model_lang->save()) {
+                    die(json_encode(array('success' => true, 'session_lang' => Yii::$app->session['_worklang'], 'urlPrefix' => $urlPrefix, 'modelLang' => $model->langFields[0]->getAttributes())));
+                } else {
+                    throw new \yii\web\HttpException(500, Yii::t('app', 'Error updating page language'));
+
+                }
+
             } else {
-                throw new \yii\web\HttpException(500, Yii::t('app', 'Error updating page language'));
+                die(json_encode(array(
+                    'success' => true, 'urlPrefix' => $urlPrefix, 'session_lang' => Yii::$app->session['_worklang'], 'modelLang' => $model->langFields[0]->getAttributes())));
+            }
+        }else {
+            $query=Tag::find()->where(['id_lang'=>Yii::$app->session['_worklang']]);
+            $tagdataProvider = new ActiveDataProvider([
+                'query' => $query,
+                'pagination' => [
+                    'pageSize' => 10,
+                ],
+            ]);
+            $tagManagementHtml=$this->renderPartial('@backend/views/news/tagGridView',[
+                'tagdataProvider'=> $tagdataProvider]);
 
+            $tg=$query->all();
+            $tags =[];
+
+            foreach($tg as $k=>$tag){
+                $tags[]=$tag->name;
             }
 
-        } else {
             die(json_encode(array(
-                'success' => true, 'urlPrefix' => $urlPrefix, 'session_lang' => Yii::$app->session['_worklang'], 'modelLang' => $model->langFields[0]->getAttributes())));
+                'success' => true, 'urlPrefix' => $urlPrefix, 'session_lang' => Yii::$app->session['_worklang'],'tagManagementHtml'=>$tagManagementHtml,'suggestions'=>$tags)));
         }
 
     }

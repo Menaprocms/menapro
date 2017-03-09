@@ -81,9 +81,9 @@ $.extend(JSBlocks.blocks, {
                 skin: "lightgray",
                 minHeight: 800,
                 file_picker_types: 'file image media',
-                plugins: "colorpicker link  paste table code media textcolor autoresize image",//autoresize
-                toolbar1: ",|,alignleft,aligncenter,alignright,alignjustify,|,forecolor, backcolor,pasteword,|,bullist,numlist,|,outdent,indent,|,link,unlink,|,cleanup,|,media, image, myimage",
-                toolbar2: ",bold,italic,underline,strikethrough,|,removeformat,",
+                plugins: "link  paste table code media textcolor autoresize image",//autoresize colorpicker
+                toolbar1: ",|,alignleft,aligncenter,alignright,alignjustify,|pasteword,|,outdent,indent,|,link,unlink,|,cleanup,|,media, image, myimage,bold,italic,underline,strikethrough,|,removeformat,",
+                //toolbar2: "",//,forecolor, backcolor, |,bullist,numlist,
                 content_css: 'blocks/text/backend/css/editor.css',
                 plugin_preview_height: 500,
                 object_resizing: true,

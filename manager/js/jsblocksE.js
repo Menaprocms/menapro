@@ -12,6 +12,7 @@ var JSBlocks = {
         social: [],
         other: [],
         charts: [],
+        news:[],
         thirds: []
     },
     blocks: {},
@@ -153,7 +154,7 @@ var JSBlocks = {
                 self.log("The block " + k + " have not the property group defined", 'error');
                 return false;
             }
-            console.log()
+
             if (typeof v.getIcon == "function") {
                 self.categories[v.group].push(v.getIcon())
             } else {
@@ -565,7 +566,7 @@ var JSBlocks = {
 
             }
             if (!check_ok) {
-                this.errors.push('El parámetro ' + param + ' no es valido. Debe ser ' + type + '.');
+                this.errors.push('El parámetro ' + param + ' no es valido. Debe ser ' + validator + '.');
             }
         }
         if(required!=false) {

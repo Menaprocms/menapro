@@ -36,6 +36,8 @@
 
             <div class="col-xs-5 col-sm-5 mn_animated_childs text-right">
                 <div class="row" id="topButtons">
+                    <a id="confignews" class="mn_tb_icon mn_btn tb_news_config mn_ajax" name="confignews" href="#" data-action="news/loadpanel" data-callback="news.cb_confignews_click(data,sender);"></a>
+<!--                    data-action="content/togglevisible" data-info="{&quot;id&quot;:1}" data-callback="cb_active" data-target="">-->
                     <div id="published_btn" class=""></div>
 
 

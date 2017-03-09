@@ -174,7 +174,7 @@ $generalSettingsTabs = [
     Html::tag("span", Yii::t('app', 'Others'), ['class' => "mn_panel_subtitle"]),
 
     Html::beginTag('ul', ['class' => "list-group"]),
-    Html::tag('li', Yii::t('app', 'Cache') . Html::tag('span', "Clear",
+    Html::tag('li', Yii::t('app', 'Cache') . Html::tag('span', Yii::t('app','Clear'),
             [
                 'class' => 'btn btn-xs btn-default pull-right mn_ajax',
                 'data-action' => 'configuration/clearcache',

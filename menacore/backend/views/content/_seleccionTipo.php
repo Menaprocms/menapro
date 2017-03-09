@@ -56,6 +56,28 @@
                     </div>
                 </div>
             </div>
+            <div id="news-group" class="col-xs-2 eCol eParentCol">
+                <div class="ePanel">
+                    <div class="ePanelHeading">
+                        <?php echo Yii::t('app','News')?>
+                    </div>
+                    <div class="ePanelContent">
+                        <i class="eIco eIcoNews">
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div id="charts-group" class="col-xs-2 eCol eParentCol">
+                <div class="ePanel">
+                    <div class="ePanelHeading">
+                        <?php echo Yii::t('app','Charts')?>
+                    </div>
+                    <div class="ePanelContent">
+                        <i class="eIco eIcoCharts">
+                        </i>
+                    </div>
+                </div>
+            </div>
             <div id="other-group" class="col-xs-2 eCol eParentCol">
                 <div class="ePanel">
                     <div class="ePanelHeading">

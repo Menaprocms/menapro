@@ -68,7 +68,4 @@ class ContentLang extends \yii\db\ActiveRecord
             'id_lang'=>Yii::t('app','Language')
         ];
     }
-
-
-
 }

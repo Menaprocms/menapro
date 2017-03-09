@@ -576,6 +576,8 @@
   content: "\F0C0"; }
 .eRow .eIcoCharts:after {
   content: "\F080"; }
+.eRow .eIcoNews:after {
+  content: "\F1EA"; }
 .eRow .eIcoFacebook:after {
   content: "\F082"; }
 .eRow .eIcoFacebookOne:after {

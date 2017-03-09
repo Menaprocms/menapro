@@ -150,6 +150,7 @@ class ContentController extends Controller
 
             } elseif (file_exists(Yii::getAlias('@menaBase') . '/blocks/' . $block_prefix . '/frontend/css/' . $block_prefix . '.css')) {
 
+
                 $this->view->registerCssFile(
                     '@web/blocks/' . $block_prefix . '/frontend/css/' . $block_prefix . '.css', ['depends' => $dependency]);
             }
@@ -179,23 +180,25 @@ class ContentController extends Controller
         $lang=Yii::$app->params['app_lang'];
         $theme = $this->config['_DEFAULT_THEME_'];
 
-
         //Register ThemeAsset and load main model
-        if($data['id']!=0) {
+       if($data['id']!=0) {
             $model = $this->findModel($id);
             if($model->theme!="default")
             {
                 $theme=$model->theme;
             }
-        }
-            
+       }
+
         if(file_exists(Yii::getAlias('@menaBase') . '/themes/' . $theme . '/assets/ThemeAsset.php'))
         {
             Yii::$app->view->registerAssetBundle("themes\\{$theme}\\assets\\ThemeAsset");
         }
 
+
+
         if($data['id']!=0) {
-           
+
+
             Yii::$app->params['cur_model_langfields']=$model->assocLang;
 
 
@@ -294,6 +297,7 @@ class ContentController extends Controller
         }else{
 
             $this->actionNotfound();
+
         }
 
     }

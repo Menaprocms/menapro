@@ -57,7 +57,12 @@ include("_topbar.php");
     include("_pagesBar.php");
     ?>
     <!-- /#sidebar-wrapper -->
+    <!-- News panel -->
 
+<!--    --><?php //echo $this->render('_newsPanel')?>
+    <?php include("_newsPanel.php"); ?>
+
+    <!-- /News panel -->
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
@@ -75,6 +80,7 @@ include("_topbar.php");
                 </div>
             </div>
         </div>
+
     </div>
     <!-- /#page-content-wrapper -->
 
@@ -82,6 +88,7 @@ include("_topbar.php");
 
 <div id="browser_error" class="alert alert-danger"><?php echo Yii::t('app','Su versión del navegador es demasiado antigua para trabajar con MenaPRO.');?></div>
 <div id="device_error" class="alert alert-danger"><?php echo Yii::t('app','Su versión de MenaPRO no le permite editar desde éste dispositivo.');?></div>
+
 
 <!-- /#wrapper -->
 <?php

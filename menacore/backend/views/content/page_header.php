@@ -8,6 +8,7 @@ use backend\assets\ContentAsset;
 /* @var $this yii\web\View */
 /* @var $model common\models\Content */
 /* @var $form yii\widgets\ActiveForm */
+
 $title = Yii::t('app', 'Update {modelClass}: ', [
         'modelClass' => 'Content',
     ]) . ' ' . $model->langFields[0]->title;

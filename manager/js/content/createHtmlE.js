@@ -586,7 +586,7 @@ var cHtml = {
                         var link = $('<a>', {
                             class: 'btn btn-default',
                             id: 'copy_' + vl.id
-                        }).html(copyFrom + ' [' + vl.iso + ']');
+                        }).html(menacoreE_lang.copyFrom + ' [' + vl.iso + ']');
                         link.click(function (e) {
                             var toCopy = cms.data.structure[vl.id];
                             cms.data.structure[JSBlocks.lang] = $.extend(true, [], toCopy);

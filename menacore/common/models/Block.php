@@ -93,7 +93,7 @@ class Block extends \yii\db\ActiveRecord
             'version' => Yii::t('app', 'Version'),
             'position' => Yii::t('app', 'Position'),
             'configurable' => Yii::t('app', 'Configurable'),
-            'prefix'=>Yii::t('app', 'Prefx'),
+            'prefix'=>Yii::t('app', 'Prefix'),
             'block_default'=>Yii::t('app', 'Block default'),
             'date_upd' => Yii::t('app', 'Updated'),
         ];

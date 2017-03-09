@@ -63,10 +63,13 @@ html {
 .tb_live_view:after {
   content: "\e105"; }
 
+.tb_news_config:after {
+  content: "\e043"; }
+
 #published_btn {
   display: inline-block; }
 
-.tb_published {
+.tb_published, .post_published_cont {
   border-radius: 30px;
   display: inline-block;
   padding: 3px 11px;
@@ -74,7 +77,7 @@ html {
   margin-right: 25px;
   background: #3E4147;
   color: #fff; }
-  .tb_published .onoffswitch {
+  .tb_published .onoffswitch, .post_published_cont .onoffswitch {
     margin-left: 8px;
     vertical-align: bottom; }
 
@@ -1067,10 +1070,130 @@ a#show_trash_btn {
 
 .langtrash-pull {
   margin-right: 20px; }
+
 .lsp_default_lang {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 2px; }  
-.select2-search__field{
-  color:black;}  
+  margin-left: 2px; }
+
+.select2-search__field {
+  color: black; }
+
+.news_editor_options li:hover {
+  cursor: pointer; }
+.news_editor_options .text_format li.selected {
+  border: 1px solid  #2196f3;
+  color: #2196f3; }
+.news_editor_options .news_editor-formats {
+  background: #fff;
+  padding: 0px;
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 6px; }
+  .news_editor_options .news_editor-formats li {
+    padding: 10px;
+    position: relative; }
+    .news_editor_options .news_editor-formats li:not(:last-child) {
+      border-bottom: 1px solid #ddd; }
+    .news_editor_options .news_editor-formats li[data-format="H1"]:after {
+      content: "h1"; }
+    .news_editor_options .news_editor-formats li[data-format="H2"]:after {
+      content: "H2"; }
+    .news_editor_options .news_editor-formats li[data-format="H3"]:after {
+      content: "H3"; }
+    .news_editor_options .news_editor-formats li[data-format="H4"]:after {
+      content: "H4"; }
+    .news_editor_options .news_editor-formats li[data-format="H5"]:after {
+      content: "H5"; }
+    .news_editor_options .news_editor-formats li[data-format="H6"]:after {
+      content: "H6"; }
+    .news_editor_options .news_editor-formats li[data-format="BLOCKQUOTE"]:after {
+      content: "\"";
+      font-size: 40px;
+      top: 0px !important; }
+    .news_editor_options .news_editor-formats li.selected:after {
+      color: #1b7cd5; }
+    .news_editor_options .news_editor-formats li:after {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ddd; }
+    .news_editor_options .news_editor-formats li.selected {
+      background: #2196f3;
+      color: #fff; }
+  .news_editor_options .news_editor-formats h1, .news_editor_options .news_editor-formats h2, .news_editor_options .news_editor-formats h3, .news_editor_options .news_editor-formats h4, .news_editor_options .news_editor-formats h5, .news_editor_options .news_editor-formats h6 {
+    margin: 0px !important;
+    padding: 0px !important;
+    text-decoration: none;
+    border: none !important; }
+  .news_editor_options .news_editor-formats h1 {
+    font-size: 25px;
+    font-weight: bold; }
+  .news_editor_options .news_editor-formats h2 {
+    font-size: 20px; }
+  .news_editor_options .news_editor-formats h3 {
+    font-size: 16px;
+    font-weight: bold; }
+  .news_editor_options .news_editor-formats h4 {
+    font-size: 13px; }
+  .news_editor_options .news_editor-formats h5 {
+    font-size: 13px;
+    font-weight: bold; }
+  .news_editor_options .news_editor-formats h6 {
+    font-size: 13px; }
+  .news_editor_options .news_editor-formats p {
+    padding: 0px;
+    margin: 0px; }
+
+.mce-panel {
+  background: #fff !important; }
+
+.mce-btn {
+  background: transparent !important; }
+
+.mce-toolbar-grp .mce-flow-layout-item {
+  background-color: transparent !important;
+  border: 1px solid #ddd;
+  border-radius: 3px; }
+
+.mce-active {
+  background-color: #2196f3 !important;
+  border: 1px solid #2196f3 !important; }
+  .mce-active .mce-ico {
+    color: #fff !important; }
+
+.mce-primary button {
+  background-color: #00C8B9; }
+
+.mce-menu {
+  position: fixed !important; }
+
+.post_published_label {
+  cursor: pointer; }
+
+.news_title {
+  text-align: center;
+  color: black; }
+
+.newtagbtnitem {
+  display: inline-block;
+  vertical-align: middle; }
+
+#news_post_search_author {
+  min-width: 80px; }
+
+#news_post_search_published {
+  min-width: 75px; }
+
+#news_post_search_id {
+  max-width: 65px; }
+
+#news_post_search_reset, #news_tag_search_reset {
+  color: #fff; }
+
+#news_post_grid tbody tr td:last-child {
+  min-width: 70px; }
+
 /*# sourceMappingURL=menaproadmin.css.map */

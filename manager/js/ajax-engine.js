@@ -23,13 +23,14 @@ var cp = {
          *
          */
         bs_mn_page: function (settings, sender) {
-            $(".superMedinapro").addClass('closed')
+            $(".superMedinapro").addClass('closed');
+            $("#newsconfig_panel").hide();
         },
         cb_mn_page: function (data, sender) {
             //This function is bigger so moved to main class
             cms.loadPageCallback(data, sender);
         },
-        cb_deletelang:function(data,sender){
+		cb_deletelang:function(data,sender){
             if(data.success){
                 $('#lang_item_'+data.id_lang).remove();
                 $('#tlang_'+data.id_lang).remove();
@@ -80,12 +81,12 @@ var cp = {
                 var link=$("#contentlang-link_rewrite");
                 //if(liveviewlink.data('url').match(regExp) != null)
                 //{
-                var nUrl=liveviewlink.data('url').split("/");
-                var l=nUrl.length - 1;
-                nUrl[l]=link.val()+'.html';
+                    var nUrl=liveviewlink.data('url').split("/");
+                    var l=nUrl.length - 1;
+                    nUrl[l]=link.val()+'.html';
 
-                var res= nUrl.join('/');
-                liveviewlink.data('url',res);
+                    var res= nUrl.join('/');
+                    liveviewlink.data('url',res);
                 //}
 
 
@@ -111,13 +112,13 @@ var cp = {
             var html=[];
             $.each(data.messages, function (k,v) {
 
-                if(k!=0)
-                {
-                    html.push($("<span>",{
-                        class:"label label-"+status[k],
-                        html: [v.length , "<i class='fa fa-exclamation-triangle'></i>"," "]
-                    }))
-                }
+              if(k!=0)
+              {
+                  html.push($("<span>",{
+                      class:"label label-"+status[k],
+                      html: [v.length , "<i class='fa fa-exclamation-triangle'></i>"," "]
+                  }))
+              }
 
             });
             cont.html(html);
@@ -569,8 +570,9 @@ var cp = {
     },
     setLangFields: function () {
         var self=this;
+        var isnews=window.location.hash=='#news';
         var data = {
-                id: cms.model.id,
+                id: (isnews?0:cms.model.id),
                 work_lang: JSBlocks.lang,
                 //r:'content/setlang'
             },
@@ -590,23 +592,30 @@ var cp = {
                     self.log.warn(data);
                     //@todo: Check cms attachevents;
                     cms.attachEvents();
-
-                    cms.modelLang=data.modelLang;
-                    if (typeof(data.availablePages) != 'undefined') {
-                        cms.availablePages=JSON.parse(data.availablePages);
-                        JSBlocks.refreshAvailablePages();
+                    JSBlocks.blocks.news.getexistingtags();
+                    if(!isnews) {
+                        cms.modelLang = data.modelLang;
+                        if (typeof(data.availablePages) != 'undefined') {
+                            cms.availablePages = JSON.parse(data.availablePages);
+                            JSBlocks.refreshAvailablePages();
+                        }
+                        $(cp.containers.page_header).find('h1').text('Update Content:  ' + data.modelLang.title);
+                        $('#contentlang-title').val(data.modelLang.title);
+                        $('#contentlang-menu_text').val(data.modelLang.menu_text);
+                        $('#contentlang-link_rewrite').val(data.modelLang.link_rewrite);
+                        $('#contentlang-meta_title').val(data.modelLang.meta_title);
+                        $('#contentlang-meta_description').val(data.modelLang.meta_description);
+                        var url = $('#submitLiveview').data('url');
+                        //url=url.replace(/\/[a-zA-z1-9-]+.html/,'/'+data.urlPrefix+data.modelLang.link_rewrite+'.html');
+                        url = url.replace(/(\/[a-zA-Z]{2})?\/[a-zA-z1-9-]+.html/, '/' + data.urlPrefix + data.modelLang.link_rewrite + '.html');
+                        $('#submitLiveview').data('url', url);
+                        cms.toggleMenuStatus();
+                    }else{
+                        $('#showtags').html('').html(data.tagManagementHtml);
+                        news.refreshSuggestions(data.suggestions);
+                        news.bindUpdateTagEvent();
+                        cp.delegateEvents();
                     }
-                    $(cp.containers.page_header).find('h1').text('Update Content:  ' + data.modelLang.title);
-                    $('#contentlang-title').val(data.modelLang.title);
-                    $('#contentlang-menu_text').val(data.modelLang.menu_text);
-                    $('#contentlang-link_rewrite').val(data.modelLang.link_rewrite);
-                    $('#contentlang-meta_title').val(data.modelLang.meta_title);
-                    $('#contentlang-meta_description').val(data.modelLang.meta_description);
-                    var url = $('#submitLiveview').data('url');
-                    //url=url.replace(/\/[a-zA-z1-9-]+.html/,'/'+data.urlPrefix+data.modelLang.link_rewrite+'.html');
-                    url = url.replace(/(\/[a-zA-Z]{2})?\/[a-zA-z1-9-]+.html/, '/' + data.urlPrefix + data.modelLang.link_rewrite + '.html');
-                    $('#submitLiveview').data('url', url);
-                    cms.toggleMenuStatus()
 
                 }
             }
@@ -715,9 +724,9 @@ var cp = {
                     cp._appendAjaxError(sender, data.error);
                     return;
                 }
-                if (typeof(data.availablePages) != 'undefined') {
-                    cms.availablePages=JSON.parse(data.availablePages);
-                    JSBlocks.refreshAvailablePages();
+				if (typeof(data.availablePages) != 'undefined') {
+                   cms.availablePages=JSON.parse(data.availablePages);
+                   JSBlocks.refreshAvailablePages();
 
                 }
 
@@ -790,7 +799,7 @@ var cp = {
      */
     _getInputValue: function (el) {
         if(typeof(el.data('field'))!='undefined'){
-            el=$(el.data('field'));
+          el=$(el.data('field'));
         }
         switch ("Property name", el.prop("tagName")) {
             case "INPUT":

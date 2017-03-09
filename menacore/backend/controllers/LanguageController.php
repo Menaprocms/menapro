@@ -198,7 +198,7 @@ class LanguageController extends Controller
 		if($this->findModel($id)->delete()){
            die(json_encode(array('success' => true,'id_lang'=>$id)));
        }else {
-           throw new \yii\web\HttpException(500, Yii::t('app', 'Error deletinglang'));
+           throw new \yii\web\HttpException(500, Yii::t('app', 'Error deleting lang'));
 
        }
     }

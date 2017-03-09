@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<block>
+	<name>News</name>
+	<prefix>news</prefix>
+	<version>0.1</version>
+	<configurable>1</configurable>
+	<position>0</position>	
+</block>

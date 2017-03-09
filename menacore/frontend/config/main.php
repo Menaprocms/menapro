@@ -23,7 +23,7 @@ $config = [
         ],
         'assetsAutoCompress' =>
             [
-                'class' => 'skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
+                'class' => 'frontend\components\CustomAssetsAutoCompressComponent',//'skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
                 'htmlCompress'=>true,
                 'htmlCompressOptions'=>[
                     'extra'=>true
@@ -58,6 +58,7 @@ $config = [
 ];
 
 if (YII_ENV_DEV) {
+
     if(is_array($config['bootstrap']))
     {
         $config['bootstrap'][] = 'debug';

@@ -68,6 +68,7 @@ class Controller  extends \yii\web\Controller{
             Yii::$app->params['app_lang']=$l->id_lang;
 
         }
+
         if(Configuration::getValue('_WEB_NAME_')!=false){
             Yii::$app->name=Configuration::getValue('_WEB_NAME_');
         }

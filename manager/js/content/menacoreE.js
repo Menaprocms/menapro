@@ -10,6 +10,7 @@ $(document).ready(function () {
 
 
 var cms = {
+
     options: {
         autosave: false,
         tiny: 0,
@@ -298,6 +299,8 @@ var cms = {
 
         }
 
+        news.initNewsPanel();
+
         setTimeout(function () {
             JSBlocks.init();
         }, 5);
@@ -530,18 +533,23 @@ var cms = {
     checkHash:function(){
       if(window.location.hash)
       {
-          var pieces=window.location.hash.split(":");
-          if(pieces.length==2 && !isNaN(pieces[1]))
+          if(window.location.hash=='#news'){
+              $('#confignews').trigger('click');
+          }else {
+
+              var pieces = window.location.hash.split(":");
+              if (pieces.length == 2 && !isNaN(pieces[1])) {
           {
 
-              var id="#menuItem_" + (parseInt(pieces[1]));
-              $("#sidebar-wrapper").mCustomScrollbar("scrollTo", id, {
-                  //scrollEasing: "easeOut",
-                  scrollInertia: 00
-              });
-              this.log.info("Requested page id is: "+id);
+                  var id = "#menuItem_" + (parseInt(pieces[1]));
+                  $("#sidebar-wrapper").mCustomScrollbar("scrollTo", id, {
+                      //scrollEasing: "easeOut",
+                      scrollInertia: 00
+                  });
+                  this.log.info("Requested page id is: " + id);
 
-              $(id+" a").triggerHandler('click');
+                  $(id + " a").triggerHandler('click');
+              }
           }
       }
     },
@@ -726,9 +734,9 @@ var cms = {
 
         var html = "";
         if (!this.model.active) {
-            html = "The page will not be available in menu"
+            html = menacoreE_lang.not_show_in_menu_text;
         } else {
-            html="The page will appear in menu as "+this.modelLang.menu_text;
+            html=menacoreE_lang.show_in_menu_text+" "+this.modelLang.menu_text;
             //todo: Get if parent page is enabled
             //if (this.model.parentActive) {
             //    html = "The page will appear in menu as <b>" + this.model.menu_text + "</b>";
@@ -950,7 +958,10 @@ var cms = {
             var nc = $(e.currentTarget).data('info');
             $('#selectLang').removeClass(c).addClass('flag flag_' + nc + '  mn_dropdown open');
 
-            cHtml.drawCms();
+                if(window.location.hash!='#news'){
+                    cHtml.drawCms();
+
+                }
             cp.setLangFields();
 
         })
@@ -964,6 +975,7 @@ var cms = {
      */
     createPageCallback: function (data, sender) {
         this.log.info("createPageCallback");
+        $("#newsconfig_panel").hide();
         var li = $('<li>', {
             id: 'menuItem_' + data.model.id,
             class: 'mn_page mn_ajax mjs-nestedSortable-branch mn_page_unpublished ui-sortable-handle'

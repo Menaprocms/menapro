@@ -34,6 +34,7 @@ namespace frontend\components;
 use common\models\Content;
 use common\models\Language;
 use common\models\Configuration;
+use common\models\Post;
 use yii\web\UrlRuleInterface;
 use common\models\ContentLang;
 use yii\base\Object;
@@ -100,6 +101,7 @@ class ContentUrlRule extends Object implements UrlRuleInterface
     public function parseRequest($manager, $request)
     {
 
+
         \Yii::beginProfile('Parsing content request');
 
         //@todo: Detect browser language and check if is available. Then redirect.
@@ -111,22 +113,28 @@ class ContentUrlRule extends Object implements UrlRuleInterface
 
 //        }else {
 
-        $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-        $l = Language::findByIso($lang);
+            $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+            $l = Language::findByIso($lang);
 
 
-        $pathInfo = "";
+            $pathInfo = "";
 
-        \Yii::beginProfile('Loading needed params');
+            \Yii::beginProfile('Loading needed params');
+            Yii::$app->params['postpage']=false;
+            Yii::$app->params['renderedpostpage']=false;
+            Yii::$app->params['islatestpost']=false;
 
-        \Yii::beginProfile('Loading default lang');
-        if (!$l) {
-            Yii::$app->params['app_lang'] = Yii::$app->params['default_lang'];
-        } else {
-            Yii::$app->params['app_lang'] = $l;
-        }
+            if(Yii::$app->request->get('latest',false)){
+                Yii::$app->params['islatestpost']=true;
+            }
+            \Yii::beginProfile('Loading default lang');
+            if (!$l) {
+                Yii::$app->params['app_lang'] = Yii::$app->params['default_lang'];
+            } else {
+                Yii::$app->params['app_lang'] = $l;
+            }
 //        }
-        // Set default language as default
+            // Set default language as default
         \Yii::endProfile('Loading default lang');
 
 
@@ -134,13 +142,13 @@ class ContentUrlRule extends Object implements UrlRuleInterface
         $allActiveLangs = Yii::$app->params['active_langs'] = Language::getActiveLanguages();
 
 
-        \Yii::beginProfile('Exploding pathinfo');
+            \Yii::beginProfile('Exploding pathinfo');
 
-        unset($allActiveLangs[Yii::$app->params['default_lang']]);
-        $pieces = explode("/", $request->getPathInfo());
+            unset($allActiveLangs[Yii::$app->params['default_lang']]);
+            $pieces = explode("/", $request->getPathInfo());
 
-        $nbPieces = count($pieces);
-        \Yii::endProfile('Exploding pathinfo');
+            $nbPieces = count($pieces);
+            \Yii::endProfile('Exploding pathinfo');
 
 
         \Yii::endProfile('Loading needed params');
@@ -155,10 +163,10 @@ class ContentUrlRule extends Object implements UrlRuleInterface
 
 
             if (count(array_filter($allActiveLangs,function($var) use ($pieces){
-                    if(mb_strtolower($pieces[0])==$var['iso_code']){
-                        return true;
-                    }
-                }))>0){
+                if(mb_strtolower($pieces[0])==$var['iso_code']){
+                    return true;
+                }
+            }))>0){
 
                 $result="";
 
@@ -166,32 +174,44 @@ class ContentUrlRule extends Object implements UrlRuleInterface
                 {
                     if(strtolower(substr($pieces[0], 0, 2))==$value['iso_code']){
                         $result=$key;
-                        break;
+                       break;
                     }
                 }
 
                 Yii::$app->params['app_lang'] =$result;
 
-                if (strlen($pieces[0]) == 2 && $nbPieces == 1) {
-                    $pathInfo = "";
-                    \Yii::endProfile('Parsing uri');
-                    \Yii::endProfile('Parsing content request');
-                    Yii::$app->getResponse()->redirect(Yii::$app->request->baseUrl . "/" . strtolower(substr($pieces[0], 0, 2)) . "/");
-                } else {
-                    if (!ctype_lower($pieces[0]) && strlen($pieces[0] == 2)) {
+                    if (strlen($pieces[0]) == 2 && $nbPieces == 1) {
+                        $pathInfo = "";
                         \Yii::endProfile('Parsing uri');
                         \Yii::endProfile('Parsing content request');
-                        Yii::$app->getResponse()->redirect(Yii::$app->request->baseUrl . "/" . strtolower(substr($pieces[0], 0, 2)) . "/" . $pieces[1]);
-                    }
+                        Yii::$app->getResponse()->redirect(Yii::$app->request->baseUrl . "/" . strtolower(substr($pieces[0], 0, 2)) . "/");
+                    } else {
 
-                    $pathInfo = $pieces[1];
-                }
+                        if (!ctype_lower($pieces[0]) && strlen($pieces[0] == 2)) {
+                            \Yii::endProfile('Parsing uri');
+                            \Yii::endProfile('Parsing content request');
+                            Yii::$app->getResponse()->redirect(Yii::$app->request->baseUrl . "/" . strtolower(substr($pieces[0], 0, 2)) . "/" . $pieces[1]);
+                        }
+                        if(sizeof($pieces)==3){
+                            $pathInfo=$pieces[1].'.html';
+                            Yii::$app->params['postpage']=$pieces[2];
+                        }else{
+                            $pathInfo = $pieces[1];
+                        }
+
+                    }
 
 
             } else {
-                \Yii::endProfile('Parsing uri');
-                \Yii::endProfile('Parsing content request');
-                return $this->notFoundRoute;
+                if(sizeof($pieces)==2){
+                    $pathInfo=$pieces[0].'.html';
+                    Yii::$app->params['postpage']=$pieces[1];
+                }else{
+                    \Yii::endProfile('Parsing uri');
+                    \Yii::endProfile('Parsing content request');
+                    return $this->notFoundRoute;
+                }
+
 //                return false;
             }
         } else if ($nbPieces = 1) {
@@ -205,6 +225,7 @@ class ContentUrlRule extends Object implements UrlRuleInterface
             }
 
         }
+
         \Yii::endProfile('Parsing uri');
 
 
@@ -229,18 +250,29 @@ class ContentUrlRule extends Object implements UrlRuleInterface
 
 
         } else {
+
             if (strpos($pathInfo, '.html') === false && strlen($pieces[0] == 2)) {
                 \Yii::endProfile('Parsing content request');
 
                 Yii::$app->getResponse()->redirect(Yii::$app->request->baseUrl . "/" . strtolower(substr($pieces[0], 0, 2)) . "/");
                 Yii::$app->end();
             } else if(strpos($pathInfo,".html")!=false){
+                if(Yii::$app->params['postpage']){
+                    $friendly=str_replace('.html','',Yii::$app->params['postpage']);
+                    $pp=Post::find()->where(['friendly_url' => trim($friendly)])->one();
+                    if((int)$pp['id']){
+                        Yii::$app->params['postpage']=(int)$pp['id'];
+                    }else{
+                        Yii::$app->params['postpage']=false;
+                    }
 
+                }
                 $route = str_ireplace('.html', "", $pathInfo);
                 $r = ContentLang::find()->where(['link_rewrite' => $route])->andWhere(['id_lang' => Yii::$app->params['app_lang']])->one();
                 $id = (int)$r['id_content'];
             }else
             {
+
                 \Yii::endProfile('Parsing content request');
                 return $this->notFoundRoute;
             }

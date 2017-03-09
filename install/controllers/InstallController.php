@@ -131,7 +131,15 @@ class InstallController
                 $checkWritable[]=__DIR__.'/../../manager/assets/';
                 $checkWritable[]=__DIR__.'/../../'.CORE_ROUTE.'/';
                 $checkWritable[]=__DIR__.'/../';//install
+                $checkWritable[]=__DIR__.'/../../composer.json';
+                $bycomposer=false;
+                if(file_exists(__DIR__.'/../../composer.lock')){
+                    $checkWritable[]=__DIR__.'/../../composer.lock';
+                    $bycomposer=true;
+                }
+
                 $checkWritable[]=__DIR__.'/../../';//rootfolder
+
 
 
                 $give_permissions=array();
@@ -152,6 +160,24 @@ class InstallController
                         $oldname = __DIR__ . '/../../menacore';
                         $newName = $this->generate_random_password(6);
 
+                        $cpjsonpath=__DIR__ . '/../../composer.json';
+
+                        if(!$renamejson = @rename($cpjsonpath,$oldname.'/composer.json')){
+                            echo 'Could not move composer.json file';
+                        }else{
+                            $compjson_cont=file_get_contents ($oldname.'/composer.json');
+                            $compjson_cont=str_replace('menacore/','',$compjson_cont);
+                            if (file_put_contents($oldname.'/composer.json', $compjson_cont) == false) {
+                                echo 'Can not write composer.json file';
+                            }
+                            if($bycomposer){
+                                $cplockpath=__DIR__ . '/../../composer.lock';
+                                if(!$renamelock = @rename($cplockpath,$oldname.'/composer.lock')){
+                                    echo 'Could not move composer.lock file';
+                                }
+                            }
+
+                        }
 
                         if (!$rename = @rename($oldname, $oldname . $newName)) {
                             echo 'Could not rename menacore folder';
@@ -165,9 +191,11 @@ class InstallController
                             die();
                         }";
                             if (file_put_contents($path, $text) == false) {
-                                echo 'no copia el archivo core_routes.php';
+                                echo 'Can not write core_routes.php';
                             }
                         }
+
+
                     }
                     $view = 'index.php';
                     include(__DIR__ . '/../views/layouts/main.php');
