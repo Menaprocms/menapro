@@ -489,6 +489,10 @@ var cms = {
                 $('#lang_' + langId).addClass('active');
             });
         });
+        //$('#confignews').click(function(e){
+        //    e.preventDefault();
+        //
+        //});
     },
     /**
      * Initialize the sortable event for rows
@@ -527,8 +531,6 @@ var cms = {
                 cms.log.info("proBox-" + k + "-group");
             });
         });
-
-
     },
     checkHash:function(){
       if(window.location.hash)
@@ -539,7 +541,6 @@ var cms = {
 
               var pieces = window.location.hash.split(":");
               if (pieces.length == 2 && !isNaN(pieces[1])) {
-          {
 
                   var id = "#menuItem_" + (parseInt(pieces[1]));
                   $("#sidebar-wrapper").mCustomScrollbar("scrollTo", id, {

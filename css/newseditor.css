@@ -1,0 +1,40 @@
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #f7f7f7; }
+
+h1, h2, h3, h4, h5 {
+  color: #000; }
+
+img {
+  max-width: 100% !important;
+  height: auto !important; }
+
+blockquote {
+  background: #eeeeee;
+  padding: 5px;
+  font-size: 1.2em;
+  border-left: 4px solid #333; }
+
+a, a:visited, a:active {
+  color: #2196f3; }
+
+a[target*="blank"]:after {
+  content: '\f08e';
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.btn {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-bottom: 2px solid #878787;
+  text-decoration: none; }
+
+/*# sourceMappingURL=newseditor.css.map */
