@@ -1,4 +1,4 @@
 <?php
 return [
-    'menapro_version'=>'1.1.1'
+    'menapro_version'=>'1.1.0'
 ];
