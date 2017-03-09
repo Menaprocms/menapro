@@ -20,7 +20,7 @@ use yii\widgets\Pjax;
 //    ],
 //]);
 ?>
-<div id="newsconfig_panel">
+<div id="newsconfig_panel" class="oculto">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
