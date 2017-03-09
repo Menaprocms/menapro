@@ -561,7 +561,7 @@ class InstallController
             $this->jsonResponse(false,['errormsg'=>'Cannot check db integrity']);
         }
         $ok=true;
-        if($tables->num_rows==8){
+        if($tables->num_rows==11){
             $prefix=$data['db_prefix'];
 
             foreach($dataToCheck as $table=>$ncols){
