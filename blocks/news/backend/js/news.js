@@ -39,11 +39,11 @@
                 JSBlocks.blocks.news.getexistingtags();
             },
             getexistingtags:function(){
-                console.log('getExistingTags');
+
                 var senderData = {
                     url: baseDir + "/index.php?r=news/gettags",
                     success: function (data) {
-                        console.log(data);
+
                         JSBlocks.blocks.news.fillTagSelect(data.tags);
 
                     }
@@ -51,11 +51,9 @@
                 cp.sendAjax(senderData);
             },
             validatetag:function(){
-                console.log('validate tag');
-                console.log(this.data.type);
 
                 var tag=$('#news_tag').val();
-                console.log(tag);
+
               if(this.data.type==2 &&  (tag==0 || tag==null)){
                   return false;
               }

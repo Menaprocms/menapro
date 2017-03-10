@@ -140,9 +140,18 @@ class NewsController extends Controller
                 $isAllowed=false;
             }
         }
+        $tagManagementHtml=false;
         if($isAllowed){
             //creo tag
             $this->addTag($tag);
+            $tagdataProvider = new ActiveDataProvider([
+                'query' => Tag::find()->where(['id_lang'=>$this->curL]),
+                'pagination' => [
+                    'pageSize' => 10
+                ],
+            ]);
+            $tagManagementHtml=$this->renderPartial('tagGridView',[
+                'tagdataProvider'=> $tagdataProvider]);
 
         }
         $existing_tags=$this->getExistingTags();
@@ -150,7 +159,8 @@ class NewsController extends Controller
             array(
                 'success' => true,
                 'isallowed'=>true,
-                'existing_tags'=>$existing_tags)));
+                'existing_tags'=>$existing_tags,
+                'tagManagementHtml'=>$tagManagementHtml)));
     }
     public function addTag($tag){
 

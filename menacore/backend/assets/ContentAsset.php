@@ -57,7 +57,7 @@ class ContentAsset extends AssetBundle
         //textext
         'js/textext/js/textext.core.js',
         'js/textext/js/textext.plugin.autocomplete.js',
-        'js/textext/js/textext.plugin.tags.js',
+        'js/textext/js/textext.plugin.tags-modified.js',
         'js/textext/js/textext.plugin.suggestions.js',
         'js/textext/js/textext.plugin.filter.js',
         //textext

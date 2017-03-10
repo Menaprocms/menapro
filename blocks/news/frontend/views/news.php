@@ -102,7 +102,7 @@ if(Yii::$app->params['postpage']){
                                         }
                                     }
                                     ?>
-                                    <a href="<?php echo $postUrl?>" target="_blank" class="btn btn-default pull-right"><?php echo Yii::t('blocks/news', 'View more');?></a>
+                                    <a href="<?php echo $postUrl?>" class="btn btn-mena pull-right"><?php echo Yii::t('blocks/news', 'View more');?></a>
                                 </div>
                             </div>
 

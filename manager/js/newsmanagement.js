@@ -30,7 +30,6 @@ var news = {
 
                 if(data.success){
                     $('#post_ok').show();
-                    //$.pjax.reload({container:'#postsGridView'});
                     news.clearPanel();
                     var fillsearch=false;
                     $.each(sdata,function(k,v){
@@ -165,6 +164,7 @@ var news = {
         news.editor.setContent('');
         $('#news_post_friendly').val('');
         $('#news_post_published').attr('cheked',false);
+        $('.post_message').hide();
         news.clearTags();
 
     },
@@ -620,6 +620,11 @@ var news = {
                     url: baseDir + "/index.php?r=news/istagallowed",
                     success: function (data) {
                         news.refreshSuggestions(data.existing_tags);
+                        if(data.tagManagementHtml!=false){
+                            $('#showtags').html('').append(data.tagManagementHtml);
+                            news.bindUpdateTagEvent();
+                            cp.delegateEvents();
+                        }
                         return data.isallowed;
                     }
                 };

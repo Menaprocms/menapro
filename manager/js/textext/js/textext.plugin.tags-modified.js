@@ -468,12 +468,12 @@
 			tag  = self.itemManager().stringToItem(val)
 			;
 
-		if(self.isTagAllowed(tag))
-		{
+		//if(self.isTagAllowed(tag))
+		//{
 			self.addTags([ tag ]);
 			// refocus the textarea just in case it lost the focus
 			self.core().focusInput();
-		}
+		//}
 	};
 
 	//--------------------------------------------------------------------------------
