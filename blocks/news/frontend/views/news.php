@@ -75,6 +75,8 @@ if(Yii::$app->params['postpage']){
                                 ?>
                                 </div>
                                 <div class="col-md-8">
+                                    <?php $date=trim(substr($post->date_add,0,10)); ?>
+                                    <p class="pull-right"><?php echo Yii::$app->formatter->asDate($date,'long'); ?></p>
                                     <h3><?php echo $post->title;?></h3>
                                     <div class="post_content">
                                         <?php echo StringHelper::truncateWords(strip_tags($cont_to_show),21,'...',null,true);?>

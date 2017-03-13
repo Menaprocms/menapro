@@ -54,6 +54,16 @@ use common\components\Html;
                                            }
                                        ],
                                        [
+                                           'attribute'=>'date_add',
+                                           'format' => 'raw',
+                                            'contentOptions' => ['class' => 'text_center_column'],
+                                           'value' => function ($item, $index) {
+                                               $date=trim(substr($item->date_add,0,10));
+                                               return Yii::$app->formatter->asDate($date,'short');
+
+                                           }
+                                       ],
+                                       [
                                            'attribute'=>'published',
                                            'filter'=> Html::dropDownList('news_post_search_published',null,[
                                                    0=>Yii::t('app', 'NO'),
