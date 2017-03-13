@@ -58,8 +58,7 @@ use common\components\Html;
                                            'format' => 'raw',
                                             'contentOptions' => ['class' => 'text_center_column'],
                                            'value' => function ($item, $index) {
-                                               $date=trim(substr($item->date_add,0,10));
-                                               return Yii::$app->formatter->asDate($date,'short');
+                                               return Yii::$app->formatter->asDate($item->date_add,'short');
 
                                            }
                                        ],
