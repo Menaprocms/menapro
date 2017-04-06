@@ -113,8 +113,14 @@ class ContentUrlRule extends Object implements UrlRuleInterface
 
 //        }else {
 
-            $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-            $l = Language::findByIso($lang);
+            $l=false;
+            if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']))
+            {
+                  $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+                  $l = Language::findByIso($lang);
+            }
+        
+          
 
 
             $pathInfo = "";
