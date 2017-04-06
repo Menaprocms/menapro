@@ -42,7 +42,7 @@ MenaPro has been designed to be easy and powerful, and it is. Everyone can creat
 
 ##Contribute
 
-Have finded something that does not work as expected? Tell us or create a pull request.
+Have found something that does not work as expected? Tell us or create a pull request.
 
 
 
