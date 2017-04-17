@@ -46,6 +46,7 @@ Have found something that does not work as expected? Tell us or create a pull re
 
 
 
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
 
 
