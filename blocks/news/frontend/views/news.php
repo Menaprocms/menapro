@@ -5,6 +5,7 @@ use common\components\Html;
 
 $postpage=false;
 $renderpost=false;
+
 if(Yii::$app->params['postpage']){
 
     $postpage=true;
@@ -32,7 +33,7 @@ if(Yii::$app->params['postpage']){
 <div class="eNewsBlock">
     <?php if($postpage && $renderpost){
         ?>
-       <div class="eSinglePost">
+       <div class="eSinglePost" id="post_content_<?php echo $cRow.'_'.$cCol?>"">
            <?php if($postR){
                ?>
                <h4><?php echo $postR->title;?></h4>
@@ -82,6 +83,9 @@ if(Yii::$app->params['postpage']){
                                     </div>
                                     <?php
                                     $postUrl= Yii::$app->request->getUrl();
+                                    if(isset(Yii::$app->params['index_friendly_url']) && Yii::$app->params['index_friendly_url']){
+                                        $postUrl.=Yii::$app->params['index_friendly_url'];
+                                    }
                                     if($postpage){
                                         $postUrl=str_replace($postR->friendly_url,'',$postUrl);
                                         $postUrl=str_replace('.html',$post->friendly_url.'.html',$postUrl);
@@ -89,6 +93,7 @@ if(Yii::$app->params['postpage']){
                                     }else{
                                         $postUrl=str_replace('.html','/'.$post->friendly_url.'.html',$postUrl);
                                     }
+
                                     if($col->content->type==1){
                                         if(strpos($postUrl,'?')===false){
                                             $postUrl.='?latest=1';
@@ -102,6 +107,7 @@ if(Yii::$app->params['postpage']){
                                             $postUrl=str_replace('?latest=1','',$postUrl);
                                         }
                                     }
+                                    $postUrl.='#post_content_'.$cRow.'_'.$cCol;
                                     ?>
                                     <a href="<?php echo $postUrl?>" class="btn btn-mena pull-right"><?php echo Yii::t('blocks/news', 'View more');?></a>
                                 </div>

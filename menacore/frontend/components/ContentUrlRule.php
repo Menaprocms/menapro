@@ -239,14 +239,14 @@ class ContentUrlRule extends Object implements UrlRuleInterface
 
         Yii::$app->language = Yii::$app->params['active_langs'][Yii::$app->params['app_lang']]['iso_code'] . "-" . strtoupper(Yii::$app->params['active_langs'][Yii::$app->params['app_lang']]['country_code']);
 
-
+        Yii::$app->params['index_friendly_url']=false;
         if (trim($pathInfo) == "" || $pathInfo == 'index.html') {
 
             $r = Content::find()->where(['id_parent' => 0])
                 ->andWhere(['active' => 1])
                 ->andWhere(['in_trash' => 0])->orderBy('position ASC')->one();
             $id = (int)$r['id'];
-
+            Yii::$app->params['index_friendly_url']=$r->langFields[0]->link_rewrite.'.html';
             if ($id == 0) {
 //                If no active page has been found do search for inactive content
                 $r = Content::find()->where(['id_parent' => 0])
@@ -254,8 +254,7 @@ class ContentUrlRule extends Object implements UrlRuleInterface
                 $id = (int)$r['id'];
             }
 
-
-        } else {
+        }else{
 
             if (strpos($pathInfo, '.html') === false && strlen($pieces[0] == 2)) {
                 \Yii::endProfile('Parsing content request');

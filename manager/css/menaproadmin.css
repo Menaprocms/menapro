@@ -69,7 +69,7 @@ html {
 #published_btn {
   display: inline-block; }
 
-.tb_published, .post_published_cont {
+.tb_published {
   border-radius: 30px;
   display: inline-block;
   padding: 3px 11px;
@@ -77,7 +77,7 @@ html {
   margin-right: 25px;
   background: #3E4147;
   color: #fff; }
-  .tb_published .onoffswitch, .post_published_cont .onoffswitch {
+  .tb_published .onoffswitch {
     margin-left: 8px;
     vertical-align: bottom; }
 
@@ -1195,5 +1195,13 @@ a#show_trash_btn {
 
 #news_post_grid tbody tr td:last-child {
   min-width: 70px; }
+
+#newsconfig_panel {
+  max-width: 1170px;
+  margin: 5%; }
+
+.newspanel_wrap {
+  max-width: 90%;
+  margin: auto; }
 
 /*# sourceMappingURL=menaproadmin.css.map */

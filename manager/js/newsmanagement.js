@@ -47,7 +47,6 @@ var news = {
                         }
                         news.bindUpdatePostEvent();
                         cp.delegateEvents();
-                        //news.bindUpdateTagEvent();
                     }
 
 
@@ -163,7 +162,7 @@ var news = {
         $('#news_post_title').val('');
         news.editor.setContent('');
         $('#news_post_friendly').val('');
-        $('#news_post_published').attr('cheked',false);
+        $('#news_post_published').attr('checked',false).attr('checked',true).trigger('click');
         $('.post_message').hide();
         news.clearTags();
 
@@ -218,8 +217,8 @@ var news = {
     fillEditionFields:function(){
         $('#news_post_title').val(news.postmodel.title);
         $('#news_post_friendly').val(news.postmodel.friendly_url);
-        if(news.postmodel.published){
-            $('#news_post_published').attr('checked',true).trigger('change');
+        if(!news.postmodel.published){
+            $('#news_post_published').attr('checked',false);
         }
         news.editor.setContent(news.postmodel.content);
         news.fillTagsField();
@@ -359,7 +358,6 @@ var news = {
             function setNewsActiveItem(name) {
 
                 return function (state, args) {
-                    //$(".editor_options li").removeClass('selected');
 
                     var nodeName, i = args.parents.length;
 
@@ -373,7 +371,7 @@ var news = {
                     var cssClass = "selected";
 
                     if (state) {
-                        //$(".editor_options li").not(item).removeClass('selected');
+
                         item.addClass(cssClass);
                     } else {
                         $('[data-format="' + name + '"]').removeClass(cssClass)
@@ -656,7 +654,6 @@ var news = {
     refreshSuggestions:function(suggestions){
 
         $('#news_post_tags').textext()[0].suggestions().setSuggestions(suggestions,false);
-        //$('#news_post_tags').textext()[0].autocomplete().trigger('setSuggestions',{result:suggestions});
         $('#news_post_tags').textext()[0]._opts.suggestions=suggestions;
     }
     //*****************************************************END textextjs functions

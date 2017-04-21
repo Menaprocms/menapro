@@ -85,10 +85,22 @@ use common\components\Html;
 
                                                'view'=>function ($url, $model, $key) {
                                                    /** @var ActionColumn $column */
-                                                   return Html::a('<span class="fa fa-eye"></span>', $url, [
-                                                       'title' => Yii::t('yii', 'Send mail'),
+//                                                   $url=  Yii::$app->urlManagerFrontend->createUrl(['npreview','id'=>$model->id,'token' => LIVEVIEW_HASH]);
+                                                   $url=  Yii::$app->urlManagerFrontend->createUrl(['content/view','id_post'=>$model->id,'token' => LIVEVIEW_HASH,'liveview'=>true]);
+                                                   $arr=explode ('/' ,$url);
+                                                   foreach($arr as $k=>$v){
+                                                       $pos=strpos($v,'manager');
+                                                       if($pos!==false){
+                                                           $index=$k;
+                                                       }
+                                                   }
+                                                   unset($arr[$index]);
+                                                   $url=implode('/',$arr);
+                                                   return Html::a('<span class="fa fa-eye"></span>',$url, [
+                                                       'title' => Yii::t('yii', 'LiveView'),
                                                        //        'data-confirm' => Yii::t('yii', 'Are you sure to delete this item?'),
                                                        'data-method' => 'post',
+                                                       'target'=>'_blank'
                                                    ]);
                                                },
                                                 'delete'=>function ($url, $model, $key) {

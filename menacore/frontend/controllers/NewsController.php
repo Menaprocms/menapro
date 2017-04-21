@@ -6,19 +6,9 @@ namespace frontend\controllers;
 
 use common\models\Post;
 use Yii;
-use common\models\Block;
-use common\models\BlockLang;
-use common\models\Configuration;
 use yii\filters\VerbFilter;
-use backend\models\UploadblockForm;
-use yii\web\UploadedFile;
-use common\components\Tools;
-use backend\components\Controller;
-use ReflectionClass;
-use yii\captcha\Captcha;
-use yii\captcha\CaptchaAction;
-use yii\captcha\CaptchaValidator;
-use yii\helpers\Url;
+use frontend\components\Controller;
+
 
 /**
  * NewsController implements the CRUD actions for News model.
@@ -33,12 +23,13 @@ class NewsController extends Controller
             'rules' => [
                 // allow authenticated users
                 [
+
                     'allow' => true,
                     'roles' => ['@'],
                 ],
                 // everything else is denied
                 [
-                    'actions' => ['getposts','getsinglepost','updateshowpostparam'],
+                    'actions' => ['getposts','getsinglepost','updateshowpostparam','view'],
                     'allow' => true,
                     'roles' => ['?'],
                 ],
@@ -55,7 +46,6 @@ class NewsController extends Controller
 
     public function beforeAction($action)
     {
-
         return parent::beforeAction($action);
     }
     public static function getPosts($nposts,$type,$tag=null){
@@ -68,8 +58,12 @@ class NewsController extends Controller
 
         return $query->all();
     }
-    public static function getSinglePost($id){
-        $post=Post::find()->where(['id'=>$id])->one();
+    public static function getSinglePost($id,$liveview=false){
+        $query=Post::find()->where(['id'=>$id]);
+        if(!$liveview){
+            $query->andWhere(['published'=>1]);
+        }
+        $post=$query->one();
 
         return $post;
     }
@@ -81,5 +75,6 @@ class NewsController extends Controller
             array(
                 'success' => true)));
     }
+
 
 }

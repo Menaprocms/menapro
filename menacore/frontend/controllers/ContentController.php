@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 
+use common\models\Post;
 use themes\grada\assets\AppAsset;
 use Yii;
 use common\models\Content;
@@ -168,7 +169,41 @@ class ContentController extends Controller
 
         }
     }
+    public function createPostModel($post){
+        $model= new \stdClass();
+        $model->theme='default';
+        $model->assocLang=null;
+        $lang=new \stdClass();
+        $lang->meta_title=$post->title;
+        $lang->meta_description=$post->title;
+        $model->langFields[0]=$lang;
+        $content=["structure"=>
+                [null,
+                    [[
+                       "htmlOptions"=>[],
+                       "content"=>[
+                            [
+                                    "type"=>"text",
+                                    "class"=>12,
+                                    "content"=>[
+                                        "text"=>"<h4>".$post->title."</h4>
+                                       <div class=\"ePostContent\">
+                                          ".$post->content."
+                                       </div>"]
+                                ]
+                            ]
+                    ]]
+                ],
+            "theme"=>"",
+            "trash"=>["elements"=>[null,[]]],"columns"=>["left"=>0,"right"=>0]];
+        $content=json_encode($content);
+        $model->content=base64_encode($content);
+        $model->active=0;
+        $model->in_trash=0;
+        return $model;
 
+
+    }
     /**
      * Displays a single Content model.
      * @param integer $id
@@ -179,14 +214,20 @@ class ContentController extends Controller
         $data = Yii::$app->request->get();
         $lang=Yii::$app->params['app_lang'];
         $theme = $this->config['_DEFAULT_THEME_'];
-
+        $render=false;
         //Register ThemeAsset and load main model
-       if($data['id']!=0) {
+       if(isset($data['id']) && $data['id']!=0) {
             $model = $this->findModel($id);
             if($model->theme!="default")
             {
                 $theme=$model->theme;
             }
+           $render=true;
+       }elseif(isset($data['id_post']) && $data['id_post']!=0){
+           $post=Post::find()->where(['id'=> $data['id_post']])->one();
+
+           $model=$this->createPostModel($post);
+           $render=true;
        }
 
         if(file_exists(Yii::getAlias('@menaBase') . '/themes/' . $theme . '/assets/ThemeAsset.php'))
@@ -196,7 +237,7 @@ class ContentController extends Controller
 
 
 
-        if($data['id']!=0) {
+        if($render) {
 
 
             Yii::$app->params['cur_model_langfields']=$model->assocLang;
