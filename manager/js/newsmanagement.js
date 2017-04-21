@@ -2,7 +2,7 @@
  * Created by silvia on 28/02/2017.
  */
 $(document).ready(function () {
-
+    $('#news_post_published').attr('checked',false).attr('checked',true).trigger('click');
 });
 
 var news = {
