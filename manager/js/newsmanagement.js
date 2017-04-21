@@ -647,7 +647,19 @@ var news = {
         $(sender).closest('tr').remove();
     },
     cb_togglepublished:function(data,sender){
-         $(sender).toggleClass('label-success label-danger').find('i').toggleClass('fa-check fa-remove');
+        $(sender).toggleClass('label-success label-danger').find('i').toggleClass('fa-check fa-remove');
+
+        var published=0;
+        if($(sender).hasClass('label-success')){
+            published=1;
+        }
+        var updateBtn=$(sender).closest('tr').find('a.update_post');
+        var json = $(updateBtn).data('info');
+
+        json.model.published=published;
+
+        $(updateBtn).data('info',json)
+
     },
     //*****************************************************END callbacks functions
     //*****************************************************textextjs functions
