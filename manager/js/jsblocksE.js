@@ -450,7 +450,7 @@ var JSBlocks = {
                 self.log("Calling load" + k, "info");
                 self.blocks[self.currentBlock]['load' + k](v);
             } else {
-                self.log("load" + k + "() is not present. Using default collector");
+                self.log("load" + k + "() is not present. Using default loader");
                 var selector = "#" + cb.name + "_" + k;
 
                 if (self.checkParamType(k) == "object") {
