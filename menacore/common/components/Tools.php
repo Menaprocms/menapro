@@ -87,7 +87,8 @@ class Tools extends Component
     public static function ZipExtract($from_file, $to_dir)
     {
         if (!file_exists($to_dir))
-            mkdir($to_dir, 0777);
+            yii\helpers\FileHelper::createDirectory($to_dir,0755);
+        
         if (class_exists('ZipArchive', false)) {
             $zip = new \ZipArchive;
             chmod($to_dir, 0777);
