@@ -112,11 +112,12 @@ class Html extends Yii\helpers\Html
         $dir = FileHelper::normalizePath($filePieces['dirname']);
         $destDir = Yii::getAlias("@webroot/") . $thumbsFolder . $dir;
         $fullPath = $destDir . DIRECTORY_SEPARATOR . $newFilename;
-
+        if(!file_exists($file)){
+            return $file;
+        }
         if (!file_exists($fullPath)) {
             if (FileHelper::createDirectory($destDir)) {
                 Image::thumbnail($file, $width, $height)->save($fullPath);
-
             } else
                 return $file;
         }

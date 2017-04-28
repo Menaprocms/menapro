@@ -10,7 +10,7 @@
 
             RewriteCond %{REQUEST_URI} \.(gif|jpg|jpeg|png)$ [NC]
             RewriteCond %{REQUEST_FILENAME} !-f
-            RewriteRule ^.*$ img/404.gif [L]
+            RewriteRule ^.*$ img/404.jpg [L]
 
             # If a directory or a file exists, use it directly
             RewriteCond %{REQUEST_FILENAME} !-f
