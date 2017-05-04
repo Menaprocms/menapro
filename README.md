@@ -68,7 +68,7 @@ CHANGELOG
 
 **Menapro 1.1.0**
 [+] Add news functionallity, categorizable content.
-[+ ]New block news for use it.
+[+] New block news for use it.
 
 
 
