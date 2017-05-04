@@ -1204,4 +1204,7 @@ a#show_trash_btn {
   max-width: 90%;
   margin: auto; }
 
+.ui-widget button {
+  font-size: inherit !important; }
+
 /*# sourceMappingURL=menaproadmin.css.map */
