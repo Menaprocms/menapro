@@ -48,6 +48,28 @@ Have found something that does not work as expected? Tell us or create a pull re
 
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
+CHANGELOG
+---------
+**Menapro 1.1.2**
+[*] Update jsblocksE.js
+[*] Use FileHelper::createDirectory instead of mkdir
+
+[-] Thumbnail function: Exception if file does not exists.
+[-] 404 image extension.
+
+**Menapro 1.1.1**
+[-] - News: Correct url in news list at home page.
+[-] - News: Added condition published in getSinglePost method.
+[-] - News management: Published button load the model value and is marked by default in new posts.
+[-] - News management: Toggle published refresh data of update post link.
+
+[+] - News: Added link to page content in view one post link.
+[+] - News management: Preview button.
+
+**Menapro 1.1.0**
+[+] Add news functionallity, categorizable content.
+[+ ]New block news for use it.
+
 
 
 
