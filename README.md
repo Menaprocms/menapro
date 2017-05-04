@@ -52,8 +52,8 @@ CHANGELOG
 ---------
 **Menapro 1.1.2**
 
-[*] Update jsblocksE.js
-[*] Use FileHelper::createDirectory instead of mkdir
+[\*] Update jsblocksE.js
+[\*] Use FileHelper::createDirectory instead of mkdir
 
 [-] Thumbnail function: Exception if file does not exists.
 [-] 404 image extension.
