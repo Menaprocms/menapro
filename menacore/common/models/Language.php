@@ -78,7 +78,7 @@ class Language extends \yii\db\ActiveRecord
     }
 
     public static function findByIso($iso_code,$id=true){
-        $l=self::find()->where(['iso_code' => $iso_code])->one();
+        $l=self::find()->where(['iso_code' => $iso_code,'active'=> 1])->one();
 
         if($l!=null) {
             if ($id) {
