@@ -511,7 +511,7 @@ var cHtml = {
                         });
                         var html = '';
 
-                        if (v.type != 'splitted') {
+                        if (v.type != 'splitted' && v.type != '') {
                             col.find('.ePreview').addClass(JSBlocks.blocks[v.type].contentClass);
                             html = JSBlocks.blocks[v.type].getPreview(v.content);
                         } else {
