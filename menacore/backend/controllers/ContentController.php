@@ -39,6 +39,7 @@ use common\models\Language;
 use common\models\Tag;
 use common\models\Configuration;
 use common\components\ProcmsCommon;
+use yii\base\Exception;
 use yii\data\ActiveDataProvider;
 use yii\helpers\Json;
 use yii\web\NotFoundHttpException;
@@ -219,9 +220,17 @@ class ContentController extends Controller
     }
     public function getLastVersion(){
         $url='http://menapro.com/version.json';
-        $data="";
+        $data=false;
         if( ini_get('allow_url_fopen') ) {
-            $data=json_decode(file_get_contents($url));
+            try{
+                if($d = file_get_contents($url)){
+                    $data=json_decode($d);
+                }
+            }catch (Exception $e){
+
+            }
+
+
         }else if(function_exists('curl_version')){
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
@@ -229,13 +238,19 @@ class ContentController extends Controller
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-            $data = json_decode(curl_exec($ch));
+            try{
+                if($d = curl_exec($ch)){
+                    $data = json_decode($d);
+                }
+            }catch (Exception $e){
+
+            }
             curl_close($ch);
         }
-        if($data!=""){
-            return $data->version;
-        }else{
+        if(!$data){
             return false;
+        }else{
+            return $data->version;
         }
     }
     public function actionChecktrash()
