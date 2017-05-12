@@ -52,11 +52,14 @@ CHANGELOG
 ---------
 **Menapro 1.1.2**
 
+
 [+] Add changelog to Readme
 
 [\*] Update jsblocksE.js
 
 [\*] Use FileHelper::createDirectory instead of mkdir
+
+[\*] Fixed problem when user lang is different than the active ones.
 
 [-] Thumbnail function: Exception if file does not exists.
 
