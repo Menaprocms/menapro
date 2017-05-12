@@ -61,9 +61,13 @@ CHANGELOG
 
 [\*] Fixed problem when user lang is different than the active ones.
 
+[\*] Solved checking version issue
+
 [-] Thumbnail function: Exception if file does not exists.
 
 [-] 404 image extension.
+
+
 
 **Menapro 1.1.1**
 
