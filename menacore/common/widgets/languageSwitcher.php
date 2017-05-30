@@ -81,6 +81,7 @@ class languageSwitcher extends Widget
 
             echo ButtonDropdown::widget([
                 'label' => $current['name'],
+                'containerOptions'=>['class'=>'languageSwitch'],
                 'dropdown' => [
                     'items' => $items,
                 ],
