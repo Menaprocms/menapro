@@ -105,7 +105,7 @@ class Html extends Yii\helpers\Html
         $filePieces = pathinfo($file);
 
         //Png thumbnail is disabled due to some wrong results with 24bit pngs
-        if (strtolower($filePieces['extension'] == "png"))
+        if (in_array(strtolower($filePieces['extension']),['png','gif']))
             return $file;
 
         $newFilename = $filePieces['filename'] . "_" . $width . "_" . $height . ".jpg";
