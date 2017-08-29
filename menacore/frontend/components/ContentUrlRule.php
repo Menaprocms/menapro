@@ -236,7 +236,10 @@ class ContentUrlRule extends Object implements UrlRuleInterface
 
 
         //@fixme: Get correct country code
-
+        if(!isset(Yii::$app->params['active_langs'][Yii::$app->params['app_lang']])){
+            Yii::$app->params['app_lang']=Yii::$app->params['default_lang'];
+        }
+        
         Yii::$app->language = Yii::$app->params['active_langs'][Yii::$app->params['app_lang']]['iso_code'] . "-" . strtoupper(Yii::$app->params['active_langs'][Yii::$app->params['app_lang']]['country_code']);
 
         Yii::$app->params['index_friendly_url']=false;
