@@ -26,5 +26,11 @@
             "npm-asset-library": "menacore/vendor/npm",
             "bower-asset-library": "menacore/vendor/bower"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
