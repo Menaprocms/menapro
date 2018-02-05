@@ -4,7 +4,7 @@
     "keywords": ["mena", "cms", "website", "builder"],
     "homepage": "http://www.menapro.com/",
     "type": "project",
-    "license": "OSL v3.0",
+    "license": "OSL-3.0",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0",
