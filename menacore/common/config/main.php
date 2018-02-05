@@ -8,6 +8,10 @@ return [
         'yii\i18n\PhpMessageSource',
         'yii\helpers\Html'
     ],
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
     'components' => [
 
         'i18n' => [

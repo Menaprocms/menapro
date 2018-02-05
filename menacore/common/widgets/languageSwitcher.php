@@ -1,17 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: silvia
- * Date: 03/11/2016
- * Time: 9:59
- */
-
-/*
-author :: Pitt Phunsanit
-website :: http://plusmagi.com
-change language by get language=EN, language=TH,...
-or select on this widget
-*/
 
 namespace common\widgets;
 
@@ -81,6 +68,7 @@ class languageSwitcher extends Widget
 
             echo ButtonDropdown::widget([
                 'label' => $current['name'],
+                'containerOptions'=>['class'=>'languageSwitch'],
                 'dropdown' => [
                     'items' => $items,
                 ],

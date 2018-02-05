@@ -218,8 +218,7 @@ final class Supervisor extends Component
             'woff2',
             'ttf',
             'otf',
-            'bm',
-            'map'
+            'bm'
         ];
         if ($version = $this->apacheVersion()) {
             if ($version >= 2.4) {
