@@ -33,9 +33,9 @@ class ProcmsCommon extends Component
     {
 
         foreach ($jsonObject->structure as $k => $v) {
-            if ($jsonObject->structure != null && sizeof($jsonObject->structure[$k]) > 0) {
+            if ($jsonObject->structure != null && is_array($jsonObject->structure[$k]) && sizeof($jsonObject->structure[$k]) > 0) {
                 foreach ($jsonObject->structure[$k] as $row => $rv) {
-                    if ($jsonObject->structure[$k][$row] != null && sizeof($jsonObject->structure[$k][$row]) > 0) {
+                    if ($jsonObject->structure[$k][$row] != null && is_array($jsonObject->structure[$k][$row]) && sizeof($jsonObject->structure[$k][$row]) > 0) {
                         if (isset($jsonObject->structure[$k][$row]->content) && sizeof($jsonObject->structure[$k][$row]->content) > 0) {
                             $empty = true;
                             foreach ($jsonObject->structure[$k][$row]->content as $col => $cv) {

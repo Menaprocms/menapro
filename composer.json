@@ -7,7 +7,7 @@
     "license": "OSL v3.0",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.10",
+        "yiisoft/yii2": "~2.0",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "components/bootstrap": "^3.3",
@@ -16,15 +16,21 @@
         "yiisoft/yii2-imagine": "^2.0",
         "yiisoft/yii2-debug": "~2.0.0"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "config": {
         "process-timeout": 1800,
-        "vendor-dir": "menacore/vendor"
-    },
-    "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "menacore/vendor/npm",
-            "bower-asset-library": "menacore/vendor/bower"
+        "vendor-dir": "menacore/vendor",
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "menacore/vendor/npm",
+                "bower-asset-library": "menacore/vendor/bower"
+            }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
