@@ -50,6 +50,18 @@ Have found something that does not work as expected? Tell us or create a pull re
 
 CHANGELOG
 ---------
+**Menapro 1.1.5**
+
+[+] Add php 7 compatibility
+
+**Menapro 1.1.4**
+
+[+] Asset packagist changes
+
+**Menapro 1.1.3**
+
+[\*] Solved language issue
+
 **Menapro 1.1.2**
 
 
