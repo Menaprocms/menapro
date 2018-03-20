@@ -20,12 +20,6 @@
     "config": {
         "process-timeout": 1800,
         "vendor-dir": "menacore/vendor",
-        "fxp-asset": {
-            "installer-paths": {
-                "npm-asset-library": "menacore/vendor/npm",
-                "bower-asset-library": "menacore/vendor/bower"
-            }
-        }
     },
     "repositories": [
         {
