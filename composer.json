@@ -19,7 +19,7 @@
     "minimum-stability": "stable",
     "config": {
         "process-timeout": 1800,
-        "vendor-dir": "menacore/vendor",
+        "vendor-dir": "menacore/vendor"
     },
     "repositories": [
         {
