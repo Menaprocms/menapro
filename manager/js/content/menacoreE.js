@@ -111,8 +111,7 @@ var cms = {
                 div.css("top", $(window).scrollTop());
 
             });
-            $('#snapshot_iframe').load(function (e) {
-
+            $('#snapshot_iframe').on('load', function (e) {
                 cms.min.thumb(id);
             });
         },
