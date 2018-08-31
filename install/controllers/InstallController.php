@@ -116,7 +116,7 @@ class InstallController
     }
     public function runAction($action){
         date_default_timezone_set('UTC');
-        $baseDir = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' : 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+        $baseDir = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' : 'http://').$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
         $partial=false;
         $success=false;
         switch($action) {
@@ -148,7 +148,7 @@ class InstallController
 
                 $baseToReplace=$_SERVER['DOCUMENT_ROOT'];
                 foreach($checkWritable as $k=>$v){
-                    if(!is_writable($v)){
+                    if(file_exists($v) && !is_writable($v)){
                         $permissions_ok=false;
 
                         $give_permissions[]=str_replace($baseToReplace,'',realpath($v));
