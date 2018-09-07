@@ -23,7 +23,7 @@ $this->beginPage() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?php echo Url::base() ?>/../img/favicon.ico" type="image/x-icon" />
     <?php if($this->context->gmap_api_key!=""){?>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&key=<?php echo $this->context->gmap_api_key?>"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=<?php echo $this->context->gmap_api_key?>"></script>
     <?php } ?>
      <?php echo  Html::csrfMetaTags() ?>
     <title> <?php echo   Html::encode($this->title) ?></title>
