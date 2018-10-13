@@ -363,7 +363,7 @@ class BananaController extends Controller
 
     private function checkFileTypes($data)
     {
-        if (isset($data['fileTypes']) && is_array($data['fileTypes']) && count($data['fileTypes'] > 0)) {
+        if (isset($data['fileTypes']) && is_array($data['fileTypes']) && count($data['fileTypes']) > 0) {
             $imgToo = array_search('image', $data['fileTypes']);
 
             if ($imgToo > -1) {
