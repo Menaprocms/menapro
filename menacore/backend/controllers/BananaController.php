@@ -519,8 +519,10 @@ class BananaController extends Controller
         if($files===false)
             $files=[];
 
-        usort($files, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
-//            $this->info.=" glob al dir: ".$this->dir." NIVEL: ".$this->level;
+        usort(
+            $files,
+             function($a,$b){return filemtime($b) - filemtime($a);}
+        ); 
         $this->processFolder($files, $data);
 
 
