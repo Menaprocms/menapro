@@ -363,7 +363,7 @@ class BananaController extends Controller
 
     private function checkFileTypes($data)
     {
-        if (isset($data['fileTypes']) && is_array($data['fileTypes']) && count($data['fileTypes'] > 0)) {
+        if (isset($data['fileTypes']) && is_array($data['fileTypes']) && count($data['fileTypes']) > 0) {
             $imgToo = array_search('image', $data['fileTypes']);
 
             if ($imgToo > -1) {
@@ -519,8 +519,10 @@ class BananaController extends Controller
         if($files===false)
             $files=[];
 
-        usort($files, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
-//            $this->info.=" glob al dir: ".$this->dir." NIVEL: ".$this->level;
+        usort(
+            $files,
+             function($a,$b){return filemtime($b) - filemtime($a);}
+        ); 
         $this->processFolder($files, $data);
 
 
