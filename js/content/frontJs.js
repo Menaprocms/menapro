@@ -23,6 +23,24 @@ $(document).ready(function () {
         }
 
     });
+
+    $("#accept-cookies").click(function(e){
+        console.log('click');
+        e.preventDefault();
+        let url = $(e.currentTarget).attr('href');
+        // let csrfToken = $('meta[name="csrf-token"]').attr("content");
+        $.ajax({
+            type: 'POST',
+            url: url,
+            dataType: 'json',
+            // data: {_csrf: csrfToken},
+            success: function() {
+                $("#cookies_notification").hide();
+                location.reload();
+            }
+        });
+    });
+
     // Keep the slider in a var so other themes can customize it
 
     $.each($('.eSliderBx'), function (k, v) {

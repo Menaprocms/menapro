@@ -20,6 +20,13 @@ use yii\web\UrlRule;
  */
 class SiteController extends Controller
 {
+
+    public function beforeAction($action) {
+        if($action->id == 'accept-cookies'){
+            $this->enableCsrfValidation = false;
+        }
+        return parent::beforeAction($action);
+    }
     /**
      * @inheritdoc
      */
@@ -28,13 +35,13 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
+                'only' => ['logout', 'signup', 'accept-cookies'],
                 'rules' => [
-//                    [
-//                        'actions' => ['signup'],
-//                        'allow' => false,
-//                        'roles' => ['?'],
-//                    ],
+                    [
+                        'actions' => ['accept-cookies'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
                     [
                         'actions' => ['logout'],
                         'allow' => true,
@@ -46,6 +53,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'accept-cookies' => ['post'],
                 ],
             ],
         ];
@@ -108,5 +116,10 @@ class SiteController extends Controller
                 'route'=>'content/view?id='.$page->id);
         }
         Yii::$app->urlManager->addRules($rules,false);
+    }
+
+    public function actionAcceptCookies(){
+        Yii::$app->session->set('accept_cookies', true);
+        return true;
     }
 }

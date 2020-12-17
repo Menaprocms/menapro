@@ -39,6 +39,7 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => true,
             'rules' => [
+                'site/accept-cookies' => 'site/accept-cookies',
                 'block/block.html' => 'block/block',
                 'site/<action:\w+>' => 'site/<action>',
                 [

@@ -99,7 +99,7 @@ class Controller extends \yii\web\Controller
             Yii::$app->params['adminEmail'] = $this->config['_EMAIL_'];
             Yii::$app->params['supportEmail'] = $this->config['_EMAIL_'];
         }
-        if ($this->config['_UA_ANALYTICS_']) {
+        if ($this->config['_UA_ANALYTICS_'] && Yii::$app->session['accept_cookies']) {
             Yii::$app->params['ua_analitycs'] = Configuration::getValue('_UA_ANALYTICS_');
             $this->view->registerJs(
                 "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
